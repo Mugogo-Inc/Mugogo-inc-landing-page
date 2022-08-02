@@ -214,6 +214,7 @@ section .hero{
   margin-top: 30px;
   padding-right: 40px;
   font-size: 20px;
+  color:whitesmoke;
 }
 
 
@@ -254,4 +255,21 @@ letter-spacing: 1.4px;
 }
 .about-text p{
   margin-right: 20px;
+}
+
+.about-text button{
+  padding: 10px;
+  margin-top: 30px;
+  border:1px solid white;
+  cursor: pointer;
+  outline: none
+}
+.about-text button:hover{
+  background-color: lightcoral;
+  font-weight: 500;
+  color: white;
+  border: 1px solid wheat;
+}
+.about-text i{
+  margin-left: 5px;
 }

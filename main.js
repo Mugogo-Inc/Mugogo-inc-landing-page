@@ -54,6 +54,8 @@ document.querySelector('#app').innerHTML = `
     <div class='about-text'>
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
     <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a conmprevensive suite of services<br> to make your business reach the digital age</p>
+
+    <button class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></button>
     </div>
     </section>
     </div>
