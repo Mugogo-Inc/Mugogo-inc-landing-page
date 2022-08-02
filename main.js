@@ -19,7 +19,7 @@ document.querySelector('#app').innerHTML = `
      </div>
 
     </nav>
-
+   <div class='main'>
     <section class='hero'>
     <div class = 'hero-content'>
     <div class='text-content'>
@@ -34,7 +34,33 @@ document.querySelector('#app').innerHTML = `
     </div>
     
     </div>
+    <div class='lines'>
+    <p> 01/ <span class='five'>05</span></p>
+    </div>
+    </div>
     </section>
+    <section class='features'>
+    <div>
+    <div class='details'>
+    <p>Our sucess rests<br> in relationships <br>between people</p>
+    <div class= 'product-head'>
+    <h1>Human Connections <span class = 'human'>First</span> <br/> Code <span class='second'>Second </span></h1></div>
+   
+    </div>
+    <section class='about'>
+    <div class='about-img'>
+    <img src="/texture.jpg" alt="about"/>
+    </div>
+    <div class='about-text'>
+    <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
+    <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a conmprevensive suite of services<br> to make your business reach the digital age</p>
+    </div>
+    </section>
+    </div>
+   
+    </section>
+    
+    </div>
     </main>
   </div>
 `
