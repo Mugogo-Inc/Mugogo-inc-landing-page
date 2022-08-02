@@ -19,8 +19,24 @@ document.querySelector('#app').innerHTML = `
      </div>
 
     </nav>
+
+    <section class='hero'>
+    <div class = 'hero-content'>
+    <div class='text-content'>
+    <h1>Trust is earned through Experience<br>
+    <span>let us earn yours</span></h1>
+    <p>We are reimagining the endless posibilities<br> in building enterprise software!</p>
+    <button>Learn More</button>
+    </div>
+    <div class='svg-cont'>
+    <img src= "/hero.svg"/>
+    </div>
+    </div>
+    
+    </div>
+    </section>
     </main>
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+// setupCounter(document.querySelector('#counter'))
