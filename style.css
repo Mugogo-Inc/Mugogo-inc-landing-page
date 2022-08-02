@@ -1,0 +1,90 @@
+
+:root {
+  font-family: 'Roboto', sans-serif;
+ 
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color:#add8e6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  border-bottom: 1px solid #ffffff;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo{
+  
+  height: 100%;
+  border-right: 1px solid #ffffff;
+  overflow: hidden;
+  padding-right: 60px;
+ 
+}
+
+.navbar-logo img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+ ;
+  overflow: hidden;
+ 
+}
+
+.navbar-item{
+ display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+
+}
+.navbar-item a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.navbar-item span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
+
+
+.navbar-icons{
+  display: flex;
+  justify-content: space-between;
+  margin:0 10px;
+}
+
+.navbar-icons i{
+  margin-right: 20px;
+  cursor: pointer;
+}
