@@ -53,11 +53,15 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='about-text'>
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
-    <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a conmprevensive suite of services<br> to make your business reach the digital age</p>
+    <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a conmprevensive<br> suite of services to make your business reach the digital age</p>
 
     <button class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></button>
     </div>
+
     </section>
+    <div class='about-info'>
+    <h1>Lets work together into <br> turning your <span class='vision'>business vision</span> <br> into a <span class='modern'>modern software solution</span>  <br>for your clients.</h1>
+    </div>
     </div>
    
     </section>
