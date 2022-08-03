@@ -27,6 +27,7 @@ nav{
   border-bottom: 1px solid #ffffff;
   align-items: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .navbar-logo{
@@ -103,6 +104,7 @@ hero.section{
   max-height: 500px;
   max-width :1400px;
   margin-right: 50px;
+  margin-top: 50px;
 }
 section img{
   margin-top: 50px;
@@ -259,11 +261,15 @@ letter-spacing: 1.4px;
 }
 
 .about-text button{
-  padding: 10px;
+  padding: 15px;
   margin-top: 50px;
   border:1px solid white;
   cursor: pointer;
-  outline: none
+  outline: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+
 }
 .about-text button:hover{
   background-color: lightcoral;
@@ -283,7 +289,7 @@ letter-spacing: 1.4px;
   margin-bottom: 50px;
 }
 .about-info h1{
-  font-size: 30px;
+  font-size: 40px;
   line-height: 1.2;
   letter-spacing: 1.4px;
   font-weight: 400;
@@ -300,3 +306,71 @@ letter-spacing: 1.4px;
 .modern{
   color: plum;
 }
+
+.about-things{
+  height: 500px;
+  margin-right: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.things-text{
+  width: 50%;
+  padding:50px ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  
+  
+}
+.things-text h1{
+  font-size: 45px;
+  line-height: 1.3;
+}
+.things-text p {
+  margin-left: 90px;
+}
+
+.things-text button{
+  margin-top: 70px;
+  margin-bottom: 30px;
+  margin-right: 130px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  font-family: 500;
+  width: 150px;
+ background: transparent;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.things-text button:hover{
+  background-color:plum;
+}
+.things-text button:focus{
+  background: transparent;
+}
+.things-text i{
+  padding-left: 5px;
+}
+.things-img{
+  width:50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.things-img img{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  padding: 0px;
+  margin: 0px;
+}
+

@@ -62,6 +62,16 @@ document.querySelector('#app').innerHTML = `
     <div class='about-info'>
     <h1>Lets work together into <br> turning your <span class='vision'>business vision</span> <br> into a <span class='modern'>modern software solution</span>  <br>for your clients.</h1>
     </div>
+    <div class='about-things'>
+    <div class='things-text'>
+    <h1>We do things <br>differently</h1>
+    <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
+    <button >Our Work <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class = 'things-img'>
+    <img src='/texture.jpg'/>
+    </div>
+    </div>
     </div>
    
     </section>
