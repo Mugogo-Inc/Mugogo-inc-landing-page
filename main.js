@@ -32,20 +32,20 @@ document.querySelector('#app').innerHTML = `
     <img src= "/hero.svg"/>
     </div>
     </div>
-    
+    </section>
     </div>
+    
     <div class='lines'>
     <p> 01/ <span class='five'>05</span></p>
     </div>
-    </div>
-    </section>
+    
+ 
     <section class='features'>
     <div>
     <div class='details'>
     <p>Our sucess rests<br> in relationships <br>between people</p>
     <div class= 'product-head'>
     <h1>Human Connections <span class = 'human'>First</span> <br/> Code <span class='second'>Second </span></h1></div>
-   
     </div>
     <section class='about'>
     <div class='about-img'>
@@ -57,7 +57,7 @@ document.querySelector('#app').innerHTML = `
 
     <button class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></button>
     </div>
-
+    </div>
     </section>
     <div class='about-info'>
     <h1>Lets work together into <br> turning your <span class='vision'>business vision</span> <br> into a <span class='modern'>modern software solution</span>  <br>for your clients.</h1>
@@ -72,11 +72,34 @@ document.querySelector('#app').innerHTML = `
     <img src='/texture.jpg'/>
     </div>
     </div>
+   
     </div>
    
     </section>
-    
     </div>
+    <div class='lines'>
+    <p> 02/ <span class='five'>05</span></p>
+    </div>
+    <section class='featuress'>
+    <div class='details'>
+    <p>We have spent many<br> years refining a process <br>that deliver results</p>
+    <div class= 'product-head product'>
+    <h1>Process & <br><span class='second'>Control </span></h1>
+     <div class='connect'><h1>Connect<h1></div>
+    </div>
+    </div>
+    <div class='coperate'>
+    <h1>Cooperate</h1>
+    <p>This is where your business idea gets<br>foundational bones to build on <br>As a team we work together<br> to set goals and timelines</p>
+    <button>Details <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class='create'><h1>Create</h1></div>
+    <div class='continue'><h1>Continue</h1></div>
+    </div>
+    </section>
+   
+
+    
     </main>
   </div>
 `
