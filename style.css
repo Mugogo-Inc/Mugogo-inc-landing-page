@@ -191,8 +191,9 @@ section img{
   font-size: 20px;
   font-weight: bold;
   color: plum;
-  
 }
+
+
 .features{
   height: 700px;
   margin-left: 130px;
@@ -216,6 +217,9 @@ section img{
 .three{
  margin-left: 90px;
 }
+.four{
+  margin-left: 137px;
+}
 .product-head{
   height: 400px;
   border-left: 1px solid white;
@@ -224,6 +228,9 @@ section img{
 
 .process{
   margin-left: 120px;
+}
+.team{
+  margin-left: 112px;
 }
  .connect{
   margin-top: 60px;
@@ -524,6 +531,8 @@ display: flex;
   margin-right: 130px;
 }
 
+/* Services Section */
+
 .services{
   margin-top: 50px;
   margin-left: 130px;
@@ -566,4 +575,74 @@ display: flex;
 
 
 
+.team-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.team-grid{
+  margin-right: 130px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 20px;
+ 
+
+}
+
+.team-grid-card{
+  margin-top: 0px;
+  display: flex;
+  border: 1px solid white;
+  justify-content: center;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  padding: 0px;
+ 
+}
+.grid-img-container img{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 98.7%;
+  margin: 0px;
+  object-fit: cover;
+  overflow-y: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.grid-text{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-text h1{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  padding-top: 20px;
+  font-weight: 500;
+}
+.grid-text p{
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.team-grid-item-1{
+  border: 1px solid white;
+}

@@ -149,7 +149,57 @@ document.querySelector('#app').innerHTML = `
     </section>
     </div>
     
+    <div>
+
+    <div class='ideas-heading'>
+    <h1>Need a <span class='idea'><br>dependable team?</span> <br> We've <span class='here'>got you</span>...</h1>
+    <i class="fa-solid fa-square-down-right"></i>
+    </div>
+    <div class='lines process team'>
+    <p> 04/ <span class='five'>05</span></p>
+    </div>
+    <section class='featuress'>
+    <div class='details'>
+    <p>Technology is great<br>The minds that<br> create it <br>are greater <br>results</p>
+    <div class= 'product-head product'>
+    <h1>Leadership <br> &<span class='second'><br>Team </span></h1>
+    </div>
     
+    </div>
+    <div class='team-section'>
+    <div class='team-grid'>
+    <div class='team-grid-card'>
+    <div class ='grid-img-container'>
+    <img src='./texture.jpg'/>
+    </div>
+    <div class='grid-text'>
+    <h1>Peter Sande</h1>
+    <p>CEO</p>
+    </div>
+    </div>
+    <div class='team-grid-card'>
+    <div class ='grid-img-container'>
+    <img src='./texture.jpg'/>
+    </div>
+    <div class='grid-text'>
+    <h1>Nzai Kilonzo</h1>
+    <p>Software Developer</p>
+    </div>
+    </div>
+    <div class='team-grid-card'>
+    <div class ='grid-img-container'>
+    <img src='./texture.jpg'/>
+    </div>
+    <div class='grid-text'>
+    <h1>Reuben Jefwa</h1>
+    <p>Technical Director</p>
+    </div>
+    </div>
+     </div>
+    </div>
+    </div>
+    </section>
+    </div>
     </main>
   </div>
 `
