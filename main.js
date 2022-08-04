@@ -88,16 +88,18 @@ document.querySelector('#app').innerHTML = `
     </div>
     </div>
     <div class='coperate'>
+    <i class="fa-solid fa-angle-right"></i>
     <h1>Cooperate</h1>
-    <i class="fa-solid fa-angles-down"></i>
+  
     </div>
     <div class='create'>
+    <i class="fa-solid fa-angle-right"></i>
     <h1>Create</h1>
-    <i class="fa-solid fa-angles-down"></i>
+    
     </div>
     <div class='continue'>
+     <i class="fa-solid fa-angle-right"></i>
     <h1>Continue</h1>
-    <i class="fa-solid fa-angles-down"></i>
     </div>
    <div class='ideas-heading'>
    <h1>Want to <span class='idea'>let go</span> <br>of <span class='idea'>old ideas?</span><br> We're here <span class='here'>for it</span>...</h1>
