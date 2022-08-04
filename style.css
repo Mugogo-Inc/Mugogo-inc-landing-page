@@ -1,6 +1,6 @@
 
 :root {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Epilogue', sans-serif;
  
   line-height: 24px;
   font-weight: 400;
@@ -17,9 +17,9 @@
 }
 
 
-
 main{
   max-width: 1300px;
+  font-family: 'Epilogue', sans-serif;
 }
 
 nav{
@@ -363,6 +363,11 @@ margin-right: 200px;
   margin-left: 90px;
 }
 
+.things-text span{
+  color: plum;
+  font-weight: 900;
+}
+
 .things-text button{
   margin-top: 70px;
   margin-bottom: 30px;
@@ -404,17 +409,16 @@ margin-right: 200px;
 }
 .featuress{
   margin-left: 130px;
+  margin-right: 10px;
   margin-bottom: 0px;
 
   
   
 }
 .coperate{
-  height: 250px;
-  padding: 50px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
@@ -424,27 +428,15 @@ margin-right: 200px;
 
 .coperate h1{
   font-size: 56px;
-  font-weight: 100;
+  font-weight: 400;
 }
-.coperate p{
-  font-size: 20px;
-}
-.coperate button{
-  padding: 15px;
-  margin-top: 20px;
-  color: white;
-  font-weight: 500;
-  background: transparent;
-  border: none;
-  outline: none;
-  width: 100px;
+.coperate i{
+margin-left:40px ;
+display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-
-.coperate button i{
-  margin-left: 10px;
+  font-size: 25px;
 }
 
 .create{
@@ -456,6 +448,15 @@ margin-right: 200px;
   border-bottom: 1px solid white;
 }
 
+.create i{
+  margin-left: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 .create h1{
   font-size: 56px;
   font-weight: 100;
@@ -465,7 +466,7 @@ margin-right: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 130px;
+  margin-right: 135px;
   height: 100px;
   border-bottom: 1px solid white;
 }
@@ -474,3 +475,84 @@ margin-right: 200px;
   font-size: 56px;
   font-weight: 100;
 }
+
+.continue i{
+  margin-left: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.ideas-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
+.ideas-heading h1{
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 100;
+  
+}
+
+ .idea{
+  color: plum;
+}
+
+.here{
+  color: #ADFF2F;
+}
+
+.products{
+  border-bottom:1px solid wheat ;
+  margin-right: 130px;
+}
+
+.services{
+  margin-top: 50px;
+  margin-left: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-grid{
+  margin-right: 130px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 20px;
+ 
+
+}
+.card{
+  padding: 20px;
+  display: flex;
+  border: 1px solid white;
+  justify-content: start;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.card h4{
+  font-weight: 500;
+  line-height: 1.4;
+}
+.card i{
+  font-size: 40px;
+  padding: 10px;
+}
+.card i{
+  font-size: 40px;
+  padding: 10px;
+}
+.card p{
+  font-size: 12px
+}
+
+
+
+

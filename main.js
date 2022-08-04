@@ -64,7 +64,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='about-things'>
     <div class='things-text'>
-    <h1>We do things <br>differently</h1>
+    <h1>We do things <br><span>differently</span></h1>
     <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
     <button >Our Work <i class="fa-solid fa-arrow-right"></i></button>
     </div>
@@ -85,19 +85,69 @@ document.querySelector('#app').innerHTML = `
     <p>We have spent many<br> years refining a process <br>that deliver results</p>
     <div class= 'product-head product'>
     <h1>Process & <br><span class='second'>Control </span></h1>
-     <div class='connect'><h1>Connect<h1></div>
     </div>
     </div>
     <div class='coperate'>
     <h1>Cooperate</h1>
-    <p>This is where your business idea gets<br>foundational bones to build on <br>As a team we work together<br> to set goals and timelines</p>
-    <button>Details <i class="fa-solid fa-arrow-right"></i></button>
+    <i class="fa-solid fa-angles-down"></i>
     </div>
-    <div class='create'><h1>Create</h1></div>
-    <div class='continue'><h1>Continue</h1></div>
+    <div class='create'>
+    <h1>Create</h1>
+    <i class="fa-solid fa-angles-down"></i>
+    </div>
+    <div class='continue'>
+    <h1>Continue</h1>
+    <i class="fa-solid fa-angles-down"></i>
+    </div>
+   <div class='ideas-heading'>
+   <h1>Want to <span class='idea'>let go</span> <br>of <span class='idea'>old ideas?</span><br> We're here <span class='here'>for it</span>...</h1>
+   <i class="fa-solid fa-square-down-right"></i>
+   </div>
+    </div>
+
+    </section>
+    <div class='lines'>
+    <p> 03/ <span class='five'>05</span></p>
+    </div class='services'>
+    <div>
+    <section class='featuress products'>
+    <div class='details'>
+    <p>Choose from our services<br> to find a solution for your needs</p>
+    <div class= 'product-head product'>
+    <h1>Solution & <br><span class='second'>Technology </span></h1>
+    </div>
     </div>
     </section>
-   
+    <section>
+    <div class='services'>
+    <div class='services-grid'>
+    <div class='grid-item-1 card'>
+    <i class="fa-brands fa-cloudsmith"></i>
+    <h4>Cloud Computing & <br>Infrastructure</h4>
+    <p>Mugogo helps clients <br>to scale thier services<br> on AWS, Netlify and Google Cloud</p>
+        </div>
+    <div class='grid-item-2 card' ><i class="fa-solid fa-globe"></i></i>
+    <h4>Web Application & <br>Development</h4>
+    <p>Mugogo develops responsive <br>web applications that work<br> with modern frameworks</p></div>
+    <div class='grid-item-3 card'> <i class="fa-solid fa-gears"></i>
+    <h4>Cross platform <br>mobile development</h4>
+    <p>Secure our team <br>to perform mobile development <br>on both Android and IOS</p></div>
+    <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
+    <h4>Consulting <br>services</h4>
+    <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
+
+    <div class='grid-item-4 card'><i class="fa-regular fa-folder-closed"></i>
+    <h4>Enterprise data <br>Handling</h4>
+    <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment, they<br>we provide key metrics to drive good <br>decison making </p></div>
+    <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
+    <h4>Consulting <br>services</h4>
+    <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
+    </div>
+    
+    
+    </div>
+    </section>
+    </div>
 
     
     </main>
