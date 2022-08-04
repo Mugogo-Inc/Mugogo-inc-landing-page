@@ -34,7 +34,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     </section>
     </div>
-    
+  
     <div class='lines'>
     <p> 01/ <span class='five'>05</span></p>
     </div>
@@ -77,12 +77,12 @@ document.querySelector('#app').innerHTML = `
    
     </section>
     </div>
-    <div class='lines'>
+    <div class='lines process'>
     <p> 02/ <span class='five'>05</span></p>
     </div>
     <section class='featuress'>
     <div class='details'>
-    <p>We have spent many<br> years refining a process <br>that deliver results</p>
+    <p>We have spent many<br> years refining<br> a process <br>that deliver <br>results</p>
     <div class= 'product-head product'>
     <h1>Process & <br><span class='second'>Control </span></h1>
     </div>
@@ -106,13 +106,13 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     </section>
-    <div class='lines'>
+    <div class='lines three'>
     <p> 03/ <span class='five'>05</span></p>
     </div class='services'>
     <div>
     <section class='featuress products'>
     <div class='details'>
-    <p>Choose from our services<br> to find a solution for your needs</p>
+    <p>Choose from our <br>services to find a   <br>solution for your<br> needs</p>
     <div class= 'product-head product'>
     <h1>Solution & <br><span class='second'>Technology </span></h1>
     </div>
@@ -138,7 +138,7 @@ document.querySelector('#app').innerHTML = `
 
     <div class='grid-item-4 card'><i class="fa-regular fa-folder-closed"></i>
     <h4>Enterprise data <br>Handling</h4>
-    <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment, they<br>we provide key metrics to drive good <br>decison making </p></div>
+    <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment<br>we provide key metrics to drive good <br>decison making </p></div>
     <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
     <h4>Consulting <br>services</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
@@ -148,7 +148,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     </section>
     </div>
-
+    
     
     </main>
   </div>
