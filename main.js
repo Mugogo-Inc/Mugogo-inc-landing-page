@@ -43,7 +43,9 @@ document.querySelector('#app').innerHTML = `
     <section class='features'>
     <div>
     <div class='details'>
+    <div class='paragraph'>
     <p>Our sucess rests<br> in relationships <br>between people</p>
+    </div>
     <div class= 'product-head'>
     <h1>Human Connections <span class = 'human'>First</span> <br/> Code <span class='second'>Second </span></h1></div>
     </div>
