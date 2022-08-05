@@ -199,8 +199,24 @@ document.querySelector('#app').innerHTML = `
     </div>
      </div>
     </div>
+    <div class='ideas-heading'>
+    <h1>Mugogo is <span class='idea'>Working</span> <br> on  <span class='idea'>Software</span> that brings  <br>all the pieces <span class='here'>Together</span></h1>
+    <i class="fa-solid fa-square-down-right"></i>
     </div>
+    </div>
+    
     </section>
+    </div>
+    <div class='lines'>
+    <p> 04/ <span class='five'>05</span></p>
+    </div>
+    <section class='featuress'>
+    <div class='details'>
+    <p>Technology is great<br>The minds that<br> create it <br>are greater <br>results</p>
+    <div class= 'product-head product'>
+    <h1>Work</h1>
+    </div>
+    
     </div>
     </main>
   </div>
