@@ -658,7 +658,7 @@ display: flex;
 
 /* Media Queries */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
 
   /* Navbar Media Queries */
 nav{
@@ -720,7 +720,7 @@ font-size: 10px;
 
 }
 .hero-content .text-content button{
- margin-right: 60px;
+ margin-right: 40px;
  font-size: 13px;
 }
 
@@ -728,12 +728,15 @@ font-size: 10px;
   font-size: 26px;
   font-weight: 500;
   align-items: center;
+  margin-left: 50px;
  
  
 }
 .hero-content p{
   font-size: 14px;
   align-items: center;
+  margin-left: 50px;
+  
   
 
 }
@@ -826,6 +829,7 @@ font-size: 10px;
   align-items: center;
   justify-content: start;
   margin-left: 60px;
+  
 
 }
 .about-text h1{
@@ -835,5 +839,38 @@ font-size: 10px;
 }
 .about-text button{
   margin-left: -70px;
+}
+
+.about-info{
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.about-info h1{
+  font-size: 26px;
+  font-weight: 700px;
+}
+
+.about-things{
+margin-top: 50px;
+border: 1px solid white;
+flex-direction: column;
+
+}
+.things-text{
+  border-bottom: 1px solid white;
+
+}
+.things-text h1{
+ font-size: 26px;
+}
+.things-img{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+
 }
 }
