@@ -658,7 +658,7 @@ display: flex;
 
 /* Media Queries */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
 
   /* Navbar Media Queries */
 nav{
@@ -700,56 +700,39 @@ font-size: 10px;
 /* hero section  Media Queries*/
 
 .main{
-  margin: 0px;
+  margin-top: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
-.hero-content{
-  display: flex;
-  align-items: center;
- flex-direction: column;
- margin: right 50px; ;
- 
-  
 
+.hero .hero-content{
+  display: block;
+  margin: auto;
 }
 .hero-content .text-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  display: block;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+.text-content h1{
+  font-size: 26PX;
+}
+.text-content button{
+  font-size: 13px;
+}
+.hero-content .svg-cont{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
 
-}
-.hero-content .text-content button{
- margin-right: 40px;
- font-size: 13px;
-}
-
-.hero-content h1{
-  font-size: 26px;
-  font-weight: 500;
-  align-items: center;
-  margin-left: 50px;
- 
- 
-}
-.hero-content p{
-  font-size: 14px;
-  align-items: center;
-  margin-left: 50px;
-  
-  
-
-}
-.hero-content span{
-  margin-top: 30px;
-}
-.hero-content img{
+.hero-content .svg-cont img{
+  display: block;
   width: 100%;
   height: 100%;
-  margin-right: 30px;
 }
-
-
 /* Features Connections Section */
 
 .lines{
@@ -770,39 +753,30 @@ font-size: 10px;
 
 .features{
   /* display: flex; */
-  flex-direction: column;
-  width: 100%;
-  overflow: none;
-  margin-left: 0px;
-
+  display: block;
+  margin: 0px;
+  padding: 0px;
 
 }
 
 
 
 .details{
-  display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
-  justify-content: center;
-  margin: 0px;
-  height: 250px;
-  margin-bottom: 50px;
+ display: block;
+ margin: auto;
+ text-align: center;
 }
 .details p{
   padding-top: 20px;
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .product-head{
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  margin-left: 50px;
-  margin-bottom: 0px;
-  border-left: 0px;
+display: block;
+padding-top: 20px; 
+padding-bottom: 20px;
+border: none;
 
 }
 .product-head h1{
@@ -810,6 +784,7 @@ font-size: 10px;
   margin-top: 30px;
   margin:20px;
   line-height: normal;
+  
 
 }
 /* About section */
