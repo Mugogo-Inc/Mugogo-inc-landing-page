@@ -46,7 +46,7 @@ document.querySelector('#app').innerHTML = `
     <div class='paragraph'>
     <p>Our sucess rests<br> in relationships <br>between people</p>
     </div>
-    <div class= 'product-head'>
+    <div class= 'product-head connections'>
     <h1>Human Connections <span class = 'human'>First</span> <br/> Code <span class='second'>Second </span></h1></div>
     </div>
     <section class='about'>
@@ -168,8 +168,8 @@ document.querySelector('#app').innerHTML = `
     <section class='featuress'>
     <div class='details'>
     <p>Technology is great<br>The minds that<br> create it <br>are greater <br>results</p>
-    <div class= 'product-head product'>
-    <h1>Leadership <br> &<span class='second'><br>Team </span></h1>
+    <div class= 'product-head'>
+    <h1 class='head'>Leadership <br> &<span class='second'><br>Team </span></h1>
     </div>
     
     </div>
