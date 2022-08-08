@@ -151,7 +151,7 @@ document.querySelector('#app').innerHTML = `
    
     </div>
     
-    <button class='btn-services'>Learn More</button>
+    <button class='btn-services'>Learn More  <i class="fa-solid fa-arrow-right"></i></button>
     </div>
     </section>
     </div>

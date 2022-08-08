@@ -997,7 +997,7 @@ font-size: 10px;
   color: white;
   border: none;
   background: transparent;
-  border: 1px solid white;
+font-weight: 500;
   outline: none;
   padding: 25px;
   font-size: 35px;
@@ -1005,6 +1005,19 @@ font-size: 10px;
 justify-content: center;
 align-items: center;
   margin:auto;
+}
+.btn-services:hover{
+  color: white;
+  border: none;
+  background: transparent;
+  
+  outline: none;
+  padding: 25px;
+  font-size: 35px;
+ display: flex;
+}
+.btn-services i{
+  margin-left: 10px;
 }
 .card{
   display: block;
