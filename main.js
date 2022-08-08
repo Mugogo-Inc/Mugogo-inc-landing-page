@@ -148,9 +148,10 @@ document.querySelector('#app').innerHTML = `
     <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
     <h4>Consulting <br>services</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
+   
     </div>
     
-    
+    <button class='btn-services'>Learn More</button>
     </div>
     </section>
     </div>

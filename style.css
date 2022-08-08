@@ -553,7 +553,10 @@ display: flex;
   grid-template-rows: repeat(2, 300px);
   grid-gap: 20px;
  
+}
 
+.services-grid button{
+  display: none;
 }
 .card{
   padding: 20px;
@@ -974,36 +977,51 @@ font-size: 10px;
   text-align: center;
 }
 .services-grid{
- 
+ margin-top: 50px;
   display: grid;
  width: 100%;
   padding: 3px;
-  height: fit-content;
+  height: 300px;
   border: none;
   align-items: center;
   justify-items: center;
-  
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 100px);
   grid-gap: 10px;
-  justify-items: center;
-  place-items: center;
  
-  border: 1px solid #ccc;
+ 
  
 }
+
+.btn-services{
+  color: white;
+  border: none;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  padding: 25px;
+  font-size: 35px;
+ display: flex;
+justify-content: center;
+align-items: center;
+  margin:auto;
+}
 .card{
+  display: block;
   height: 100px;
   width: 100px;
   padding: 0px;
+  margin: auto;
+  text-align: center;
+  border: none;
 }
 
 
 .card h4{
   font-size: 10px;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 10px;
+  margin-bottom: 30px;
 }
 .card p{
   display: none;
