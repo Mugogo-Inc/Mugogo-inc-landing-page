@@ -64,6 +64,7 @@ document.querySelector('#app').innerHTML = `
     <div class='about-info'>
     <h1>Lets work together into <br> turning your <span class='vision'>business vision</span> <br> into a <span class='modern'>modern software solution</span>  <br>for your clients.</h1>
     </div>
+    </div>
     <div class='about-things'>
     <div class='things-text'>
     <h1>We do things <br><span>differently</span></h1>
