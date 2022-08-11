@@ -666,6 +666,8 @@ display: flex;
 .footer-grid{
   border-top: 1px solid white;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-grid-1{
   
@@ -706,6 +708,21 @@ display: flex;
 }
 .footer-grid-2 h5{
   font-weight: 300;
+}
+
+.social-media{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+.social-media i{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 20px;
+  text-underline-offset: none;
 }
 /* Media Queries */
 
@@ -1164,5 +1181,27 @@ align-items: center;
   height: 100px;
   margin: 0px;
   padding: 0px;
+}
+
+/* Footer section */
+
+.footer-grid{
+  
+  margin: auto;
+  text-align: center;
+}
+
+.footer-grid-1{
+  width: 100px;
+  border: none;
+  font-size: 12px;
+}
+.footer-grid-2{
+  width: 100px;
+  border: none;
+  font-size: 12px;
+}
+.footer-grid h1{
+  line-height: 1.1;
 }
 }

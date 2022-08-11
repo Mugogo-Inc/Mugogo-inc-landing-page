@@ -240,9 +240,15 @@ document.querySelector('#app').innerHTML = `
      <h5>Nairobi</h5>
      <h5>info@mugogo.com</h5>
     <h5>+254 723 456 789</h5>
-
     </div>
+    
     </section>
+    <div class='social-media'>
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <h5> © Infinity, Mugogo Inc</h5>
+    </div>
     </main>
   </div>
 `
