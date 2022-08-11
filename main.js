@@ -229,10 +229,11 @@ document.querySelector('#app').innerHTML = `
     <section class='featuress'>
     <div class='footer-grid'>  
     <div class='footer-grid-1'>
-    <h1>Mugogo</h1>
-    <h1>Services</h1>
-    <h1>Products</h1>
-    <h1>About</h1>
+  
+    <a href="#"><img src='./logo_w.png'/></a>
+    <a href="#">Work</a>
+    <a href="#">Team</a>
+    <a href="#">Connect</a>
     </div>
     <div class='footer-grid-2'>
     <h1>Contact Info</h1>

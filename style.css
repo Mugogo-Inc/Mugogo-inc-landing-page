@@ -664,9 +664,49 @@ display: flex;
 /* Footer */
 
 .footer-grid{
-  border: 1px solid white;
+  border-top: 1px solid white;
+  display: flex;
+}
+.footer-grid-1{
+  
+  width: 233px;
+  border-right: 1px solid wheat;
+  padding-top: 50px;
+  
+
+}
+.footer-grid-1 a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  font-weight: 400;
+  padding: 10px;
+ 
+
 }
 
+
+.footer-grid-1 img{
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-grid-2{
+  display: block;
+  margin: 50px;
+  text-align: center;
+}
+.footer-grid-2 h1{
+  font-size: 36px;
+  font-weight: 400;
+}
+.footer-grid-2 h5{
+  font-weight: 300;
+}
 /* Media Queries */
 
 @media screen and (max-width:500px) {
