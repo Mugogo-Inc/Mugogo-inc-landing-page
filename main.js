@@ -212,6 +212,8 @@ document.querySelector('#app').innerHTML = `
     
     </section>
     </div>
+    
+    </div>
     <div class='lines'>
     <p> 04/ <span class='five'>05</span></p>
     </div>
@@ -221,8 +223,25 @@ document.querySelector('#app').innerHTML = `
     <div class= 'product-head product'>
     <h1>Work</h1>
     </div>
-    
+    </section>
     </div>
+    </div>
+    <section class='featuress'>
+    <div class='footer-grid'>  
+    <div class='footer-grid-1'>
+    <h1>Mugogo</h1>
+    <h1>Services</h1>
+    <h1>Products</h1>
+    <h1>About</h1>
+    </div>
+    <div class='footer-grid-2'>
+    <h1>Contact Info</h1>
+     <h5>Nairobi</h5>
+     <h5>info@mugogo.com</h5>
+    <h5>+254 723 456 789</h5>
+
+    </div>
+    </section>
     </main>
   </div>
 `

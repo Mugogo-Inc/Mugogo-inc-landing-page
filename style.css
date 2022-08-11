@@ -661,6 +661,11 @@ display: flex;
 .btn-services{
   display: none;
 }
+/* Footer */
+
+.footer-grid{
+  border: 1px solid white;
+}
 
 /* Media Queries */
 
