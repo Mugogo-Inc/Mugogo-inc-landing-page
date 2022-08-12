@@ -1,4 +1,5 @@
-import heroAnimation from './gsap'
+import heroAnimation from './gsap/main'
+import heroText from './gsap/heroText'
 
 import './style.css'
 
@@ -259,3 +260,4 @@ document.querySelector('#app').innerHTML = `
 
 
 heroAnimation(document.querySelector('main'))
+heroText(document.querySelector('.text-content'))
