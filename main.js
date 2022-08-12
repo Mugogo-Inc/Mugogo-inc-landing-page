@@ -1,3 +1,5 @@
+import heroAnimation from './gsap'
+
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
@@ -254,3 +256,6 @@ document.querySelector('#app').innerHTML = `
 `
 
 // setupCounter(document.querySelector('#counter'))
+
+
+heroAnimation(document.querySelector('.hero'))
