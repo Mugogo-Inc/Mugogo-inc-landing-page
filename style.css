@@ -4,6 +4,7 @@
   --color-secondary: #ffc107;
   --color-tertiary: #ffc107;
   --lines-color:#172727;
+  --blue-green: #088F8F;
   font-family: 'Epilogue', 'Cabin', sans-serif;
  
   line-height: 24px;
@@ -140,7 +141,7 @@ section img{
  
 }
 .hero-content span{
-  color: #2a52be;
+  color: var(--blue-green);
 }
 
 .hero-content p{
@@ -152,7 +153,7 @@ section img{
 .hero-content button{
   padding: 15px;
   margin-top: 20px;
-  border:1px solid var(--lines-color);
+  border:1px solid var(--blue-green);
   outline: none;
   background-color:transparent;
   font-size: 18px;
@@ -201,7 +202,7 @@ section img{
 .lines .five{
   font-size: 20px;
   font-weight: bold;
-  color: #2a52be;
+  color: #088F8F;
   font-style: italic;
 }
 
@@ -272,7 +273,7 @@ section img{
 
 
 .human{
-  color: #2a52be;
+  color: #088F8F;
   font-weight: 500;
   font-family: 'Cabin', sans-serif;
 }
@@ -364,12 +365,12 @@ color: #172727;
   font-family: 'Cabin', sans-serif;
 }
 .vision{
-  color: #2a52be;
+  color: #088F8F;
   font-weight: 500;
 }
 
 .modern{
-  color: #2a52be;
+  color: #088F8F;
 }
 
 .about-things{
@@ -404,7 +405,7 @@ color: #172727;
 }
 
 .things-text span{
-  color: #2a52be;
+  color: #088F8F;
   font-weight: 700;
 }
 
@@ -420,7 +421,7 @@ color: #172727;
   width: 150px;
  background: transparent;
   border-radius: 5px;
-  border: 1px solid var(--lines-color);
+  border: 1px solid var(--blue-green);
   color: #172727;
   cursor: pointer;
 }
@@ -553,7 +554,7 @@ display: flex;
 }
 
  .idea{
-  color: #2a52be;
+  color: #088F8F;
 }
 
  
