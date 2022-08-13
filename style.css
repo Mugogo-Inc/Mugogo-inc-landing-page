@@ -145,13 +145,14 @@ section img{
 
 .hero-content p{
   font-size: 16px;
+  color: #172727;
 
 }
 
 .hero-content button{
   padding: 15px;
   margin-top: 20px;
-  border:1px solid #2a52be;
+  border:1px solid var(--lines-color);
   outline: none;
   background-color:transparent;
   font-size: 18px;
