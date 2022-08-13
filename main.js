@@ -1,10 +1,10 @@
-import {heroText, heroAnimation} from './gsap/main'
+import {heroText, heroAnimation, scaleOnload} from './gsap/main'
 
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <main class="smooth-wrapper">
+    <main class="smooth-content">
     <div class= "smooth-scroll">
     <nav>
     <div class='navbar-logo'>
@@ -22,7 +22,7 @@ document.querySelector('#app').innerHTML = `
      </div>
 
     </nav>
-   <div class='main'>
+   <div class='main section'>
     <section class='hero'>
     <div class = 'hero-content'>
     <div class='text-content'>
@@ -87,7 +87,7 @@ document.querySelector('#app').innerHTML = `
     <div class='lines process'>
     <p> 02/ <span class='five'>05</span></p>
     </div>
-    <section class='featuress'>
+    <section class='featuress section'>
     <div class='details'>
     <p>We have spent many<br> years refining<br> a process <br>that deliver <br>results</p>
     <div class= 'product-head product'>
@@ -262,3 +262,6 @@ document.querySelector('#app').innerHTML = `
 
 heroAnimation(document.querySelector('main'))
 heroText(document.querySelector('.text-content'))
+  scaleOnload(document.querySelectorAll('section'))
+ 
+

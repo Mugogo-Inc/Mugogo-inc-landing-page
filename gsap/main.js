@@ -1,23 +1,10 @@
 import { gsap } from "gsap";
 
 
+
 //scroll animation
 
-function smoothScroll(){
-   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-   let smoother = ScrollTrigger.create({
-      trigger: ".smooth-scroll",
-      start: "top top",
-      end: "bottom bottom",
-      scrub: true,
-      pin: true,
-      anticipatePin: 1,
-      markers: true,
-      onUpdate: function(instance) {
-         console.log(instance.progress);
-      }
-   });
-   }
+
    
 
 function heroAnimation(hero){
@@ -37,9 +24,16 @@ function heroText(textcontent){
   
   
   }
-
+ function scaleOnload(element){
+  element.forEach(element => {
+   element.addEventListener('load',function(event){
+      console.log(`${event.target} has loaded`)
+   });
+});
+   
+ }
   
-  export  { heroAnimation, heroText}
+  export  { heroAnimation, heroText, scaleOnload }
 
 
 
