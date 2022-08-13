@@ -1,11 +1,11 @@
-import heroAnimation from './gsap/main'
-import heroText from './gsap/heroText'
+import {heroText, heroAnimation} from './gsap/main'
 
 import './style.css'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <main>
+    <main class="smooth-wrapper">
+    <div class= "smooth-scroll">
     <nav>
     <div class='navbar-logo'>
     <img src='./logo_w.png' alt='google logo'/>
@@ -251,6 +251,7 @@ document.querySelector('#app').innerHTML = `
     <a href="#"><i class="fa-brands fa-twitter"></i></a>
     <a href="#"><i class="fa-brands fa-instagram"></i></a>
     <h5> © Infinity, Mugogo Inc</h5>
+    </div>
     </div>
     </main>
   </div>
