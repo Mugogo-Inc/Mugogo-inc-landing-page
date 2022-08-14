@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     <div class= "smooth-scroll">
     <nav>
     <div class='navbar-logo'>
-    <img src='./logo.png' alt='google logo'/>
+    <img src='./logo_t.png' alt='google logo'/>
     </div> 
     <div class='navbar-item'>
     <a href='#'><span>Work</span></a>
@@ -54,7 +54,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <section class='about'>
     <div class='about-img'>
-    <img src="./connections.jpg" alt="about"/>
+    <img src="./thought.svg" alt="about"/>
     </div>
     <div class='about-text'>
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
