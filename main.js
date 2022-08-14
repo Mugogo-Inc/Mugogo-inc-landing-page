@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
     <div class= "smooth-scroll">
     <nav>
     <div class='navbar-logo'>
-    <img src='./logo_w.png' alt='google logo'/>
+    <img src='./logo.png' alt='google logo'/>
     </div> 
     <div class='navbar-item'>
     <a href='#'><span>Work</span></a>
@@ -233,7 +233,7 @@ document.querySelector('#app').innerHTML = `
     <div class='footer-grid'>  
     <div class='footer-grid-1'>
   
-    <a href="#"><img src='./logo_w.png'/></a>
+    <a href="#"><img src='./logo.png'/></a>
     <a href="#">Work</a>
     <a href="#">Team</a>
     <a href="#">Connect</a>

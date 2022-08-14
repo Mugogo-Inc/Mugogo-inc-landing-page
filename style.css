@@ -324,7 +324,7 @@ color: #172727;
 .about-text button{
   padding: 15px;
   margin-top: 50px;
-  border:1px solid var(--lines-color);
+  border:1px solid var(--blue-green);
   cursor: pointer;
   outline: none;
   border-radius: 5px;
