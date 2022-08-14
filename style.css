@@ -70,7 +70,7 @@ nav{
 }
 .navbar-item a{
   text-decoration: none;
-  color: var(--lines-color);
+  color: var(--blue-green);
   margin-left: 20px;
   padding: 10px;
   font-weight: bold;
@@ -588,7 +588,7 @@ display: flex;
 .card{
   padding: 20px;
   display: flex;
-  border: 1px solid #172727;
+  border: 1px solid var(--blue-green);
   justify-content: start;
   border-radius: 5px;
   flex-direction: column;
@@ -765,9 +765,10 @@ display: flex;
   /* Navbar Media Queries */
 nav{
   height: 40px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  border-bottom: none;
 }
   
 .navbar-logo{
@@ -777,11 +778,13 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+
 }
 
 .navbar-logo img{
-  height: 95%;
-  width: 80%;
+  height: 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;

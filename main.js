@@ -32,7 +32,7 @@ document.querySelector('#app').innerHTML = `
     <button>Learn More</button>
     </div>
     <div class='svg-cont'>
-    <img src= "/hero.svg"/>
+    <img src= "/heroo.svg"/>
     </div>
     </div>
     </section>
@@ -54,7 +54,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <section class='about'>
     <div class='about-img'>
-    <img src="/texture.jpg" alt="about"/>
+    <img src="./connections.jpg" alt="about"/>
     </div>
     <div class='about-text'>
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
@@ -242,7 +242,7 @@ document.querySelector('#app').innerHTML = `
     <h1>Contact Info</h1>
      <h5>Nairobi</h5>
      <h5>info@mugogo.com</h5>
-    <h5>+254 723 456 789</h5>
+    <h5>+254 721902248</h5>
     </div>
     
     </section>
