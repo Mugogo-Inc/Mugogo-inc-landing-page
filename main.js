@@ -32,7 +32,7 @@ document.querySelector('#app').innerHTML = `
     <button>Learn More</button>
     </div>
     <div class='svg-cont'>
-    <img src= "/heroo.svg"/>
+    <img src= "./heroo.svg"/>
     </div>
     </div>
     </section>
@@ -75,7 +75,7 @@ document.querySelector('#app').innerHTML = `
     <button >Our Work <i class="fa-solid fa-arrow-right"></i></button>
     </div>
     <div class = 'things-img'>
-    <img src='/texture.jpg'/>
+    <img src='/differ.svg'/>
     
     </div>
     </div>
@@ -139,18 +139,18 @@ document.querySelector('#app').innerHTML = `
     <h4>Web Application & <br>Development</h4>
     <p>Mugogo develops responsive <br>web applications that work<br> with modern frameworks</p></div>
     <div class='grid-item-3 card'> <i class="fa-solid fa-gears"></i>
-    <h4>Cross platform <br>mobile development</h4>
+    <h4>Cross platform <br>mobile App development </h4>
     <p>Secure our team <br>to perform mobile development <br>on both Android and IOS</p></div>
     <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
-    <h4>Consulting <br>services</h4>
+    <h4>UI/UX <br>Design</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
 
     <div class='grid-item-4 card'><i class="fa-regular fa-folder-closed"></i>
     <h4>Enterprise data <br>Handling</h4>
     <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment<br>we provide key metrics to drive good <br>decison making </p></div>
-    <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
-    <h4>Consulting <br>services</h4>
-    <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
+    <div class='grid-item-4 card'><i class="fa-solid fa-lightbulb"></i>
+    <h4>Digital Marketting</h4>
+    <p>Want Take your business to the next level<br>with our perfect<br>digital marketing service</p></div>
    
     </div>
     

@@ -120,6 +120,7 @@ section .hero{
 section img{
   margin-top: 50px;
   margin-right: 50px;
+  width: 100%;
 }
 /* section .hero{
   display: flex;
@@ -132,6 +133,7 @@ section img{
   justify-content: center;
   align-items: center;
   margin-left: 30px;
+  
 }
 .hero-content h1{
   font-size: 56px;
@@ -140,6 +142,9 @@ section img{
   font-family: 'Cabin', Sans-serif;
   color: #172727;
  
+}
+.hero-content .text-content{
+  width: 50%;
 }
 .hero-content span{
   color: var(--blue-green);
@@ -305,7 +310,7 @@ section img{
   margin-top: 0px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+ 
 
 }
 
@@ -883,7 +888,9 @@ font-size: 10px;
 
 
 /* About section */
+
 .about{
+   
   height: 100%;
   width: 100%;
  display: block;
