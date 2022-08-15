@@ -141,7 +141,7 @@ document.querySelector('#app').innerHTML = `
     <div class='grid-item-3 card'> <i class="fa-solid fa-gears"></i>
     <h4>Cross platform <br>mobile App development </h4>
     <p>Secure our team <br>to perform mobile development <br>on both Android and IOS</p></div>
-    <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
+    <div class='grid-item-4 card'><i class="fa-brands fa-uikit"></i></i>
     <h4>UI/UX <br>Design</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
 
@@ -180,7 +180,7 @@ document.querySelector('#app').innerHTML = `
     <div class='team-grid'>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='./texture.jpg'/>
+    <img src='/sandee.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Peter Sande</h1>
@@ -189,23 +189,33 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='./texture.jpg'/>
+    <img src='/alii.jpeg'/>
     </div>
     <div class='grid-text'>
-    <h1>Nzai Kilonzo</h1>
-    <p>Software Developer</p>
+    <h1>Ali Salim</h1>
+    <p>Managing Director</p>
     </div>
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='./texture.jpg'/>
+    <img src='/reuben.png'/>
     </div>
     <div class='grid-text'>
     <h1>Reuben Jefwa</h1>
     <p>Technical Director</p>
     </div>
     </div>
+    <div class='team-grid-card'>
+    <div class ='grid-img-container'>
+    <img src='/nzai.jpg'/>
+    </div>
+    <div class='grid-text'>
+    <h1>Nzai Kilonzo</h1>
+    <p>Software Engineer</p>
+    </div>
+    </div>
      </div>
+     
     </div>
     <div class='ideas-heading'>
     <h1>Mugogo is <span class='idea'>Working</span> <br> on  <span class='idea'>Software</span> that brings  <br>all the pieces <span class='here'>Together</span></h1>
