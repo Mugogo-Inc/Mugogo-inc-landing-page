@@ -29,7 +29,7 @@ document.querySelector('#app').innerHTML = `
     <h1>Trust is earned through Experience<br>
     <span>let us earn yours</span></h1>
     <p>We are reimagining the endless posibilities<br> in building enterprise software!</p>
-    <button>Learn More</button>
+    <a href="#about">Learn More</a>
     </div>
     <div class='svg-cont'>
     <img src= "./heroo.svg"/>
@@ -46,7 +46,7 @@ document.querySelector('#app').innerHTML = `
     <section class='features'>
     <div>
     <div class='details'>
-    <div class='paragraph'>
+    <div class='paragraph' id ="about">
     <p>Our sucess rests<br> in relationships <br>between people</p>
     </div>
     <div class= 'product-head connections'>
@@ -60,7 +60,7 @@ document.querySelector('#app').innerHTML = `
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
     <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a comprevensive<br> suite of services to make your business reach the digital age</p>
 
-    <button class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></button>
+    <a  href='#work' class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></a>
     </div>
     </div>
     </section>
@@ -69,10 +69,10 @@ document.querySelector('#app').innerHTML = `
     </div>
     </div>
     <div class='about-things'>
-    <div class='things-text'>
+    <div class='things-text' id ='work'>
     <h1>We do things <br><span>differently</span></h1>
     <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
-    <button >Our Work <i class="fa-solid fa-arrow-right"></i></button>
+    <a href='work.html'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class = 'things-img'>
     <img src='/differ.svg'/>
