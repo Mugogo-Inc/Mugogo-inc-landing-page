@@ -222,22 +222,72 @@ document.querySelector('#app').innerHTML = `
     <i class="fa-solid fa-square-down-right"></i>
     </div>
     </div>
-    
-    </section>
+   
+
+   
     </div>
     
     </div>
     <div class='lines'>
     <p> 04/ <span class='five'>05</span></p>
     </div>
-    <section class='featuress'>
-    <div class='details'>
-    <p>Technology is great<br>The minds that<br> create it <br>are greater <br>results</p>
-    <div class= 'product-head product'>
-    <h1>Work</h1>
+    <div class = 'work-section'>
+    <div>
+    <h1> Together, we'll come up <br>with radical ideas and <br>execute them flawlessly.<br> Check out our work.
+    </h1>
     </div>
-    </section>
+    <div class='work-grid'>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img src='/mnarani.png'/>
     </div>
+    <div class='work-grid-card-text'>
+    <h5>Zanzibar Sports Club</h5>
+    <div class='work-btns'>
+    <button class='btn'>Explore</button>
+    <button class='btn'> View</button>
+    </div>
+   </div>
+    </div>
+   <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img src='/mnarani.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5>Travely</h5>
+    <div class='work-btns'>
+    <button class='btn'>Explore</button>
+    <button class='btn'> View</button>
+    </div>
+   </div>
+    </div>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img src='/mnarani.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5>Mnarani Cinnamon Spa</h5>
+    <div class='work-btns'>
+    <button class='btn'>Explore</button>
+    <button class='btn'> View</button>
+    </div>
+   </div>
+    </div>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img src='/mnarani.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5> Jambiani Beauty Spa</h5>
+    <div class='work-btns'>
+    <button class='btn'>Explore</button>
+    <button class='btn'> View</button>
+    </div>
+   </div>
+    </div>
+
+    </div>
+  
     </div>
     <section class='featuress'>
     <div class='footer-grid'>  
