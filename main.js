@@ -1,4 +1,4 @@
-import {heroText, heroAnimation, scaleOnload} from './gsap/main'
+import {heroText} from './gsap/main'
 
 import './style.css'
 
@@ -8,12 +8,12 @@ document.querySelector('#app').innerHTML = `
     <div class= "smooth-scroll">
     <nav>
     <div class='navbar-logo'>
-    <img src='./logo.png' alt='google logo'/>
+    <img src='./logo_t.png' alt='google logo'/>
     </div> 
     <div class='navbar-item'>
-    <a href='#'><span>Work</span></a>
-    <a href='#'><span>Team</span></a>
-    <a href='#'><span>Connect</span></a>
+    <a href='#work'><span>Work</span></a>
+    <a href='#team'><span>Team</span></a>
+    <a href='#connect'><span>Connect</span></a>
   
     </div>
      <div class='navbar-icons'>
@@ -27,12 +27,12 @@ document.querySelector('#app').innerHTML = `
     <div class = 'hero-content'>
     <div class='text-content'>
     <h1>Trust is earned through Experience<br>
-    <span>let us earn yours</span></h1>
+    <span>let us earn yours </span>here at <span>Mugogo</span></h1>
     <p>We are reimagining the endless posibilities<br> in building enterprise software!</p>
-    <button>Learn More</button>
+    <a href="#about">Learn More</a>
     </div>
     <div class='svg-cont'>
-    <img src= "/hero.svg"/>
+    <img src= "./heroo.svg"/>
     </div>
     </div>
     </section>
@@ -46,7 +46,7 @@ document.querySelector('#app').innerHTML = `
     <section class='features'>
     <div>
     <div class='details'>
-    <div class='paragraph'>
+    <div class='paragraph' id ="about">
     <p>Our sucess rests<br> in relationships <br>between people</p>
     </div>
     <div class= 'product-head connections'>
@@ -54,13 +54,13 @@ document.querySelector('#app').innerHTML = `
     </div>
     <section class='about'>
     <div class='about-img'>
-    <img src="/texture.jpg" alt="about"/>
+    <img  loading="lazy" src="./thought.svg" alt="about"/>
     </div>
     <div class='about-text'>
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
     <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a comprevensive<br> suite of services to make your business reach the digital age</p>
 
-    <button class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></button>
+    <a  href='#work' class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></a>
     </div>
     </div>
     </section>
@@ -69,13 +69,13 @@ document.querySelector('#app').innerHTML = `
     </div>
     </div>
     <div class='about-things'>
-    <div class='things-text'>
+    <div class='things-text' id ='work'>
     <h1>We do things <br><span>differently</span></h1>
     <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
-    <button >Our Work <i class="fa-solid fa-arrow-right"></i></button>
+    <a href='work.html'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class = 'things-img'>
-    <img src='/texture.jpg'/>
+    <img loading="lazy" src='/differ.svg'/>
     
     </div>
     </div>
@@ -87,7 +87,7 @@ document.querySelector('#app').innerHTML = `
     <div class='lines process'>
     <p> 02/ <span class='five'>05</span></p>
     </div>
-    <section class='featuress section'>
+    <section class='featuress section' id="connect">
     <div class='details'>
     <p>We have spent many<br> years refining<br> a process <br>that deliver <br>results</p>
     <div class= 'product-head product'>
@@ -139,18 +139,18 @@ document.querySelector('#app').innerHTML = `
     <h4>Web Application & <br>Development</h4>
     <p>Mugogo develops responsive <br>web applications that work<br> with modern frameworks</p></div>
     <div class='grid-item-3 card'> <i class="fa-solid fa-gears"></i>
-    <h4>Cross platform <br>mobile development</h4>
+    <h4>Cross platform <br>mobile App development </h4>
     <p>Secure our team <br>to perform mobile development <br>on both Android and IOS</p></div>
-    <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
-    <h4>Consulting <br>services</h4>
+    <div class='grid-item-4 card'><i class="fa-brands fa-uikit"></i></i>
+    <h4>UI/UX <br>Design</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
 
     <div class='grid-item-4 card'><i class="fa-regular fa-folder-closed"></i>
     <h4>Enterprise data <br>Handling</h4>
     <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment<br>we provide key metrics to drive good <br>decison making </p></div>
-    <div class='grid-item-4 card'><i class="fa-regular fa-comment-dots"></i>
-    <h4>Consulting <br>services</h4>
-    <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
+    <div class='grid-item-4 card'><i class="fa-solid fa-lightbulb"></i>
+    <h4>Digital Marketting</h4>
+    <p>Want Take your business to the next level<br>with our perfect<br>digital marketing service</p></div>
    
     </div>
     
@@ -176,11 +176,11 @@ document.querySelector('#app').innerHTML = `
     </div>
     
     </div>
-    <div class='team-section'>
+    <div class='team-section' id = 'team'>
     <div class='team-grid'>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='./texture.jpg'/>
+    <img loading="lazy" src='/sandee.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Peter Sande</h1>
@@ -189,51 +189,111 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='./texture.jpg'/>
+    <img  loading="lazy" src='/ali.jpeg'/>
     </div>
     <div class='grid-text'>
-    <h1>Nzai Kilonzo</h1>
-    <p>Software Developer</p>
+    <h1>Ali Salim</h1>
+    <p>Managing Director</p>
     </div>
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='./texture.jpg'/>
+    <img  loading="lazy" src='/jefwa.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Reuben Jefwa</h1>
-    <p>Technical Director</p>
+    <p>Chief Technology Officer</p>
+    </div>
+    </div>
+    <div class='team-grid-card'>
+    <div class ='grid-img-container'>
+    <img  loading="lazy" src='/nzaih.png'/>
+    </div>
+    <div class='grid-text'>
+    <h1>Nzai Kilonzo</h1>
+    <p>Senior Developer</p>
     </div>
     </div>
      </div>
+     
     </div>
     <div class='ideas-heading'>
     <h1>Mugogo is <span class='idea'>Working</span> <br> on  <span class='idea'>Software</span> that brings  <br>all the pieces <span class='here'>Together</span></h1>
     <i class="fa-solid fa-square-down-right"></i>
     </div>
     </div>
-    
-    </section>
+   
+
+   
     </div>
     
     </div>
     <div class='lines'>
     <p> 04/ <span class='five'>05</span></p>
     </div>
-    <section class='featuress'>
-    <div class='details'>
-    <p>Technology is great<br>The minds that<br> create it <br>are greater <br>results</p>
-    <div class= 'product-head product'>
-    <h1>Work</h1>
+    <div class = 'work-section'>
+    <div>
+    <h1> Together, we'll come up <br>with radical ideas and <br>execute them flawlessly.<br> Check out our work.
+    </h1>
     </div>
-    </section>
+    <div class='work-grid'>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img loading='lazy' src='/fising.png'/>
     </div>
+    <div class='work-grid-card-text'>
+    <h5>Zanzibar Sports Club</h5>
+    <div class='work-btns'>
+    <button class='btn'>Explore</button>
+    <a href="https://zanzibarsportfishing.com/" type="button"><button class='btn'> View</button></a>
+    </div>
+   </div>
+    </div>
+   <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img loading='lazy' src='/cinnamon.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5>Travely</h5>
+    <div class='work-btns'>
+    <button class='btn'>Explore</button>
+    <button class='btn'> View</button>
+    </div>
+   </div>
+    </div>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img loading='lazy' src='/cinnamon.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5>Mnarani Cinnamon Spa</h5>
+    <div class='work-btns'>
+   <a href='https://www.google.com/travel/hotels/Nungwi%2C%20Tanzania/entity/CgoI0d7cw5XbguMEEAE?q=spa%20nungwi%20village&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4518327%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4812120%2C4814050%2C4816977%2C4828448%2C4831357%2C4837140%2C4840029&hl=en-KE&gl=ke&ssta=1&ts=CAESABoECgIaACoECgAaAA&rp=ENHe3MOV24LjBBCAoMuuk9ai3AcQodzrnYuP59mNARDqrNrW_Ivqp7ABOAJAAEgCogEQTnVuZ3dpLCBUYW56YW5pYcABAw&ap=aAE&ictx=1&ved=0CAAQ5JsGahcKEwjYsJW0odP5AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls' type="button"> <button class='btn'>Explore</button></a>
+    <a href='https://mnaranicinnamonspa.com/' type="button"><button class='btn'> View</button></a>
+    </div>
+   </div>
+    </div>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img loading='lazy' src='/beauty.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5> Jambiani Beauty Spa</h5>
+    <div class='work-btns'>
+    <a href="https://g.page/r/CdpSz9FlwcnCEAE" type="button"><button class='btn'>Explore</button></a>
+    <a href="https://jambianibeautyspa.com/" type="button"><button class='btn'> View</button></a>
+    </div>
+   </div>
+    </div>
+
+    </div>
+  
     </div>
     <section class='featuress'>
     <div class='footer-grid'>  
     <div class='footer-grid-1'>
   
-    <a href="#"><img src='./logo.png'/></a>
+    <a href="#"><img loading='lazy' src='./logo.png'/></a>
     <a href="#">Work</a>
     <a href="#">Team</a>
     <a href="#">Connect</a>
@@ -241,8 +301,10 @@ document.querySelector('#app').innerHTML = `
     <div class='footer-grid-2'>
     <h1>Contact Info</h1>
      <h5>Nairobi</h5>
-     <h5>info@mugogo.com</h5>
-    <h5>+254 723 456 789</h5>
+     <h5><span>Customer Care:</span> customerservice@mugogoinc.com
+     </h5>
+     <h5><span>Info:</span> info@mugogoinc.com</h5>
+    <h5><span>WhatsApp:</span>+254 721902248</h5>
     </div>
     
     </section>
@@ -260,8 +322,8 @@ document.querySelector('#app').innerHTML = `
 // setupCounter(document.querySelector('#counter'))
 
 
-heroAnimation(document.querySelector('main'))
+
 heroText(document.querySelector('.text-content'))
-  scaleOnload(document.querySelectorAll('section'))
+ 
  
 
