@@ -189,7 +189,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img  loading="lazy" src='/alii.jpeg'/>
+    <img  loading="lazy" src='/ali.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Ali Salim</h1>
@@ -198,7 +198,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img  loading="lazy" src='/reuben.png'/>
+    <img  loading="lazy" src='/jefwa.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Reuben Jefwa</h1>
