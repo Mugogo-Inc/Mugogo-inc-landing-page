@@ -1,4 +1,4 @@
-//import {heroText} from './gsap/main'
+import {heroText} from './gsap/main'
 
 import './style.css'
 
@@ -54,7 +54,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <section class='about'>
     <div class='about-img'>
-    <img src="./thought.svg" alt="about"/>
+    <img  loading="lazy" src="./thought.svg" alt="about"/>
     </div>
     <div class='about-text'>
     <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
@@ -75,7 +75,7 @@ document.querySelector('#app').innerHTML = `
     <a href='work.html'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class = 'things-img'>
-    <img src='/differ.svg'/>
+    <img loading="lazy" src='/differ.svg'/>
     
     </div>
     </div>
@@ -180,7 +180,7 @@ document.querySelector('#app').innerHTML = `
     <div class='team-grid'>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='/sandee.jpeg'/>
+    <img loading="lazy" src='/sandee.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Peter Sande</h1>
@@ -189,7 +189,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='/alii.jpeg'/>
+    <img  loading="lazy" src='/alii.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Ali Salim</h1>
@@ -198,7 +198,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='/reuben.png'/>
+    <img  loading="lazy" src='/reuben.png'/>
     </div>
     <div class='grid-text'>
     <h1>Reuben Jefwa</h1>
@@ -207,7 +207,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='/nzaih.png'/>
+    <img  loading="lazy" src='/nzaih.png'/>
     </div>
     <div class='grid-text'>
     <h1>Nzai Kilonzo</h1>
@@ -239,7 +239,7 @@ document.querySelector('#app').innerHTML = `
     <div class='work-grid'>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/fising.png' loading='lazy'/>
+    <img loading='lazy' src='/fising.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Zanzibar Sports Club</h5>
@@ -251,7 +251,7 @@ document.querySelector('#app').innerHTML = `
     </div>
    <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/cinnamon.png'/>
+    <img loading='lazy' src='/cinnamon.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Travely</h5>
@@ -263,7 +263,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/cinnamon.png'/>
+    <img loading='lazy' src='/cinnamon.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Mnarani Cinnamon Spa</h5>
@@ -275,7 +275,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/beauty.png'/>
+    <img loading='lazy' src='/beauty.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5> Jambiani Beauty Spa</h5>
@@ -293,7 +293,7 @@ document.querySelector('#app').innerHTML = `
     <div class='footer-grid'>  
     <div class='footer-grid-1'>
   
-    <a href="#"><img src='./logo.png'/></a>
+    <a href="#"><img loading='lazy' src='./logo.png'/></a>
     <a href="#">Work</a>
     <a href="#">Team</a>
     <a href="#">Connect</a>
@@ -323,7 +323,7 @@ document.querySelector('#app').innerHTML = `
 
 
 
-//heroText(document.querySelector('.text-content'))
+heroText(document.querySelector('.text-content'))
  
  
 
