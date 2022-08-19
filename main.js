@@ -202,7 +202,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='grid-text'>
     <h1>Reuben Jefwa</h1>
-    <p>Chief Technical Director</p>
+    <p>Chief Technology Officer</p>
     </div>
     </div>
     <div class='team-grid-card'>
@@ -268,7 +268,7 @@ document.querySelector('#app').innerHTML = `
     <div class='work-grid-card-text'>
     <h5>Mnarani Cinnamon Spa</h5>
     <div class='work-btns'>
-    <button class='btn'>Explore</button>
+   <a href='https://www.google.com/travel/hotels/Nungwi%2C%20Tanzania/entity/CgoI0d7cw5XbguMEEAE?q=spa%20nungwi%20village&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4518327%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4812120%2C4814050%2C4816977%2C4828448%2C4831357%2C4837140%2C4840029&hl=en-KE&gl=ke&ssta=1&ts=CAESABoECgIaACoECgAaAA&rp=ENHe3MOV24LjBBCAoMuuk9ai3AcQodzrnYuP59mNARDqrNrW_Ivqp7ABOAJAAEgCogEQTnVuZ3dpLCBUYW56YW5pYcABAw&ap=aAE&ictx=1&ved=0CAAQ5JsGahcKEwjYsJW0odP5AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls' type="button"> <button class='btn'>Explore</button></a>
     <a href='https://mnaranicinnamonspa.com/' type="button"><button class='btn'> View</button></a>
     </div>
    </div>
@@ -304,7 +304,7 @@ document.querySelector('#app').innerHTML = `
      <h5><span>Customer Care:</span> customerservice@mugogoinc.com
      </h5>
      <h5><span>Info:</span> info@mugogoinc.com</h5>
-    <h5>span>WhatsApp:</span>+254 721902248</h5>
+    <h5><span>WhatsApp:</span>+254 721902248</h5>
     </div>
     
     </section>
