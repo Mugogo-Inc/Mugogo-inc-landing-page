@@ -322,8 +322,8 @@ document.querySelector('#app').innerHTML = `
 // setupCounter(document.querySelector('#counter'))
 
 
-heroAnimation(document.querySelector('main'))
+
 heroText(document.querySelector('.text-content'))
-  scaleOnload(document.querySelectorAll('section'))
+ 
  
 
