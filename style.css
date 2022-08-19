@@ -776,10 +776,11 @@ display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0px;
+
 }
 .social-media i{
   text-decoration: none;
-  color: #ffffff;
+  color: var(--blue-green);
   font-size: 20px;
   margin-right: 20px;
   text-underline-offset: none;
