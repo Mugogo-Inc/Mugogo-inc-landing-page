@@ -11,9 +11,9 @@ document.querySelector('#app').innerHTML = `
     <img src='./logo_t.png' alt='google logo'/>
     </div> 
     <div class='navbar-item'>
-    <a href='#'><span>Work</span></a>
-    <a href='#'><span>Team</span></a>
-    <a href='#'><span>Connect</span></a>
+    <a href='#work'><span>Work</span></a>
+    <a href='#team'><span>Team</span></a>
+    <a href='#connect'><span>Connect</span></a>
   
     </div>
      <div class='navbar-icons'>
@@ -87,7 +87,7 @@ document.querySelector('#app').innerHTML = `
     <div class='lines process'>
     <p> 02/ <span class='five'>05</span></p>
     </div>
-    <section class='featuress section'>
+    <section class='featuress section' id="connect">
     <div class='details'>
     <p>We have spent many<br> years refining<br> a process <br>that deliver <br>results</p>
     <div class= 'product-head product'>
@@ -176,7 +176,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     
     </div>
-    <div class='team-section'>
+    <div class='team-section' id = 'team'>
     <div class='team-grid'>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
@@ -207,7 +207,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img src='/nzai.jpg'/>
+    <img src='/nzaih.png'/>
     </div>
     <div class='grid-text'>
     <h1>Nzai Kilonzo</h1>
@@ -239,13 +239,13 @@ document.querySelector('#app').innerHTML = `
     <div class='work-grid'>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/mnarani.png'/>
+    <img src='/fising.png' loading='lazy'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Zanzibar Sports Club</h5>
     <div class='work-btns'>
     <button class='btn'>Explore</button>
-    <button class='btn'> View</button>
+    <a href="https://zanzibarsportfishing.com/" type="button"><button class='btn'> View</button></a>
     </div>
    </div>
     </div>
@@ -263,25 +263,25 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/mnarani.png'/>
+    <img src='/cinnamon.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Mnarani Cinnamon Spa</h5>
     <div class='work-btns'>
     <button class='btn'>Explore</button>
-    <button class='btn'> View</button>
+    <a href='https://mnaranicinnamonspa.com/' type="button"><button class='btn'> View</button></a>
     </div>
    </div>
     </div>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/mnarani.png'/>
+    <img src='/beauty.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5> Jambiani Beauty Spa</h5>
     <div class='work-btns'>
     <button class='btn'>Explore</button>
-    <button class='btn'> View</button>
+    <a href="https://jambianibeautyspa.com/" type="button"><button class='btn'> View</button></a>
     </div>
    </div>
     </div>
@@ -301,7 +301,9 @@ document.querySelector('#app').innerHTML = `
     <div class='footer-grid-2'>
     <h1>Contact Info</h1>
      <h5>Nairobi</h5>
-     <h5>info@mugogo.com</h5>
+     <h5><span>Customer Care:</span> customerservice@mugogoinc.com
+     </h5>
+     <h5><span>Info:</span> info@mugogoinc.com</h5>
     <h5>+254 721902248</h5>
     </div>
     

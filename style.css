@@ -101,6 +101,7 @@ nav{
 .navbar-icons i{
   margin-right: 20px;
   cursor: pointer;
+  color: #088F8F;
 }
 
 /* Hero Section */
@@ -758,10 +759,15 @@ display: flex;
   font-size: 36px;
   font-weight: 400;
   color: #172727;
+  font-weight: 600;
+  font-size: 20px;
 }
 .footer-grid-2 h5{
   font-weight: 300;
   color: #172727;
+}
+.footer-grid-2 span{
+  font-weight: 500;
 }
 
 .social-media{
