@@ -1,4 +1,4 @@
-import {heroText} from './gsap/main'
+//import {heroText} from './gsap/main'
 
 import './style.css'
 
@@ -323,7 +323,7 @@ document.querySelector('#app').innerHTML = `
 
 
 
-heroText(document.querySelector('.text-content'))
+//heroText(document.querySelector('.text-content'))
  
  
 
