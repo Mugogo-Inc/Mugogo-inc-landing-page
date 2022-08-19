@@ -251,7 +251,7 @@ document.querySelector('#app').innerHTML = `
     </div>
    <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img src='/mnarani.png'/>
+    <img src='/cinnamon.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Travely</h5>
