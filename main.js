@@ -202,7 +202,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='grid-text'>
     <h1>Reuben Jefwa</h1>
-    <p>Technical Director</p>
+    <p>Chief Technical Director</p>
     </div>
     </div>
     <div class='team-grid-card'>
@@ -211,7 +211,7 @@ document.querySelector('#app').innerHTML = `
     </div>
     <div class='grid-text'>
     <h1>Nzai Kilonzo</h1>
-    <p>Software Engineer</p>
+    <p>Senior Developer</p>
     </div>
     </div>
      </div>
