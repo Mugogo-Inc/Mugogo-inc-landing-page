@@ -27,7 +27,7 @@ document.querySelector('#app').innerHTML = `
     <div class = 'hero-content'>
     <div class='text-content'>
     <h1>Trust is earned through Experience<br>
-    <span>let us earn yours</span></h1>
+    <span>let us earn yours </span>here at <span>Mugogo</span></h1>
     <p>We are reimagining the endless posibilities<br> in building enterprise software!</p>
     <a href="#about">Learn More</a>
     </div>
@@ -304,7 +304,7 @@ document.querySelector('#app').innerHTML = `
      <h5><span>Customer Care:</span> customerservice@mugogoinc.com
      </h5>
      <h5><span>Info:</span> info@mugogoinc.com</h5>
-    <h5>+254 721902248</h5>
+    <h5>span>WhatsApp:</span>+254 721902248</h5>
     </div>
     
     </section>
