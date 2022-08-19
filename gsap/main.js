@@ -18,7 +18,7 @@ function heroText(textcontent){
    
  
   
-  export  { heroAnimation, heroText }
+  export  {heroText }
 
 
 

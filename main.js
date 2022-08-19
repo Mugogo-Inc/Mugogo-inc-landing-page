@@ -1,4 +1,4 @@
-import {heroText, heroAnimation, scaleOnload} from './gsap/main'
+import {heroText} from './gsap/main'
 
 import './style.css'
 
