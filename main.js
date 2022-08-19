@@ -280,7 +280,7 @@ document.querySelector('#app').innerHTML = `
     <div class='work-grid-card-text'>
     <h5> Jambiani Beauty Spa</h5>
     <div class='work-btns'>
-    <button class='btn'>Explore</button>
+    <a href="https://g.page/r/CdpSz9FlwcnCEAE" type="button"><button class='btn'>Explore</button></a>
     <a href="https://jambianibeautyspa.com/" type="button"><button class='btn'> View</button></a>
     </div>
    </div>
