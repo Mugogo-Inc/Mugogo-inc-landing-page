@@ -32,7 +32,7 @@ document.querySelector('#app').innerHTML = `
     <a href="#about">Learn More</a>
     </div>
     <div class='svg-cont'>
-    <img src= "./heroo.svg"/>
+    <img src= "/heroo.svg"/>
     </div>
     </div>
     </section>
@@ -94,19 +94,40 @@ document.querySelector('#app').innerHTML = `
     <h1>Process & <br><span class='second'>Control </span></h1>
     </div>
     </div>
-    <div class='coperate'>
-    <i class="fa-solid fa-angle-right"></i>
-    <h1>Cooperate</h1>
-  
-    </div>
-    <div class='create'>
-    <i class="fa-solid fa-angle-right"></i>
-    <h1>Create</h1>
     
+    <div class='coperate'>
+    <div class='infos'>
+    <h1>Our Process</h1>
+    <i class="fa-solid fa-angle-down"></i>
     </div>
-    <div class='continue'>
-     <i class="fa-solid fa-angle-right"></i>
-    <h1>Continue</h1>
+    <div class='coperate-text'>
+    <div class='coperate-items'>
+   <h1>
+   Our Signature Design Process
+   </h1>
+   <p>Our signature process is broken down into six steps, even though our approach to every design process depends on the product itself to build a sustainable solution to bring growth & prosperity. We approach clients </p>
+
+   <h1><span>O1</span> User </h1>
+   <p>
+   What problems are they facing?<br>How are they struggling and how can we contribute?
+   </p>
+   <h1><span>O2</span> Brand </h1>
+   <p>
+   After understanding users we try to understand<br> the brand needs to provide better solutions <br>that align with their long-term goals.
+   </p>
+    <h1><span>O3</span> User Persona </h1>
+    <p>We make multiple types of the persona<br> of how our ideal customers look like.<br> In general, we comprise an identity, relevant quotes, <br>and information about any behavioral trends in the user persona.</p>
+    <h1><span>O4</span> Design & Code </h1>
+    <p>We create diagrams that illustrate<br> the entire user journey while<br> interacting with a product, from the initial interaction to the last.</p>
+   
+    <h1><span>O5</span> Prototype </h1>
+    <p>We create prototypes that illustrate<br> the entire user experience while<br> the client is interacting with the product,<br> from the initial interaction to the last while taking feedback.</p>
+
+    <h1><span>O6</span> Launch </h1>
+    <p>Now the product is ready for launch<br> We ensure that the client<br> is contented withthe product.</p>
+   
+    </div>
+    </div>
     </div>
    <div class='ideas-heading'>
    <h1>Want to <span class='idea'>let go</span> <br>of <span class='idea'>old ideas?</span><br> We're here <span class='here'>for it</span>...</h1>
@@ -324,6 +345,21 @@ document.querySelector('#app').innerHTML = `
 
 
 heroText(document.querySelector('.text-content'))
+
+const el = document.querySelectorAll('.coperate')
+
+el.forEach(element => {
+  element.addEventListener('click', () => {
+   element.classList.toggle('active')
+  })
+}
+)
+
+
+
+
+
+
  
  
 

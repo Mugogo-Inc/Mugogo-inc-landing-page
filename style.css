@@ -473,31 +473,68 @@ color: #172727;
   
 }
 .coperate{
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid var(--lines-color);
-  border-bottom: 1px solid var(--lines-color);
+  border: 1px solid var(--lines-color);
   margin-right: 130px;
-  margin-bottom: 0px;
+  height: fit-content;
+  
+ 
+}
+.infos{
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.infos h1{
+  font-size: 56px;
+  line-height: 1.3;
+  font-weight: 400;
+  font-family: 'Cabin', sans-serif;
 }
 
-.coperate h1{
-  font-size: 56px;
-  font-weight: 300;
-  color:var(--lines-color);
+.infos i{
+  padding-left: 5px;
+  font-size: 40px;
 }
-.coperate i{
-margin-right: 130px;
-display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 25px;
+.coperate-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  color: var(--blue-green);
+}
+.coperate-text p{
+  
   color: #172727;
 }
+.coperate.active .coperate-text{
+  max-height: 1300px;
+  overflow: none;
+}
+.coperate-items{
+ 
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  display: block;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+}
+.coperate-items h1{
+  font-weight: 500;
+  font-size: 40px;
+}
 
+.coperate-items p{
+  color: #172727;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.coperate-items h1 span{
+  color:#172727;
+  font-weight: 700;
+  border-bottom: 10px solid var(--lines-color);
+}
 .create{
   display: flex;
   justify-content: center;
@@ -1422,4 +1459,16 @@ align-items: center;
 
 .projects-section{
   display: flex;
+}
+
+.content{
+  height: 0;
+  overflow: hidden;
+  background-color: #088F8F;
+  transition: 0.5s ease-in-out;
+ 
+}
+
+ .active .content {
+  height: auto;
 }
