@@ -502,6 +502,7 @@ color: #172727;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
   color: var(--blue-green);
+  
 }
 .coperate-text p{
   
@@ -1186,45 +1187,34 @@ font-size: 10px;
 height: 200px;
   border: none;
 }
-.connections{
-  height: 300px;
-}
+
 .coperate{
-  display: flex;
-  justify-content: space-around;
-  margin: 0px;
-  padding: 0px;
- 
-}
-.coperate i{
- 
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.create{
-
-  margin: 0px;
-  padding: 0px;
-  height: auto;
-
-}
-.create i{
   display: block;
-  margin-left: -40px;
-}
-
-.continue{
   text-align: center;
   margin: 0px;
   padding: 0px;
-  height: auto;
- 
+  border: none;
 
 }
-.continue i{
+.infos h1{
+  font-size: 36px;
+  
+}
+.infos i{
+  font-size: 36px;
+}
+
+.coperate-items{
+  display: block;
   margin: 0px;
 }
+.coperate-items h1{
+  font-size: 26px;
+}
+.coperate-items p{
+  font-size: 16px;
+}
+
 .ideas-heading{
   display: block;
   margin: 0px;
@@ -1232,6 +1222,12 @@ height: 200px;
   height: auto;
   border: none;
   text-align: center;
+}
+.ideas-heading h1{
+  font-size: 36px;
+  font-weight: 500;
+  display: block;
+ text-align: center;
 }
 
 /* Services Section */

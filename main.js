@@ -105,7 +105,7 @@ document.querySelector('#app').innerHTML = `
    <h1>
    Our Signature Design Process
    </h1>
-   <p>Our signature process is broken down into six steps, even though our approach to every design process depends on the product itself to build a sustainable solution to bring growth & prosperity. We approach clients </p>
+   <p>Our signature process is broken down into six steps, even though our approach to every design process depends on the product itself to build a sustainable solution to bring growth & prosperity. </p>
 
    <h1><span>O1</span> User </h1>
    <p>
@@ -118,13 +118,13 @@ document.querySelector('#app').innerHTML = `
     <h1><span>O3</span> User Persona </h1>
     <p>We make multiple types of the persona<br> of how our ideal customers look like.<br> In general, we comprise an identity, relevant quotes, <br>and information about any behavioral trends in the user persona.</p>
     <h1><span>O4</span> Design & Code </h1>
-    <p>We create diagrams that illustrate<br> the entire user journey while<br> interacting with a product, from the initial interaction to the last.</p>
+    <p>We create diagrams that illustrate<br> the entire user journey while<br> interacting with a product, <br>from the initial interaction to the last.</p>
    
     <h1><span>O5</span> Prototype </h1>
     <p>We create prototypes that illustrate<br> the entire user experience while<br> the client is interacting with the product,<br> from the initial interaction to the last while taking feedback.</p>
 
     <h1><span>O6</span> Launch </h1>
-    <p>Now the product is ready for launch<br> We ensure that the client<br> is contented withthe product.</p>
+    <p>Now the product is ready for launch<br> We ensure that the client<br> is contented with the product.</p>
    
     </div>
     </div>
@@ -325,7 +325,7 @@ document.querySelector('#app').innerHTML = `
      <h5><span>Customer Care:</span> customerservice@mugogoinc.com
      </h5>
      <h5><span>Info:</span> info@mugogoinc.com</h5>
-    <h5><span>WhatsApp:</span>+254 721902248</h5>
+    <h5><span>Whatsapp:</span>+254721902248</h5>
     </div>
     
     </section>
