@@ -1,8 +1,8 @@
-import {heroText} from './gsap/main'
+import { heroText } from "./gsap/main";
 
-import './style.css'
+import "./style.css";
 
-document.querySelector('#app').innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
     <main class="smooth-content">
     <div class= "smooth-scroll">
@@ -251,13 +251,15 @@ document.querySelector('#app').innerHTML = `
     </div>
    <div class='work-grid-card'>
     <div class='work-grid-card-img'>
-    <img loading='lazy' src='/cinnamon.png'/>
+    <img loading='lazy' src='/travely.png'/>
     </div>
     <div class='work-grid-card-text'>
     <h5>Travely</h5>
     <div class='work-btns'>
-    <button class='btn'>Explore</button>
-    <button class='btn'> View</button>
+
+    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class='btn'> Explore</button></a>
+    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class='btn'> View</button></a>
+
     </div>
    </div>
     </div>
@@ -317,13 +319,8 @@ document.querySelector('#app').innerHTML = `
     </div>
     </main>
   </div>
-`
+`;
 
 // setupCounter(document.querySelector('#counter'))
 
-
-
-heroText(document.querySelector('.text-content'))
- 
- 
-
+heroText(document.querySelector(".text-content"));
