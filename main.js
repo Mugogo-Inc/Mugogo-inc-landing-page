@@ -356,7 +356,7 @@ document.querySelector("#app").innerHTML = `
 
 
 
-heroText(document.querySelector('.text-content'))
+
 
 const el = document.querySelectorAll('.coperate')
 
