@@ -69,10 +69,10 @@ document.querySelector('#app').innerHTML = `
     </div>
     </div>
     <div class='about-things'>
-    <div class='things-text' id ='work'>
+    <div class='things-text'>
     <h1>We do things <br><span>differently</span></h1>
     <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
-    <a href='work.html'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
+    <a href='#work'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class = 'things-img'>
     <img loading="lazy" src='/differ.svg'/>
@@ -247,12 +247,13 @@ document.querySelector('#app').innerHTML = `
 
    
     </div>
+
     
     </div>
     <div class='lines'>
-    <p> 04/ <span class='five'>05</span></p>
+    <p> 05/ <span class='five'>05</span></p>
     </div>
-    <div class = 'work-section'>
+    <div class = 'work-section' id="work">
     <div>
     <h1> Together, we'll come up <br>with radical ideas and <br>execute them flawlessly.<br> Check out our work.
     </h1>
@@ -309,6 +310,14 @@ document.querySelector('#app').innerHTML = `
 
     </div>
   
+    </div>
+    <div class='partners'>
+    <h1>Our Partners</h1>
+    <div class = 'partner-img'>
+    <img src = 'logosmall.jpg'/>
+    <img src = 'hero-img.jpeg' />
+    <img src = 'cinnamona.jpeg' />
+    </div>
     </div>
     <section class='featuress'>
     <div class='footer-grid'>  
