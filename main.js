@@ -1,4 +1,4 @@
-import { heroText } from "./gsap/main";
+import { heroText, heroImg } from "./gsap/main";
 
 import "./style.css";
 
@@ -32,7 +32,7 @@ document.querySelector("#app").innerHTML = `
     <a href="#about">Learn More</a>
     </div>
     <div class='svg-cont'>
-    <img src= "./heroo.svg"/>
+    <img src= "/heroo.svg"/>
     </div>
     </div>
     </section>
@@ -69,10 +69,10 @@ document.querySelector("#app").innerHTML = `
     </div>
     </div>
     <div class='about-things'>
-    <div class='things-text' id ='work'>
+    <div class='things-text'>
     <h1>We do things <br><span>differently</span></h1>
     <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
-    <a href='work.html'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
+    <a href='#work'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class = 'things-img'>
     <img loading="lazy" src='/differ.svg'/>
@@ -94,19 +94,40 @@ document.querySelector("#app").innerHTML = `
     <h1>Process & <br><span class='second'>Control </span></h1>
     </div>
     </div>
-    <div class='coperate'>
-    <i class="fa-solid fa-angle-right"></i>
-    <h1>Cooperate</h1>
-  
-    </div>
-    <div class='create'>
-    <i class="fa-solid fa-angle-right"></i>
-    <h1>Create</h1>
     
+    <div class='coperate'>
+    <div class='infos'>
+    <h1>Our Process</h1>
+    <i class="fa-solid fa-angle-down"></i>
     </div>
-    <div class='continue'>
-     <i class="fa-solid fa-angle-right"></i>
-    <h1>Continue</h1>
+    <div class='coperate-text'>
+    <div class='coperate-items'>
+   <h1>
+   Our Signature Design Process
+   </h1>
+   <p>Our signature process is broken down into six steps, even though our approach to every design process depends on the product itself to build a sustainable solution to bring growth & prosperity. </p>
+
+   <h1><span>O1</span> User </h1>
+   <p>
+   What problems are they facing?<br>How are they struggling and how can we contribute?
+   </p>
+   <h1><span>O2</span> Brand </h1>
+   <p>
+   After understanding users we try to understand<br> the brand needs to provide better solutions <br>that align with their long-term goals.
+   </p>
+    <h1><span>O3</span> User Persona </h1>
+    <p>We make multiple types of the persona<br> of how our ideal customers look like.<br> In general, we comprise an identity, relevant quotes, <br>and information about any behavioral trends in the user persona.</p>
+    <h1><span>O4</span> Design & Code </h1>
+    <p>We create diagrams that illustrate<br> the entire user journey while<br> interacting with a product, <br>from the initial interaction to the last.</p>
+   
+    <h1><span>O5</span> Prototype </h1>
+    <p>We create prototypes that illustrate<br> the entire user experience while<br> the client is interacting with the product,<br> from the initial interaction to the last while taking feedback.</p>
+
+    <h1><span>O6</span> Launch </h1>
+    <p>Now the product is ready for launch<br> We ensure that the client<br> is contented with the product.</p>
+   
+    </div>
+    </div>
     </div>
    <div class='ideas-heading'>
    <h1>Want to <span class='idea'>let go</span> <br>of <span class='idea'>old ideas?</span><br> We're here <span class='here'>for it</span>...</h1>
@@ -145,8 +166,8 @@ document.querySelector("#app").innerHTML = `
     <h4>UI/UX <br>Design</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
 
-    <div class='grid-item-4 card'><i class="fa-regular fa-folder-closed"></i>
-    <h4>Enterprise data <br>Handling</h4>
+    <div class='grid-item-4 card'><i class="fa-solid fa-laptop-code"></i>
+    <h4>Machine Learning & <br>Big Data</h4>
     <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment<br>we provide key metrics to drive good <br>decison making </p></div>
     <div class='grid-item-4 card'><i class="fa-solid fa-lightbulb"></i>
     <h4>Digital Marketting</h4>
@@ -226,12 +247,13 @@ document.querySelector("#app").innerHTML = `
 
    
     </div>
+
     
     </div>
     <div class='lines'>
-    <p> 04/ <span class='five'>05</span></p>
+    <p> 05/ <span class='five'>05</span></p>
     </div>
-    <div class = 'work-section'>
+    <div class = 'work-section' id="work">
     <div>
     <h1> Together, we'll come up <br>with radical ideas and <br>execute them flawlessly.<br> Check out our work.
     </h1>
@@ -291,6 +313,14 @@ document.querySelector("#app").innerHTML = `
     </div>
   
     </div>
+    <div class='partners'>
+    <h1>Our Partners</h1>
+    <div class = 'partner-img'>
+    <img src = 'logosmall.jpg'/>
+    <img src = 'hero-img.jpeg' />
+    <img src = 'cin.png' />
+    </div>
+    </div>
     <section class='featuress'>
     <div class='footer-grid'>  
     <div class='footer-grid-1'>
@@ -306,7 +336,7 @@ document.querySelector("#app").innerHTML = `
      <h5><span>Customer Care:</span> customerservice@mugogoinc.com
      </h5>
      <h5><span>Info:</span> info@mugogoinc.com</h5>
-    <h5><span>WhatsApp:</span>+254 721902248</h5>
+    <h5><span>Whatsapp:</span>+254721902248</h5>
     </div>
     
     </section>
@@ -323,4 +353,20 @@ document.querySelector("#app").innerHTML = `
 
 // setupCounter(document.querySelector('#counter'))
 
+
+
+
+
+
+const el = document.querySelectorAll('.coperate')
+
+el.forEach(element => {
+  element.addEventListener('click', () => {
+   element.classList.toggle('active')
+  })
+}
+)
+
 heroText(document.querySelector(".text-content"));
+heroImg(document.querySelector('.svg-cont'))
+
