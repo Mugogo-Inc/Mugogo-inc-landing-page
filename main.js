@@ -1,4 +1,4 @@
-import { heroText } from "./gsap/main";
+import { heroText, heroImg } from "./gsap/main";
 
 import "./style.css";
 
@@ -166,8 +166,8 @@ document.querySelector("#app").innerHTML = `
     <h4>UI/UX <br>Design</h4>
     <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
 
-    <div class='grid-item-4 card'><i class="fa-regular fa-folder-closed"></i>
-    <h4>Enterprise data <br>Handling</h4>
+    <div class='grid-item-4 card'><i class="fa-solid fa-laptop-code"></i>
+    <h4>Machine Learning & <br>Big Data</h4>
     <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment<br>we provide key metrics to drive good <br>decison making </p></div>
     <div class='grid-item-4 card'><i class="fa-solid fa-lightbulb"></i>
     <h4>Digital Marketting</h4>
@@ -367,14 +367,6 @@ el.forEach(element => {
 }
 )
 
-
-
-
-
-
- 
- 
-
-
 heroText(document.querySelector(".text-content"));
+heroImg(document.querySelector('.svg-cont'))
 
