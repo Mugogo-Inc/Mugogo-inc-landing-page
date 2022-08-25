@@ -368,18 +368,23 @@ document.querySelector("#app").innerHTML = `
 
 
 
-
-const el = document.querySelectorAll('.coperate')
-
-el.forEach(element => {
-  element.addEventListener('click', () => {
-   element.classList.toggle('active')
+//tiggle the process sectiom
+const el = document.querySelector('.coperate')
+  el.addEventListener('click', () => {
+   el.classList.toggle('active')
   })
-}
-)
 
+
+//select elements
 const dropdown = document.querySelector('.dropdown-content')
 const btn = document.querySelector('.downloader')
+const links = document.querySelectorAll(".dropdown-content a")
+//close the dropdown after clicking
+links.forEach(link=>link.addEventListener('click', function(){
+  dropdown.classList.remove('show')
+}))
+
+//show the dropdown
 btn.addEventListener('click', show)
 function show(){
   dropdown.classList.toggle('show')

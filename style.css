@@ -137,28 +137,7 @@ section img{
   position: relative;
   
 }
-.hero-content form{
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  
-}
-.hero-content form button{
- 
- padding: 15px;
- width: 100px;
- position: fixed;
- border:1px solid #088F8F;
- background-color: transparent;
- font-weight: 500;
- border-radius: 5px;
- font-size: 15px;
- font-family: 'Cabin', sans-serif;
- color: #172727;
 
-}
 .hero-content h1{
   font-size: 56px;
   line-height: 1.2;
@@ -205,6 +184,10 @@ section img{
   border: 1px solid wheat;
 
 }
+
+  
+  
+
 
 /* Features Section */
 /* lines */
@@ -1465,6 +1448,63 @@ align-items: center;
   
  
 }
+.download{
+  margin-left: 30px;
+  position: fixed;
+}
+
+ /* .download button{
+  padding: 14px;
+  border: none;
+  background-color: transparent;
+  color: var(--lines-color);
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Cabin", sans-serif;
+
+}
+.download button i{
+  font-size: 15px;
+  margin-right: 10px;
+}
+.download button:hover{
+  background-color: transparent;
+  color: #172727;
+  border: none;
+  outline: none;
+}
+
+.dropdown-content{
+  display: none;
+  height: 250px;
+  width: 150px;
+  margin: auto;
+
+}
+.dropdown-content a{
+  padding: 10px;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+  text-align: center;
+
+}
+.dropdown-content a i{
+  padding-right: 5px;
+}
+
+.show{
+  display: block;
+  
+}
+
+
+.dropdown-content a{
+  border: none;
+}  */
   
 }
 
@@ -1555,13 +1595,17 @@ align-items: center;
 }
 
 /* dropdown */
-.download{
-  display: block;
-  position: fixed;
+ .download{
+  margin-top: 180px;
+  margin-right: 20px;
+ position: fixed;
   border: 1px solid var(--blue-green);
   border-radius: 5px;
-  margin: auto;
   text-align: center;
+  top: 0;
+  right: 0;
+  
+
 }
 .download button{
   padding: 14px;
@@ -1575,6 +1619,7 @@ align-items: center;
   align-items: center;
   font-weight: 500;
   font-family: "Cabin", sans-serif;
+  
 
 }
 .download button i{
@@ -1586,7 +1631,7 @@ align-items: center;
   color: #172727;
   border: none;
   outline: none;
-}
+} 
 
 .dropdown-content{
   display: none;
@@ -1615,4 +1660,4 @@ align-items: center;
 
 .dropdown-content a{
   border: none;
-}
+} 
