@@ -1554,4 +1554,65 @@ align-items: center;
  
 }
 
+/* dropdown */
+.download{
+  display: block;
+  position: fixed;
+  border: 1px solid var(--blue-green);
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+.download button{
+  padding: 14px;
+  border: none;
+  background-color: transparent;
+  color: var(--lines-color);
+  outline: none;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Cabin", sans-serif;
 
+}
+.download button i{
+  font-size: 15px;
+  margin-right: 10px;
+}
+.download button:hover{
+  background-color: transparent;
+  color: #172727;
+  border: none;
+  outline: none;
+}
+
+.dropdown-content{
+  display: none;
+  height: 250px;
+  width: 150px;
+  margin: auto;
+
+}
+.dropdown-content a{
+  padding: 10px;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+  text-align: center;
+
+}
+.dropdown-content a i{
+  padding-right: 5px;
+}
+
+.show{
+  display: block;
+  
+}
+
+
+.dropdown-content a{
+  border: none;
+}

@@ -25,9 +25,17 @@ document.querySelector("#app").innerHTML = `
    <div class='main section'>
     <section class='hero'>
     <div class = 'hero-content'>
-    <form method="get" action="SME Proposal-Kenya.pdf">
-   <button type="submit">Download Proposal</button>
-   </form>
+    
+      <div class="download">
+   <button class="downloader"><i class="fa-solid fa-download"></i>Download Proposal</button>
+   <div id="dropdown" class="dropdown-content">
+    <a href="./SME Proposal-Kenya.pdf" download><i class="fa-solid fa-download"></i>SME Kenya</a>
+    <a href="./SME Proposal-International.pdf" download ><i class="fa-solid fa-download"></i>SME International</a>
+    <a href="./Corporate Proposal-Kenya.pdf" download ><i class="fa-solid fa-download"></i>Corporate Kenya</a>
+    <a href="./Corporate Proposal-International.pdf" download ><i class="fa-solid fa-download"></i>Corporate international</a>
+
+  </div>
+    </div>
     <div class='text-content'>
     <h1>Trust is earned through Experience<br>
     <span>let us earn yours </span>here at <span>Mugogo</span></h1>
@@ -370,6 +378,13 @@ el.forEach(element => {
 }
 )
 
+const dropdown = document.querySelector('.dropdown-content')
+const btn = document.querySelector('.downloader')
+btn.addEventListener('click', show)
+function show(){
+  dropdown.classList.toggle('show')
+}
 heroText(document.querySelector(".text-content"));
 heroImg(document.querySelector('.svg-cont'))
+
 
