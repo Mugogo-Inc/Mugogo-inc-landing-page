@@ -134,7 +134,27 @@ section img{
   justify-content: center;
   align-items: center;
   margin-left: 30px;
+  position: relative;
   
+}
+.hero-content form{
+  position: absolute;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  
+}
+.hero-content form button{
+  padding: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  
+  border: 1px solid var(--blue-green);
+  border-radius: 5px;
+  background: transparent;
+  
+
 }
 .hero-content h1{
   font-size: 56px;

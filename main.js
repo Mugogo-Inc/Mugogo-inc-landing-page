@@ -25,6 +25,9 @@ document.querySelector("#app").innerHTML = `
    <div class='main section'>
     <section class='hero'>
     <div class = 'hero-content'>
+    <form method="get" action="SME Proposal-Kenya.pdf">
+   <button type="submit">Download Proposal</button>
+   </form>
     <div class='text-content'>
     <h1>Trust is earned through Experience<br>
     <span>let us earn yours </span>here at <span>Mugogo</span></h1>
