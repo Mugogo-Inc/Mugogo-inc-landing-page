@@ -327,9 +327,9 @@ document.querySelector("#app").innerHTML = `
     <div class='partners'>
     <h1>Our Partners</h1>
     <div class = 'partner-img'>
-    <img src = 'logosmall.jpg'/>
-    <img src = 'hero-img.jpeg' />
-    <img src = 'cin.png' />
+    <img src = 'jambiani.png'/>
+    <img src = 'zanzibar.png' />
+    <img src = 'cinn.png' />
     </div>
     </div>
     <section class='featuress'>

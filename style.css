@@ -1451,6 +1451,7 @@ align-items: center;
 .download{
   
   position: fixed;
+  margin-bottom: 50px;
 }
 
  /* .download button{
