@@ -25,6 +25,17 @@ document.querySelector("#app").innerHTML = `
    <div class='main section'>
     <section class='hero'>
     <div class = 'hero-content'>
+    
+      <div class="download">
+   <button class="downloader"><i class="fa-solid fa-download"></i>Download Proposal</button>
+   <div id="dropdown" class="dropdown-content">
+    <a href="./SME Proposal-Kenya.pdf" download><i class="fa-solid fa-download"></i>SME Kenya</a>
+    <a href="./SME Proposal-International.pdf" download ><i class="fa-solid fa-download"></i>SME International</a>
+    <a href="./Corporate Proposal-Kenya.pdf" download ><i class="fa-solid fa-download"></i>Corporate Kenya</a>
+    <a href="./Corporate Proposal-International.pdf" download ><i class="fa-solid fa-download"></i>Corporate international</a>
+
+  </div>
+    </div>
     <div class='text-content'>
     <h1>Trust is earned through Experience<br>
     <span>let us earn yours </span>here at <span>Mugogo</span></h1>
@@ -316,9 +327,9 @@ document.querySelector("#app").innerHTML = `
     <div class='partners'>
     <h1>Our Partners</h1>
     <div class = 'partner-img'>
-    <img src = 'logosmall.jpg'/>
-    <img src = 'hero-img.jpeg' />
-    <img src = 'cin.png' />
+    <img src = 'jambiani.png'/>
+    <img src = 'zanzibar.png' />
+    <img src = 'cinn.png' />
     </div>
     </div>
     <section class='featuress'>
@@ -357,16 +368,28 @@ document.querySelector("#app").innerHTML = `
 
 
 
-
-const el = document.querySelectorAll('.coperate')
-
-el.forEach(element => {
-  element.addEventListener('click', () => {
-   element.classList.toggle('active')
+//tiggle the process sectiom
+const el = document.querySelector('.coperate')
+  el.addEventListener('click', () => {
+   el.classList.toggle('active')
   })
-}
-)
 
+
+//select elements
+const dropdown = document.querySelector('.dropdown-content')
+const btn = document.querySelector('.downloader')
+const links = document.querySelectorAll(".dropdown-content a")
+//close the dropdown after clicking
+links.forEach(link=>link.addEventListener('click', function(){
+  dropdown.classList.remove('show')
+}))
+
+//show the dropdown
+btn.addEventListener('click', show)
+function show(){
+  dropdown.classList.toggle('show')
+}
 heroText(document.querySelector(".text-content"));
 heroImg(document.querySelector('.svg-cont'))
+
 
