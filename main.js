@@ -1,5 +1,7 @@
 import { heroText, heroImg } from "./gsap/main";
 
+
+
 import "./style.css";
 
 document.querySelector("#app").innerHTML = `
@@ -37,10 +39,10 @@ document.querySelector("#app").innerHTML = `
   </div>
     </div>
     <div class='text-content'>
-    <h1>Trust is earned through Experience<br>
+    <h1 class="heading-one">Trust is earned through Experience<br>
     <span>let us earn yours </span>here at <span>Mugogo</span></h1>
-    <p>We are reimagining the endless posibilities<br> in building enterprise software!</p>
-    <a href="#about">Learn More</a>
+    <p class="paragraph-2">We are reimagining the endless posibilities<br> in building enterprise software!</p>
+    <a href="#about" class="learn-more">Learn More</a>
     </div>
     <div class='svg-cont'>
     <img src= "/heroo.svg"/>
@@ -246,9 +248,19 @@ document.querySelector("#app").innerHTML = `
     <p>Senior Developer</p>
     </div>
     </div>
+     <div class='team-grid-card'>
+    <div class ='grid-img-container'>
+    <img  loading="lazy" src='/JIMMY.jpeg'/>
+    </div>
+    <div class='grid-text'>
+    <h1>Jimmy</h1>
+    <p>Community Manager</p>
+    </div>
+    </div>
      </div>
      
     </div>
+
     <div class='ideas-heading'>
     <h1>Mugogo is <span class='idea'>Working</span> <br> on  <span class='idea'>Software</span> that brings  <br>all the pieces <span class='here'>Together</span></h1>
     <i class="fa-solid fa-square-down-right"></i>
@@ -269,6 +281,95 @@ document.querySelector("#app").innerHTML = `
     <h1> Together, we'll come up <br>with radical ideas and <br>execute them flawlessly.<br> Check out our work.
     </h1>
     </div>
+  <div class="k-391">
+<!-- Slider main container -->
+<div class="swiper mySwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+    <div class="work-grid-card">
+    <div class="work-grid-card-img">
+    <img loading="lazy" src="/fising.png">
+    </div>
+    <div class="work-grid-card-text">
+    <h5>Zanzibar Sports Club</h5>
+    <div class="work-btns">
+    <button class="btn">Explore</button>
+    <a href="https://zanzibarsportfishing.com/" type="button"><button class="btn"> View</button></a>
+    </div>
+   </div>
+    </div>
+    </div>
+    <div class="swiper-slide"><div class="work-grid-card">
+    <div class="work-grid-card-img">
+    <img loading="lazy" src="/travely.png">
+    </div>
+    <div class="work-grid-card-text">
+    <h5>Travely</h5>
+    <div class="work-btns">
+
+    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class="btn"> Explore</button></a>
+    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class="btn"> View</button></a>
+
+    </div>
+   </div>
+    </div>
+    </div>
+    <div class="swiper-slide">
+    <div class="work-grid-card">
+    <div class="work-grid-card-img">
+    <img loading="lazy" src="/cinnamon.png">
+    </div>
+    <div class="work-grid-card-text">
+    <h5>Mnarani Cinnamon Spa</h5>
+    <div class="work-btns">
+   <a href="https://www.google.com/travel/hotels/Nungwi%2C%20Tanzania/entity/CgoI0d7cw5XbguMEEAE?q=spa%20nungwi%20village&amp;g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4518327%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4812120%2C4814050%2C4816977%2C4828448%2C4831357%2C4837140%2C4840029&amp;hl=en-KE&amp;gl=ke&amp;ssta=1&amp;ts=CAESABoECgIaACoECgAaAA&amp;rp=ENHe3MOV24LjBBCAoMuuk9ai3AcQodzrnYuP59mNARDqrNrW_Ivqp7ABOAJAAEgCogEQTnVuZ3dpLCBUYW56YW5pYcABAw&amp;ap=aAE&amp;ictx=1&amp;ved=0CAAQ5JsGahcKEwjYsJW0odP5AhUAAAAAHQAAAAAQAw&amp;utm_campaign=sharing&amp;utm_medium=link&amp;utm_source=htls" type="button"> <button class="btn">Explore</button></a>
+    <a href="https://mnaranicinnamonspa.com/" type="button"><button class="btn"> View</button></a>
+    </div>
+   </div>
+    </div>
+    </div>
+     <div class="swiper-slide">
+     <div class="work-grid-card">
+    <div class="work-grid-card-img">
+    <img loading="lazy" src="/beauty.png">
+    </div>
+    <div class="work-grid-card-text">
+    <h5> Jambiani Beauty Spa</h5>
+    <div class="work-btns">
+    <a href="https://g.page/r/CdpSz9FlwcnCEAE" type="button"><button class="btn">Explore</button></a>
+    <a href="https://jambianibeautyspa.com/" type="button"><button class="btn"> View</button></a>
+    </div>
+   </div>
+    </div>
+     </div>
+    <div class="swiper-slide">
+    <div class="work-grid-card">
+    <div class="work-grid-card-img">
+    <img loading="lazy" src="/tourszanzibar.png">
+    </div>
+    <div class="work-grid-card-text">
+    <h5> Tours Zanzibar</h5>
+    <div class="work-btns">
+  
+    <a href="https://tourszanzibar.com/" type="button"><button class="btn"> View</button></a>
+    </div>
+   </div>
+    </div>
+    </div>
+    ...
+  </div>
+  
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+
+  </div>
     <div class='work-grid'>
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
@@ -296,6 +397,7 @@ document.querySelector("#app").innerHTML = `
     </div>
    </div>
     </div>
+    
     <div class='work-grid-card'>
     <div class='work-grid-card-img'>
     <img loading='lazy' src='/cinnamon.png'/>
@@ -317,6 +419,18 @@ document.querySelector("#app").innerHTML = `
     <div class='work-btns'>
     <a href="https://g.page/r/CdpSz9FlwcnCEAE" type="button"><button class='btn'>Explore</button></a>
     <a href="https://jambianibeautyspa.com/" type="button"><button class='btn'> View</button></a>
+    </div>
+   </div>
+    </div>
+    <div class='work-grid-card'>
+    <div class='work-grid-card-img'>
+    <img loading='lazy' src='/tourszanzibar.png'/>
+    </div>
+    <div class='work-grid-card-text'>
+    <h5> Tours Zanzibar</h5>
+    <div class='work-btns'>
+  
+    <a href="https://tourszanzibar.com/" type="button"><button class='btn'> View</button></a>
     </div>
    </div>
     </div>
@@ -379,9 +493,11 @@ const el = document.querySelector('.coperate')
 const dropdown = document.querySelector('.dropdown-content')
 const btn = document.querySelector('.downloader')
 const links = document.querySelectorAll(".dropdown-content a")
+
 //close the dropdown after clicking
 links.forEach(link=>link.addEventListener('click', function(){
   dropdown.classList.remove('show')
+  
 }))
 
 //show the dropdown
@@ -389,7 +505,10 @@ btn.addEventListener('click', show)
 function show(){
   dropdown.classList.toggle('show')
 }
-heroText(document.querySelector(".text-content"));
+heroText(document.querySelector(".heading-one"), 0.2);
+heroText(document.querySelector(".paragraph-2"), 0.7);
+heroText(document.querySelector(".learn-more"), 1.2);
+
 heroImg(document.querySelector('.svg-cont'))
 
 
