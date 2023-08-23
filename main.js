@@ -1,7 +1,5 @@
 import { heroText, heroImg } from "./gsap/main";
 
-
-
 import "./style.css";
 
 document.querySelector("#app").innerHTML = `
@@ -214,7 +212,7 @@ document.querySelector("#app").innerHTML = `
     <div class='team-grid'>
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img loading="lazy" src='/sandee.jpeg'/>
+    <img loading="lazy" src='/sandeeMugogo.jpeg'/>
     </div>
     <div class='grid-text'>
     <h1>Peter Sande</h1>
@@ -250,11 +248,11 @@ document.querySelector("#app").innerHTML = `
     </div>
      <div class='team-grid-card'>
     <div class ='grid-img-container'>
-    <img  loading="lazy" src='/JIMMY.jpeg'/>
+    <img  loading="lazy" src='/jimmyMugogo.jpeg'/>
     </div>
     <div class='grid-text'>
-    <h1>Jimmy</h1>
-    <p>Community Manager</p>
+    <h1>Jimmy Wambua</h1>
+    <p>Digital Strategist</p>
     </div>
     </div>
      </div>
@@ -347,7 +345,7 @@ document.querySelector("#app").innerHTML = `
     <div class="swiper-slide">
     <div class="work-grid-card">
     <div class="work-grid-card-img">
-    <img loading="lazy" src="/tourszanzibar.png">
+    <img loading="lazy" src="/toursz.png"/>
     </div>
     <div class="work-grid-card-text">
     <h5> Tours Zanzibar</h5>
@@ -478,37 +476,31 @@ document.querySelector("#app").innerHTML = `
 
 // setupCounter(document.querySelector('#counter'))
 
-
-
-
-
 //tiggle the process sectiom
-const el = document.querySelector('.coperate')
-  el.addEventListener('click', () => {
-   el.classList.toggle('active')
-  })
-
+const el = document.querySelector(".coperate");
+el.addEventListener("click", () => {
+  el.classList.toggle("active");
+});
 
 //select elements
-const dropdown = document.querySelector('.dropdown-content')
-const btn = document.querySelector('.downloader')
-const links = document.querySelectorAll(".dropdown-content a")
+const dropdown = document.querySelector(".dropdown-content");
+const btn = document.querySelector(".downloader");
+const links = document.querySelectorAll(".dropdown-content a");
 
 //close the dropdown after clicking
-links.forEach(link=>link.addEventListener('click', function(){
-  dropdown.classList.remove('show')
-  
-}))
+links.forEach((link) =>
+  link.addEventListener("click", function () {
+    dropdown.classList.remove("show");
+  })
+);
 
 //show the dropdown
-btn.addEventListener('click', show)
-function show(){
-  dropdown.classList.toggle('show')
+btn.addEventListener("click", show);
+function show() {
+  dropdown.classList.toggle("show");
 }
 heroText(document.querySelector(".heading-one"), 0.2);
 heroText(document.querySelector(".paragraph-2"), 0.7);
 heroText(document.querySelector(".learn-more"), 1.2);
 
-heroImg(document.querySelector('.svg-cont'))
-
-
+heroImg(document.querySelector(".svg-cont"));
