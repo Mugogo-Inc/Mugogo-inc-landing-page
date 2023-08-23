@@ -345,7 +345,7 @@ document.querySelector("#app").innerHTML = `
     <div class="swiper-slide">
     <div class="work-grid-card">
     <div class="work-grid-card-img">
-    <img loading="lazy" src="/toursz.png">
+    <img loading="lazy" src="/toursz.png"/>
     </div>
     <div class="work-grid-card-text">
     <h5> Tours Zanzibar</h5>
