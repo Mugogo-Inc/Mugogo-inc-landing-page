@@ -219,15 +219,7 @@ document.querySelector("#app").innerHTML = `
     <p>CEO</p>
     </div>
     </div>
-    <div class='team-grid-card'>
-    <div class ='grid-img-container'>
-    <img  loading="lazy" src='/ali.jpeg'/>
-    </div>
-    <div class='grid-text'>
-    <h1>Ali Salim</h1>
-    <p>Managing Director</p>
-    </div>
-    </div>
+    
     <div class='team-grid-card'>
     <div class ='grid-img-container'>
     <img  loading="lazy" src='/jefwa.jpeg'/>
@@ -246,15 +238,7 @@ document.querySelector("#app").innerHTML = `
     <p>Senior Developer</p>
     </div>
     </div>
-     <div class='team-grid-card'>
-    <div class ='grid-img-container'>
-    <img  loading="lazy" src='/jimmyMugogo.jpeg'/>
-    </div>
-    <div class='grid-text'>
-    <h1>Jimmy Wambua</h1>
-    <p>Digital Strategist</p>
-    </div>
-    </div>
+    
      </div>
      
     </div>
