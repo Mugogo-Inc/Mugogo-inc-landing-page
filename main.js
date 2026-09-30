@@ -539,6 +539,11 @@ document.querySelector("#app").innerHTML = `
               </div>
 
               <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="+254721902248" class="form-control" />
+              </div>
+
+              <div class="form-group">
                 <label for="service">Service Interested In</label>
                 <select id="service" class="form-control" required>
                   <option value="">Select a Service...</option>
@@ -738,22 +743,64 @@ if (modalCloseBtn && modalOverlay) {
 }
 
 if (packageForm) {
-  packageForm.addEventListener("submit", (e) => {
+  packageForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const pkgName = pkgNameInput.value;
     const pdfUrl = selectedPackagePdf.value;
 
-    pkgFormFeedback.style.display = "block";
-    pkgFormFeedback.style.color = "var(--color-primary)";
-    pkgFormFeedback.innerHTML = `
-      <p style="margin-bottom:0.5rem; font-weight:600;">
-        <i class="fa-solid fa-circle-check"></i> Thank you! Your application for <strong>${pkgName}</strong> has been received. Our team will contact you shortly.
-      </p>
-      ${pdfUrl ? `<a href="${pdfUrl}" download class="btn btn-outline" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;"><i class="fa-solid fa-file-pdf"></i> Download ${pkgName} Proposal PDF</a>` : ""}
-    `;
+    const submitBtn = packageForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = 'Sending...';
+    submitBtn.disabled = true;
 
-    packageForm.reset();
-    if (pkgNameInput) pkgNameInput.value = pkgName;
+    const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
+    // NOTE: Replace YOUR_SUBDOMAIN with your actual Cloudflare workers subdomain
+    const WORKER_URL = `https://mugogo-lead-router.YOUR_SUBDOMAIN.workers.dev/?bu_id=${BU_ID}`;
+
+    const payload = {
+      event_type: "package_application",
+      source_channel: "LANDING_PAGE",
+      full_name: document.querySelector("#applicantName").value,
+      email: document.querySelector("#applicantEmail").value,
+      phone_number: document.querySelector("#phoneNo").value,
+      org_name: document.querySelector("#orgName").value,
+      package_name: pkgName,
+      message: document.querySelector("#projectDesc").value,
+    };
+
+    try {
+      // Send to Cloudflare Worker Pipeline
+      await fetch(WORKER_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }).catch(err => console.warn("Worker fetch failed, may need to update WORKER_URL", err));
+
+      pkgFormFeedback.style.display = "block";
+      pkgFormFeedback.style.color = "var(--color-primary)";
+      pkgFormFeedback.innerHTML = `
+        <p style="margin-bottom:0.5rem; font-weight:600;">
+          <i class="fa-solid fa-circle-check"></i> Thank you! Redirecting to WhatsApp to complete your application...
+        </p>
+        ${pdfUrl ? `<a href="${pdfUrl}" download class="btn btn-outline" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;"><i class="fa-solid fa-file-pdf"></i> Download ${pkgName} Proposal PDF</a>` : ""}
+      `;
+
+      // WhatsApp Delivery & Booking Feature
+      const waMessage = `Hello Mugogo Inc! I just applied for the *${pkgName}* package.\n\n*Name:* ${payload.full_name}\n*Org:* ${payload.org_name}\n*Email:* ${payload.email}\n*Details:* ${payload.message || 'N/A'}`;
+      const waUrl = `https://wa.me/254721902248?text=${encodeURIComponent(waMessage)}`;
+      
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 1000);
+
+      packageForm.reset();
+      if (pkgNameInput) pkgNameInput.value = pkgName;
+    } catch (error) {
+      console.error(error);
+    } finally {
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+    }
   });
 }
 
@@ -786,16 +833,61 @@ const leadForm = document.querySelector("#leadForm");
 const formFeedback = document.querySelector("#formFeedback");
 
 if (leadForm) {
-  leadForm.addEventListener("submit", (e) => {
+  leadForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    formFeedback.style.display = "block";
-    formFeedback.style.color = "var(--color-primary)";
-    formFeedback.innerText = "Thank you! Your message has been received. Our team will contact you shortly.";
-    leadForm.reset();
 
-    setTimeout(() => {
-      formFeedback.style.display = "none";
-    }, 5000);
+    const submitBtn = leadForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = 'Sending...';
+    submitBtn.disabled = true;
+
+    const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
+    // NOTE: Replace YOUR_SUBDOMAIN with your actual Cloudflare workers subdomain
+    const WORKER_URL = `https://mugogo-lead-router.YOUR_SUBDOMAIN.workers.dev/?bu_id=${BU_ID}`;
+
+    const payload = {
+      event_type: "full_submission",
+      source_channel: "LANDING_PAGE",
+      full_name: document.querySelector("#name").value,
+      email: document.querySelector("#email").value,
+      phone_number: document.querySelector("#phone").value,
+      service_interested: document.querySelector("#service").value,
+      message: document.querySelector("#message").value,
+    };
+
+    try {
+      // Send to Cloudflare Worker Pipeline
+      await fetch(WORKER_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }).catch(err => console.warn("Worker fetch failed, may need to update WORKER_URL", err));
+
+      formFeedback.style.display = "block";
+      formFeedback.style.color = "var(--color-primary)";
+      formFeedback.innerText = "Thank you! Redirecting to WhatsApp to complete your booking...";
+
+      // WhatsApp Delivery & Booking Feature
+      const waMessage = `Hello Mugogo Inc! I'm interested in *${payload.service_interested}*.\n\n*Name:* ${payload.full_name}\n*Email:* ${payload.email}\n*Project Details:* ${payload.message}`;
+      const waUrl = `https://wa.me/254721902248?text=${encodeURIComponent(waMessage)}`;
+      
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 1000);
+
+      leadForm.reset();
+    } catch (error) {
+      console.error(error);
+      formFeedback.style.display = "block";
+      formFeedback.style.color = "red";
+      formFeedback.innerText = "There was an error sending your message. Please try again.";
+    } finally {
+      submitBtn.innerHTML = originalText;
+      submitBtn.disabled = false;
+      setTimeout(() => {
+        formFeedback.style.display = "none";
+      }, 5000);
+    }
   });
 }
 
