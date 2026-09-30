@@ -25,11 +25,8 @@ document.querySelector("#app").innerHTML = `
 
         <div class="nav-actions">
           <a href="#contact" class="btn btn-primary">Get a Quote</a>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
-            <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
-          </button>
           <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Drawer">
-            <span class="material-symbols-outlined" id="menuIcon">menu</span>
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
@@ -41,7 +38,7 @@ document.querySelector("#app").innerHTML = `
         <div class="container hero-grid">
           <div class="hero-content">
             <div class="badge">
-              <span class="material-symbols-outlined icon-filled" style="font-size:1.1rem;">trending_up</span> Digital Marketing & Software Solutions
+              <i class="fa-solid fa-chart-line"></i> Digital Marketing & Software Solutions
             </div>
             <h1 class="hero-title">
               Data-Driven <span>Digital Marketing</span> & Enterprise Software
@@ -52,7 +49,7 @@ document.querySelector("#app").innerHTML = `
 
             <div class="hero-buttons">
               <a href="#packages" class="btn btn-primary">
-                View Packages <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_forward</span>
+                View Packages <i class="fa-solid fa-arrow-right"></i>
               </a>
               <a href="#contact" class="btn btn-outline">
                 Book Consultation
@@ -98,9 +95,9 @@ document.querySelector("#app").innerHTML = `
               Our success rests in genuine relationships between people. At Mugogo Inc, we combine constant evolution with constant adaptation to ensure your business thrives in the modern digital era.
             </p>
             <ul class="features-list">
-              <li><span class="material-symbols-outlined icon-filled">check_circle</span> Open Source Transparency & Total Product Control</li>
-              <li><span class="material-symbols-outlined icon-filled">check_circle</span> Data-Backed Marketing Campaigns</li>
-              <li><span class="material-symbols-outlined icon-filled">check_circle</span> Agile Engineering with Continuous Integration</li>
+              <li><i class="fa-solid fa-check-circle"></i> Open Source Transparency & Total Product Control</li>
+              <li><i class="fa-solid fa-check-circle"></i> Data-Backed Marketing Campaigns</li>
+              <li><i class="fa-solid fa-check-circle"></i> Agile Engineering with Continuous Integration</li>
             </ul>
           </div>
 
@@ -136,73 +133,73 @@ document.querySelector("#app").innerHTML = `
             <!-- 1. Digital Marketing & SEO -->
             <article class="service-card">
               <div class="service-icon">
-                <span class="material-symbols-outlined icon-filled">campaign</span>
+                <i class="fa-solid fa-bullhorn"></i>
               </div>
               <h3>Digital Marketing & SEO</h3>
               <p>
                 Take your business to the next level with our perfect digital marketing campaigns, Search Engine Optimization (SEO), PPC ads, and conversion rate optimization.
               </p>
-              <span class="service-tag"><span class="material-symbols-outlined" style="font-size:0.9rem;">trending_up</span> Growth & Brand Scaling</span>
+              <span class="service-tag">Growth & Brand Scaling</span>
             </article>
 
             <!-- 2. Web Application Development -->
             <article class="service-card">
               <div class="service-icon">
-                <span class="material-symbols-outlined icon-filled">language</span>
+                <i class="fa-solid fa-globe"></i>
               </div>
               <h3>Web Application & Development</h3>
               <p>
                 Mugogo develops responsive, high-performance web applications using state-of-the-art modern frameworks and scalable APIs.
               </p>
-              <span class="service-tag"><span class="material-symbols-outlined" style="font-size:0.9rem;">code</span> Full-Stack Engineering</span>
+              <span class="service-tag">Full-Stack Engineering</span>
             </article>
 
             <!-- 3. Mobile App Development -->
             <article class="service-card">
               <div class="service-icon">
-                <span class="material-symbols-outlined icon-filled">smartphone</span>
+                <i class="fa-solid fa-mobile-screen-button"></i>
               </div>
               <h3>Cross-Platform Mobile Apps</h3>
               <p>
                 Secure our engineering team to perform cross-platform mobile development for iOS and Android with fluid performance and native UI.
               </p>
-              <span class="service-tag"><span class="material-symbols-outlined" style="font-size:0.9rem;">devices</span> iOS & Android</span>
+              <span class="service-tag">iOS & Android</span>
             </article>
 
             <!-- 4. Cloud Computing & Infrastructure -->
             <article class="service-card">
               <div class="service-icon">
-                <span class="material-symbols-outlined icon-filled">cloud</span>
+                <i class="fa-brands fa-aws"></i>
               </div>
               <h3>Cloud Computing & Infrastructure</h3>
               <p>
                 Mugogo helps clients scale their cloud services and backend systems on AWS, Netlify, and Google Cloud Platform with zero downtime.
               </p>
-              <span class="service-tag"><span class="material-symbols-outlined" style="font-size:0.9rem;">settings_suggest</span> DevOps & Cloud</span>
+              <span class="service-tag">DevOps & Cloud</span>
             </article>
 
             <!-- 5. UI/UX Design -->
             <article class="service-card">
               <div class="service-icon">
-                <span class="material-symbols-outlined icon-filled">palette</span>
+                <i class="fa-solid fa-pen-ruler"></i>
               </div>
               <h3>UI/UX Design</h3>
               <p>
                 Transform complex user interactions into intuitive visual interfaces through detailed user research, wireframing, and interactive design prototypes.
               </p>
-              <span class="service-tag"><span class="material-symbols-outlined" style="font-size:0.9rem;">brush</span> User Experience Design</span>
+              <span class="service-tag">User Experience Design</span>
             </article>
 
             <!-- 6. Machine Learning & Big Data -->
             <article class="service-card">
               <div class="service-icon">
-                <span class="material-symbols-outlined icon-filled">psychology</span>
+                <i class="fa-solid fa-brain"></i>
               </div>
               <h3>Machine Learning & Big Data</h3>
               <p>
                 As companies thrive in today's competitive business environment, we provide key metrics and intelligent models to drive data-driven decisions.
               </p>
-              <span class="service-tag"><span class="material-symbols-outlined" style="font-size:0.9rem;">analytics</span> AI & Data Analytics</span>
+              <span class="service-tag">AI & Data Analytics</span>
             </article>
           </div>
         </div>
@@ -234,13 +231,13 @@ document.querySelector("#app").innerHTML = `
               <span class="package-type">Small & Medium Business (Kenya)</span>
               <p>Comprehensive digital marketing & web solutions optimized for local Kenyan market growth.</p>
               <ul class="package-features">
-                <li><span class="material-symbols-outlined icon-filled">check</span> Custom Web & Mobile Solution</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Local Kenya SEO & Google Ads</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Social Media Brand Campaign</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Dedicated Support & Hosting</li>
+                <li><i class="fa-solid fa-check"></i> Custom Web & Mobile Solution</li>
+                <li><i class="fa-solid fa-check"></i> Local Kenya SEO & Google Ads</li>
+                <li><i class="fa-solid fa-check"></i> Social Media Brand Campaign</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Support & Hosting</li>
               </ul>
               <button class="btn btn-primary open-package-modal" data-package="SME Kenya" data-pdf="/SME Proposal-Kenya.pdf">
-                Apply for Package <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_forward</span>
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
               </button>
             </article>
 
@@ -251,13 +248,13 @@ document.querySelector("#app").innerHTML = `
               <span class="package-type">Small & Medium Business (Global)</span>
               <p>Scalable web & mobile architecture tailored for international startups and expanding SMEs.</p>
               <ul class="package-features">
-                <li><span class="material-symbols-outlined icon-filled">check</span> Multi-Currency Global Web App</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> International SEO & PPC Ads</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Cloud Infrastructure (AWS / GCP)</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> 24/7 Global SLA Support</li>
+                <li><i class="fa-solid fa-check"></i> Multi-Currency Global Web App</li>
+                <li><i class="fa-solid fa-check"></i> International SEO & PPC Ads</li>
+                <li><i class="fa-solid fa-check"></i> Cloud Infrastructure (AWS / GCP)</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Global SLA Support</li>
               </ul>
               <button class="btn btn-primary open-package-modal" data-package="SME International" data-pdf="/SME Proposal-International.pdf">
-                Apply for Package <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_forward</span>
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
               </button>
             </article>
 
@@ -267,13 +264,13 @@ document.querySelector("#app").innerHTML = `
               <span class="package-type">Enterprise Solution (Kenya)</span>
               <p>Enterprise-grade software systems, dedicated engineering teams, and corporate brand positioning.</p>
               <ul class="package-features">
-                <li><span class="material-symbols-outlined icon-filled">check</span> Enterprise Custom Software Architecture</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> High-Volume Digital Marketing</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Security & Compliance Integration</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Dedicated Account Manager</li>
+                <li><i class="fa-solid fa-check"></i> Enterprise Custom Software Architecture</li>
+                <li><i class="fa-solid fa-check"></i> High-Volume Digital Marketing</li>
+                <li><i class="fa-solid fa-check"></i> Security & Compliance Integration</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Account Manager</li>
               </ul>
               <button class="btn btn-primary open-package-modal" data-package="Corporate Kenya" data-pdf="/Corporate Proposal-Kenya.pdf">
-                Apply for Package <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_forward</span>
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
               </button>
             </article>
 
@@ -284,13 +281,13 @@ document.querySelector("#app").innerHTML = `
               <span class="package-type">Enterprise Solution (Global)</span>
               <p>Advanced multi-market software ecosystem, AI/Big Data analytics, and global marketing strategies.</p>
               <ul class="package-features">
-                <li><span class="material-symbols-outlined icon-filled">check</span> Multi-Market Software Ecosystem</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Machine Learning & Big Data Analytics</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Global Omni-Channel Marketing</li>
-                <li><span class="material-symbols-outlined icon-filled">check</span> Dedicated Engineering Team</li>
+                <li><i class="fa-solid fa-check"></i> Multi-Market Software Ecosystem</li>
+                <li><i class="fa-solid fa-check"></i> Machine Learning & Big Data Analytics</li>
+                <li><i class="fa-solid fa-check"></i> Global Omni-Channel Marketing</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Engineering Team</li>
               </ul>
               <button class="btn btn-primary open-package-modal" data-package="Corporate International" data-pdf="/Corporate Proposal-International.pdf">
-                Apply for Package <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_forward</span>
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
               </button>
             </article>
           </div>
@@ -386,7 +383,7 @@ document.querySelector("#app").innerHTML = `
                     <p>Sport fishing portal and digital web experience in Zanzibar.</p>
                     <div class="work-actions">
                       <a href="https://zanzibarsportfishing.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Project <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                   </div>
@@ -406,7 +403,7 @@ document.querySelector("#app").innerHTML = `
                       <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                         Google Play <i class="fa-brands fa-google-play"></i>
                       </a>
-                    </div>    
+                    </div>
                   </div>
                 </article>
               </div>
@@ -422,7 +419,7 @@ document.querySelector("#app").innerHTML = `
                     <p>Digital booking system and marketing campaign for a luxury spa resort.</p>
                     <div class="work-actions">
                       <a href="https://mnaranicinnamonspa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Website <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
+                        View Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                   </div>
@@ -440,7 +437,7 @@ document.querySelector("#app").innerHTML = `
                     <p>Web portal and Google search engine optimization for customer acquisition.</p>
                     <div class="work-actions">
                       <a href="https://jambianibeautyspa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Spa <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
+                        View Spa <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                   </div>
@@ -458,7 +455,7 @@ document.querySelector("#app").innerHTML = `
                     <p>Tourism and excursion digital portal built for fast loading speeds and high conversion.</p>
                     <div class="work-actions">
                       <a href="https://tourszanzibar.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Portal <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
+                        View Portal <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       </a>
                     </div>
                   </div>
@@ -505,7 +502,7 @@ document.querySelector("#app").innerHTML = `
           <div class="contact-grid">
             <div class="contact-info-box">
               <div class="contact-item">
-                <div class="contact-icon"><span class="material-symbols-outlined icon-filled">location_on</span></div>
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="contact-details">
                   <h4>Headquarters</h4>
                   <p>Nairobi, Kenya</p>
@@ -513,7 +510,7 @@ document.querySelector("#app").innerHTML = `
               </div>
 
               <div class="contact-item">
-                <div class="contact-icon"><span class="material-symbols-outlined icon-filled">mail</span></div>
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                 <div class="contact-details">
                   <h4>Email Us</h4>
                   <p><a href="mailto:info@mugogoinc.com">info@mugogoinc.com</a></p>
@@ -522,7 +519,7 @@ document.querySelector("#app").innerHTML = `
               </div>
 
               <div class="contact-item">
-                <div class="contact-icon"><i class="fa-brands fa-whatsapp" style="font-size:1.3rem;"></i></div>
+                <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
                 <div class="contact-details">
                   <h4>WhatsApp Direct</h4>
                   <p><a href="https://wa.me/254721902248" target="_blank" rel="noopener noreferrer">+254 721 902 248</a></p>
@@ -560,7 +557,7 @@ document.querySelector("#app").innerHTML = `
               </div>
 
               <button type="submit" class="btn btn-primary" style="width: 100%;">
-                Send Message <span class="material-symbols-outlined" style="font-size:1.1rem;">send</span>
+                Send Message <i class="fa-solid fa-paper-plane"></i>
               </button>
               <p id="formFeedback" style="font-size:0.875rem; text-align:center; display:none;"></p>
             </form>
@@ -572,7 +569,7 @@ document.querySelector("#app").innerHTML = `
     <!-- Interactive Package Application Modal -->
     <div class="modal-overlay" id="packageModal">
       <div class="modal-card">
-        <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal"><span class="material-symbols-outlined">close</span></button>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
 
         <div class="modal-header">
           <h3 id="modalPackageTitle">Apply for Package</h3>
@@ -613,7 +610,7 @@ document.querySelector("#app").innerHTML = `
           </div>
 
           <button type="submit" class="btn btn-primary" style="width: 100%;">
-            Send Package Application <span class="material-symbols-outlined" style="font-size:1.1rem;">send</span>
+            Send Package Application <i class="fa-solid fa-paper-plane"></i>
           </button>
           <div id="pkgFormFeedback" style="font-size:0.9rem; text-align:center; display:none; margin-top:1rem;"></div>
         </form>
@@ -659,9 +656,9 @@ document.querySelector("#app").innerHTML = `
           <div class="footer-col">
             <h4>Contact Info</h4>
             <ul class="footer-links">
-              <li><span class="material-symbols-outlined icon-filled" style="font-size:1rem;">mail</span> info@mugogoinc.com</li>
-              <li><span class="material-symbols-outlined icon-filled" style="font-size:1rem;">phone</span> +254 721 902 248</li>
-              <li><span class="material-symbols-outlined icon-filled" style="font-size:1rem;">location_on</span> Nairobi, Kenya</li>
+              <li><i class="fa-solid fa-envelope"></i> info@mugogoinc.com</li>
+              <li><i class="fa-solid fa-phone"></i> +254 721 902 248</li>
+              <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
             </ul>
           </div>
         </div>
@@ -680,44 +677,18 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
-// ── Theme Toggle (Dark / Light Mode) ─────────────────────────────────────
-const themeToggle = document.querySelector("#themeToggle");
-const themeIcon = document.querySelector("#themeIcon");
-const htmlEl = document.documentElement;
-
-function applyTheme(theme) {
-  htmlEl.setAttribute("data-theme", theme);
-  localStorage.setItem("mugogo-theme", theme);
-  if (themeIcon) {
-    themeIcon.textContent = theme === "dark" ? "light_mode" : "dark_mode";
-  }
-}
-
-// Sync icon on load
-if (themeIcon) {
-  const currentTheme = htmlEl.getAttribute("data-theme") || "light";
-  themeIcon.textContent = currentTheme === "dark" ? "light_mode" : "dark_mode";
-}
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    const isDark = htmlEl.getAttribute("data-theme") === "dark";
-    applyTheme(isDark ? "light" : "dark");
-  });
-}
-
-// ── Mobile Navigation Drawer Toggle ───────────────────────────────────────
+// Mobile Navigation Drawer Toggle
 const navToggle = document.querySelector("#navToggle");
 const navMenu = document.querySelector("#navMenu");
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-    const icon = navToggle.querySelector("#menuIcon");
+    const icon = navToggle.querySelector("i");
     if (navMenu.classList.contains("active")) {
-      if (icon) icon.textContent = "close";
+      icon.className = "fa-solid fa-xmark";
     } else {
-      if (icon) icon.textContent = "menu";
+      icon.className = "fa-solid fa-bars";
     }
   });
 
@@ -725,8 +696,8 @@ if (navToggle && navMenu) {
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("active");
-      const icon = navToggle.querySelector("#menuIcon");
-      if (icon) icon.textContent = "menu";
+      const icon = navToggle.querySelector("i");
+      if (icon) icon.className = "fa-solid fa-bars";
     });
   });
 }
