@@ -1,490 +1,805 @@
 import { heroText, heroImg } from "./gsap/main";
-
 import "./style.css";
 
 document.querySelector("#app").innerHTML = `
   <div>
-    <main class="smooth-content">
-    <div class= "smooth-scroll">
-    <nav>
-    <div class='navbar-logo'>
-    <img src='./logo_t.png' alt='google logo'/>
-    </div> 
-    <div class='navbar-item'>
-    <a href='#work'><span>Work</span></a>
-    <a href='#team'><span>Team</span></a>
-    <a href='#connect'><span>Connect</span></a>
-  
-    </div>
-     <div class='navbar-icons'>
-     <i class="fa-solid fa-envelope"></i>
-     <i class="fa-solid fa-phone"></i>
-     </div>
+    <!-- Navigation Header -->
+    <header class="header-nav">
+      <div class="container nav-container">
+        <a href="#" class="navbar-logo" aria-label="Mugogo Inc Homepage">
+          <img src="/logo_t.png" alt="Mugogo Inc Logo" />
+          <span class="brand-title">Mugogo<span>.inc</span></span>
+        </a>
 
-    </nav>
-   <div class='main section'>
-    <section class='hero'>
-    <div class = 'hero-content'>
-    
-      <div class="download">
-   <button class="downloader"><i class="fa-solid fa-download"></i>Download Proposal</button>
-   <div id="dropdown" class="dropdown-content">
-    <a href="./SME Proposal-Kenya.pdf" download><i class="fa-solid fa-download"></i>SME Kenya</a>
-    <a href="./SME Proposal-International.pdf" download ><i class="fa-solid fa-download"></i>SME International</a>
-    <a href="./Corporate Proposal-Kenya.pdf" download ><i class="fa-solid fa-download"></i>Corporate Kenya</a>
-    <a href="./Corporate Proposal-International.pdf" download ><i class="fa-solid fa-download"></i>Corporate international</a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#packages" class="nav-link">Packages</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#partners" class="nav-link">Partners</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
 
-  </div>
-    </div>
-    <div class='text-content'>
-    <h1 class="heading-one">Trust is earned through Experience<br>
-    <span>let us earn yours </span>here at <span>Mugogo</span></h1>
-    <p class="paragraph-2">We are reimagining the endless posibilities<br> in building enterprise software!</p>
-    <a href="#about" class="learn-more">Learn More</a>
-    </div>
-    <div class='svg-cont'>
-    <img src= "/heroo.svg"/>
-    </div>
-    </div>
-    </section>
-    </div>
-  
-    <div class='lines'>
-    <p> 01/ <span class='five'>05</span></p>
-    </div>
-    
- 
-    <section class='features'>
-    <div>
-    <div class='details'>
-    <div class='paragraph' id ="about">
-    <p>Our sucess rests<br> in relationships <br>between people</p>
-    </div>
-    <div class= 'product-head connections'>
-    <h1>Human Connections <span class = 'human'>First</span> <br/> Code <span class='second'>Second </span></h1></div>
-    </div>
-    <section class='about'>
-    <div class='about-img'>
-    <img  loading="lazy" src="./thought.svg" alt="about"/>
-    </div>
-    <div class='about-text'>
-    <h1><span class="human">Constant evolution</span><br><span class='second'>Constant adaptation.</span></h1>
-    <p>We have all the tools to take your business to the future <br>of digital transformations.<br>Here at Mugogo, we provide a comprevensive<br> suite of services to make your business reach the digital age</p>
-
-    <a  href='#work' class='about-btn'>Learn More<i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    </div>
-    </section>
-    <div class='about-info'>
-    <h1>Lets work together into <br> turning your <span class='vision'>business vision</span> <br> into a <span class='modern'>modern software solution</span>  <br>for your clients.</h1>
-    </div>
-    </div>
-    <div class='about-things'>
-    <div class='things-text'>
-    <h1>We do things <br><span>differently</span></h1>
-    <p>We are a team of talented engineers and managers<br> to complete work that will exeed your expectations. <br>We use open source tools to ensure you have total<br> control of your products</p>
-    <a href='#work'> Our Work <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    <div class = 'things-img'>
-    <img loading="lazy" src='/differ.svg'/>
-    
-    </div>
-    </div>
-   
-    </div>
-   
-    </section>
-    </div>
-    <div class='lines process'>
-    <p> 02/ <span class='five'>05</span></p>
-    </div>
-    <section class='featuress section' id="connect">
-    <div class='details'>
-    <p>We have spent many<br> years refining<br> a process <br>that deliver <br>results</p>
-    <div class= 'product-head product'>
-    <h1>Process & <br><span class='second'>Control </span></h1>
-    </div>
-    </div>
-    
-    <div class='coperate'>
-    <div class='infos'>
-    <h1>Our Process</h1>
-    <i class="fa-solid fa-angle-down"></i>
-    </div>
-    <div class='coperate-text'>
-    <div class='coperate-items'>
-   <h1>
-   Our Signature Design Process
-   </h1>
-   <p>Our signature process is broken down into six steps, even though our approach to every design process depends on the product itself to build a sustainable solution to bring growth & prosperity. </p>
-
-   <h1><span>O1</span> User </h1>
-   <p>
-   What problems are they facing?<br>How are they struggling and how can we contribute?
-   </p>
-   <h1><span>O2</span> Brand </h1>
-   <p>
-   After understanding users we try to understand<br> the brand needs to provide better solutions <br>that align with their long-term goals.
-   </p>
-    <h1><span>O3</span> User Persona </h1>
-    <p>We make multiple types of the persona<br> of how our ideal customers look like.<br> In general, we comprise an identity, relevant quotes, <br>and information about any behavioral trends in the user persona.</p>
-    <h1><span>O4</span> Design & Code </h1>
-    <p>We create diagrams that illustrate<br> the entire user journey while<br> interacting with a product, <br>from the initial interaction to the last.</p>
-   
-    <h1><span>O5</span> Prototype </h1>
-    <p>We create prototypes that illustrate<br> the entire user experience while<br> the client is interacting with the product,<br> from the initial interaction to the last while taking feedback.</p>
-
-    <h1><span>O6</span> Launch </h1>
-    <p>Now the product is ready for launch<br> We ensure that the client<br> is contented with the product.</p>
-   
-    </div>
-    </div>
-    </div>
-   <div class='ideas-heading'>
-   <h1>Want to <span class='idea'>let go</span> <br>of <span class='idea'>old ideas?</span><br> We're here <span class='here'>for it</span>...</h1>
-   <i class="fa-solid fa-square-down-right"></i>
-   </div>
-    </div>
-
-    </section>
-    <div class='lines three'>
-    <p> 03/ <span class='five'>05</span></p>
-    </div class='services'>
-    <div>
-    <section class='featuress products'>
-    <div class='details'>
-    <p>Choose from our <br>services to find a   <br>solution for your<br> needs</p>
-    <div class= 'product-head product'>
-    <h1>Solution & <br><span class='second'>Technology </span></h1>
-    </div>
-    </div>
-    </section>
-    <section>
-    <div class='services'>
-    <div class='services-grid'>
-    <div class='grid-item-1 card'>
-    <i class="fa-brands fa-cloudsmith"></i>
-    <h4>Cloud Computing & <br>Infrastructure</h4>
-    <p>Mugogo helps clients <br>to scale thier services<br> on AWS, Netlify and Google Cloud</p>
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary">Get a Quote</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Drawer">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
-    <div class='grid-item-2 card' ><i class="fa-solid fa-globe"></i></i>
-    <h4>Web Application & <br>Development</h4>
-    <p>Mugogo develops responsive <br>web applications that work<br> with modern frameworks</p></div>
-    <div class='grid-item-3 card'> <i class="fa-solid fa-gears"></i>
-    <h4>Cross platform <br>mobile App development </h4>
-    <p>Secure our team <br>to perform mobile development <br>on both Android and IOS</p></div>
-    <div class='grid-item-4 card'><i class="fa-brands fa-uikit"></i></i>
-    <h4>UI/UX <br>Design</h4>
-    <p>Want to enquire about<br>what tech to use<br>reach to us </p></div>
+      </div>
+    </header>
 
-    <div class='grid-item-4 card'><i class="fa-solid fa-laptop-code"></i>
-    <h4>Machine Learning & <br>Big Data</h4>
-    <p>As companies like yours thrive<br>and grow in today's competitive<br> business enviroment<br>we provide key metrics to drive good <br>decison making </p></div>
-    <div class='grid-item-4 card'><i class="fa-solid fa-lightbulb"></i>
-    <h4>Digital Marketting</h4>
-    <p>Want Take your business to the next level<br>with our perfect<br>digital marketing service</p></div>
-   
-    </div>
-    
-    <button class='btn-services'>Learn More  <i class="fa-solid fa-arrow-right"></i></button>
-    </div>
-    </section>
-    </div>
-    
-    <div>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="badge">
+              <i class="fa-solid fa-chart-line"></i> Digital Marketing & Software Solutions
+            </div>
+            <h1 class="hero-title">
+              Data-Driven <span>Digital Marketing</span> & Enterprise Software
+            </h1>
+            <p class="hero-desc">
+              We engineer modern web & mobile software applications and run targeted digital marketing strategies that turn your business vision into scalable market success.
+            </p>
 
-    <div class='ideas-heading'>
-    <h1>Need a <span class='idea'><br>dependable team?</span> <br> We've <span class='here'>got you</span>...</h1>
-    <i class="fa-solid fa-square-down-right"></i>
-    </div>
-    <div class='lines process team'>
-    <p> 04/ <span class='five'>05</span></p>
-    </div>
-    <section class='featuress'>
-    <div class='details'>
-    <p>Technology is great<br>The minds that<br> create it <br>are greater <br>results</p>
-    <div class= 'product-head'>
-    <h1 class='head'>Leadership <br> &<span class='second'><br>Team </span></h1>
-    </div>
-    
-    </div>
-    <div class='team-section' id = 'team'>
-    <div class='team-grid'>
-    <div class='team-grid-card'>
-    <div class ='grid-img-container'>
-    <img loading="lazy" src='/sandeeMugogo.jpeg'/>
-    </div>
-    <div class='grid-text'>
-    <h1>Peter Sande</h1>
-    <p>CEO</p>
-    </div>
-    </div>
-    
-    <div class='team-grid-card'>
-    <div class ='grid-img-container'>
-    <img  loading="lazy" src='/jefwa.jpeg'/>
-    </div>
-    <div class='grid-text'>
-    <h1>Reuben Jefwa</h1>
-    <p>Chief Technology Officer</p>
-    </div>
-    </div>
-    <div class='team-grid-card'>
-    <div class ='grid-img-container'>
-    <img  loading="lazy" src='/nzaih.png'/>
-    </div>
-    <div class='grid-text'>
-    <h1>Nzai Kilonzo</h1>
-    <p>Senior Developer</p>
-    </div>
-    </div>
-    
-     </div>
-     
-    </div>
+            <div class="hero-buttons">
+              <a href="#packages" class="btn btn-primary">
+                View Packages <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Book Consultation
+              </a>
+            </div>
 
-    <div class='ideas-heading'>
-    <h1>Mugogo is <span class='idea'>Working</span> <br> on  <span class='idea'>Software</span> that brings  <br>all the pieces <span class='here'>Together</span></h1>
-    <i class="fa-solid fa-square-down-right"></i>
-    </div>
-    </div>
-   
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>50+</h3>
+                <p>Projects Delivered</p>
+              </div>
+              <div class="stat-item">
+                <h3>99.9%</h3>
+                <p>Uptime & Security</p>
+              </div>
+              <div class="stat-item">
+                <h3>10x</h3>
+                <p>Data-Driven ROI</p>
+              </div>
+            </div>
+          </div>
 
-   
-    </div>
+          <div class="hero-image-cont">
+            <img src="/heroo.svg" alt="Digital Marketing and Software Engineering Solutions" width="460" height="380" />
+          </div>
+        </div>
+      </section>
 
-    
-    </div>
-    <div class='lines'>
-    <p> 05/ <span class='five'>05</span></p>
-    </div>
-    <div class = 'work-section' id="work">
-    <div>
-    <h1> Together, we'll come up <br>with radical ideas and <br>execute them flawlessly.<br> Check out our work.
-    </h1>
-    </div>
-  <div class="k-391">
-<!-- Slider main container -->
-<div class="swiper mySwiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-    <div class="work-grid-card">
-    <div class="work-grid-card-img">
-    <img loading="lazy" src="/fising.png">
-    </div>
-    <div class="work-grid-card-text">
-    <h5>Zanzibar Sports Club</h5>
-    <div class="work-btns">
-    <button class="btn">Explore</button>
-    <a href="https://zanzibarsportfishing.com/" type="button"><button class="btn"> View</button></a>
-    </div>
-   </div>
-    </div>
-    </div>
-    <div class="swiper-slide"><div class="work-grid-card">
-    <div class="work-grid-card-img">
-    <img loading="lazy" src="/travely.png">
-    </div>
-    <div class="work-grid-card-text">
-    <h5>Travely</h5>
-    <div class="work-btns">
+      <!-- Section Line Counter -->
+      <div class="container">
+        <div class="section-line">
+          <div class="section-counter">01 / <span>05</span></div>
+        </div>
+      </div>
 
-    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class="btn"> Explore</button></a>
-    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class="btn"> View</button></a>
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-card">
+            <span class="section-subtitle">Our Philosophy</span>
+            <h3>Human Connections <span>First</span>, Code Second</h3>
+            <p>
+              Our success rests in genuine relationships between people. At Mugogo Inc, we combine constant evolution with constant adaptation to ensure your business thrives in the modern digital era.
+            </p>
+            <ul class="features-list">
+              <li><i class="fa-solid fa-check-circle"></i> Open Source Transparency & Total Product Control</li>
+              <li><i class="fa-solid fa-check-circle"></i> Data-Backed Marketing Campaigns</li>
+              <li><i class="fa-solid fa-check-circle"></i> Agile Engineering with Continuous Integration</li>
+            </ul>
+          </div>
 
-    </div>
-   </div>
-    </div>
-    </div>
-    <div class="swiper-slide">
-    <div class="work-grid-card">
-    <div class="work-grid-card-img">
-    <img loading="lazy" src="/cinnamon.png">
-    </div>
-    <div class="work-grid-card-text">
-    <h5>Mnarani Cinnamon Spa</h5>
-    <div class="work-btns">
-   <a href="https://www.google.com/travel/hotels/Nungwi%2C%20Tanzania/entity/CgoI0d7cw5XbguMEEAE?q=spa%20nungwi%20village&amp;g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4518327%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4812120%2C4814050%2C4816977%2C4828448%2C4831357%2C4837140%2C4840029&amp;hl=en-KE&amp;gl=ke&amp;ssta=1&amp;ts=CAESABoECgIaACoECgAaAA&amp;rp=ENHe3MOV24LjBBCAoMuuk9ai3AcQodzrnYuP59mNARDqrNrW_Ivqp7ABOAJAAEgCogEQTnVuZ3dpLCBUYW56YW5pYcABAw&amp;ap=aAE&amp;ictx=1&amp;ved=0CAAQ5JsGahcKEwjYsJW0odP5AhUAAAAAHQAAAAAQAw&amp;utm_campaign=sharing&amp;utm_medium=link&amp;utm_source=htls" type="button"> <button class="btn">Explore</button></a>
-    <a href="https://mnaranicinnamonspa.com/" type="button"><button class="btn"> View</button></a>
-    </div>
-   </div>
-    </div>
-    </div>
-     <div class="swiper-slide">
-     <div class="work-grid-card">
-    <div class="work-grid-card-img">
-    <img loading="lazy" src="/beauty.png">
-    </div>
-    <div class="work-grid-card-text">
-    <h5> Jambiani Beauty Spa</h5>
-    <div class="work-btns">
-    <a href="https://g.page/r/CdpSz9FlwcnCEAE" type="button"><button class="btn">Explore</button></a>
-    <a href="https://jambianibeautyspa.com/" type="button"><button class="btn"> View</button></a>
-    </div>
-   </div>
-    </div>
-     </div>
-    <div class="swiper-slide">
-    <div class="work-grid-card">
-    <div class="work-grid-card-img">
-    <img loading="lazy" src="/toursz.png"/>
-    </div>
-    <div class="work-grid-card-text">
-    <h5> Tours Zanzibar</h5>
-    <div class="work-btns">
-  
-    <a href="https://tourszanzibar.com/" type="button"><button class="btn"> View</button></a>
-    </div>
-   </div>
-    </div>
-    </div>
-    ...
-  </div>
-  
+          <div class="about-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+            <img src="/differ.svg" alt="Innovation and Software Engineering at Mugogo Inc" style="max-height: 260px; margin-bottom: 1.5rem;" />
+            <h3>We Do Things Differently</h3>
+            <p style="margin-bottom:0;">
+              A dedicated team of senior engineers and digital marketing strategists committed to exceeding your expectations.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+      <!-- Section Line Counter -->
+      <div class="container">
+        <div class="section-line">
+          <div class="section-counter">02 / <span>05</span></div>
+        </div>
+      </div>
 
-  
-</div>
+      <!-- Services Section (Retained All Core Pillars) -->
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Our Core Offerings</span>
+            <h2 class="section-title">Solution & Technology Services</h2>
+            <p class="section-desc">
+              Choose from our comprehensive suite of digital marketing and software services designed to accelerate your growth.
+            </p>
+          </div>
 
-  </div>
-    <div class='work-grid'>
-    <div class='work-grid-card'>
-    <div class='work-grid-card-img'>
-    <img loading='lazy' src='/fising.png'/>
-    </div>
-    <div class='work-grid-card-text'>
-    <h5>Zanzibar Sports Club</h5>
-    <div class='work-btns'>
-    <button class='btn'>Explore</button>
-    <a href="https://zanzibarsportfishing.com/" type="button"><button class='btn'> View</button></a>
-    </div>
-   </div>
-    </div>
-   <div class='work-grid-card'>
-    <div class='work-grid-card-img'>
-    <img loading='lazy' src='/travely.png'/>
-    </div>
-    <div class='work-grid-card-text'>
-    <h5>Travely</h5>
-    <div class='work-btns'>
+          <div class="services-grid">
+            <!-- 1. Digital Marketing & SEO -->
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <h3>Digital Marketing & SEO</h3>
+              <p>
+                Take your business to the next level with our perfect digital marketing campaigns, Search Engine Optimization (SEO), PPC ads, and conversion rate optimization.
+              </p>
+              <span class="service-tag">Growth & Brand Scaling</span>
+            </article>
 
-    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class='btn'> Explore</button></a>
-    <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" type="button"><button class='btn'> View</button></a>
+            <!-- 2. Web Application Development -->
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3>Web Application & Development</h3>
+              <p>
+                Mugogo develops responsive, high-performance web applications using state-of-the-art modern frameworks and scalable APIs.
+              </p>
+              <span class="service-tag">Full-Stack Engineering</span>
+            </article>
 
-    </div>
-   </div>
-    </div>
-    
-    <div class='work-grid-card'>
-    <div class='work-grid-card-img'>
-    <img loading='lazy' src='/cinnamon.png'/>
-    </div>
-    <div class='work-grid-card-text'>
-    <h5>Mnarani Cinnamon Spa</h5>
-    <div class='work-btns'>
-   <a href='https://www.google.com/travel/hotels/Nungwi%2C%20Tanzania/entity/CgoI0d7cw5XbguMEEAE?q=spa%20nungwi%20village&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4518327%2C4597339%2C4703207%2C4718358%2C4723331%2C4757164%2C4786958%2C4790928%2C4794648%2C4812120%2C4814050%2C4816977%2C4828448%2C4831357%2C4837140%2C4840029&hl=en-KE&gl=ke&ssta=1&ts=CAESABoECgIaACoECgAaAA&rp=ENHe3MOV24LjBBCAoMuuk9ai3AcQodzrnYuP59mNARDqrNrW_Ivqp7ABOAJAAEgCogEQTnVuZ3dpLCBUYW56YW5pYcABAw&ap=aAE&ictx=1&ved=0CAAQ5JsGahcKEwjYsJW0odP5AhUAAAAAHQAAAAAQAw&utm_campaign=sharing&utm_medium=link&utm_source=htls' type="button"> <button class='btn'>Explore</button></a>
-    <a href='https://mnaranicinnamonspa.com/' type="button"><button class='btn'> View</button></a>
-    </div>
-   </div>
-    </div>
-    <div class='work-grid-card'>
-    <div class='work-grid-card-img'>
-    <img loading='lazy' src='/beauty.png'/>
-    </div>
-    <div class='work-grid-card-text'>
-    <h5> Jambiani Beauty Spa</h5>
-    <div class='work-btns'>
-    <a href="https://g.page/r/CdpSz9FlwcnCEAE" type="button"><button class='btn'>Explore</button></a>
-    <a href="https://jambianibeautyspa.com/" type="button"><button class='btn'> View</button></a>
-    </div>
-   </div>
-    </div>
-    <div class='work-grid-card'>
-    <div class='work-grid-card-img'>
-    <img loading='lazy' src='/tourszanzibar.png'/>
-    </div>
-    <div class='work-grid-card-text'>
-    <h5> Tours Zanzibar</h5>
-    <div class='work-btns'>
-  
-    <a href="https://tourszanzibar.com/" type="button"><button class='btn'> View</button></a>
-    </div>
-   </div>
-    </div>
+            <!-- 3. Mobile App Development -->
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3>Cross-Platform Mobile Apps</h3>
+              <p>
+                Secure our engineering team to perform cross-platform mobile development for iOS and Android with fluid performance and native UI.
+              </p>
+              <span class="service-tag">iOS & Android</span>
+            </article>
 
-    </div>
-  
-    </div>
-    <div class='partners'>
-    <h1>Our Partners</h1>
-    <div class = 'partner-img'>
-    <img src = 'jambiani.png'/>
-    <img src = 'zanzibar.png' />
-    <img src = 'cinn.png' />
-    </div>
-    </div>
-    <section class='featuress'>
-    <div class='footer-grid'>  
-    <div class='footer-grid-1'>
-  
-    <a href="#"><img loading='lazy' src='./logo.png'/></a>
-    <a href="#">Work</a>
-    <a href="#">Team</a>
-    <a href="#">Connect</a>
-    </div>
-    <div class='footer-grid-2'>
-    <h1>Contact Info</h1>
-     <h5>Nairobi</h5>
-     <h5><span>Customer Care:</span> customerservice@mugogoinc.com
-     </h5>
-     <h5><span>Info:</span> info@mugogoinc.com</h5>
-    <h5><span>Whatsapp:</span>+254721902248</h5>
-    </div>
-    
-    </section>
-    <div class='social-media'>
-    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <h5> © Infinity, Mugogo Inc</h5>
-    </div>
-    </div>
+            <!-- 4. Cloud Computing & Infrastructure -->
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-brands fa-aws"></i>
+              </div>
+              <h3>Cloud Computing & Infrastructure</h3>
+              <p>
+                Mugogo helps clients scale their cloud services and backend systems on AWS, Netlify, and Google Cloud Platform with zero downtime.
+              </p>
+              <span class="service-tag">DevOps & Cloud</span>
+            </article>
+
+            <!-- 5. UI/UX Design -->
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Transform complex user interactions into intuitive visual interfaces through detailed user research, wireframing, and interactive design prototypes.
+              </p>
+              <span class="service-tag">User Experience Design</span>
+            </article>
+
+            <!-- 6. Machine Learning & Big Data -->
+            <article class="service-card">
+              <div class="service-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3>Machine Learning & Big Data</h3>
+              <p>
+                As companies thrive in today's competitive business environment, we provide key metrics and intelligent models to drive data-driven decisions.
+              </p>
+              <span class="service-tag">AI & Data Analytics</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Line Counter -->
+      <div class="container">
+        <div class="section-line">
+          <div class="section-counter">03 / <span>05</span></div>
+        </div>
+      </div>
+
+      <!-- Packages Section -->
+      <section class="packages-section" id="packages">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Tailored Solutions</span>
+            <h2 class="section-title">Service Packages & Proposals</h2>
+            <p class="section-desc">
+              Select a package designed specifically for your business size and geographic market to apply instantly.
+            </p>
+          </div>
+
+          <div class="packages-grid">
+            <!-- Package 1: SME Kenya -->
+            <article class="package-card">
+              <span class="package-badge">Popular in Kenya</span>
+              <h3>SME Kenya</h3>
+              <span class="package-type">Small & Medium Business (Kenya)</span>
+              <p>Comprehensive digital marketing & web solutions optimized for local Kenyan market growth.</p>
+              <ul class="package-features">
+                <li><i class="fa-solid fa-check"></i> Custom Web & Mobile Solution</li>
+                <li><i class="fa-solid fa-check"></i> Local Kenya SEO & Google Ads</li>
+                <li><i class="fa-solid fa-check"></i> Social Media Brand Campaign</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Support & Hosting</li>
+              </ul>
+              <button class="btn btn-primary open-package-modal" data-package="SME Kenya" data-pdf="/SME Proposal-Kenya.pdf">
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+
+            <!-- Package 2: SME International -->
+            <article class="package-card highlight">
+              <span class="package-badge">Global Scale</span>
+              <h3>SME International</h3>
+              <span class="package-type">Small & Medium Business (Global)</span>
+              <p>Scalable web & mobile architecture tailored for international startups and expanding SMEs.</p>
+              <ul class="package-features">
+                <li><i class="fa-solid fa-check"></i> Multi-Currency Global Web App</li>
+                <li><i class="fa-solid fa-check"></i> International SEO & PPC Ads</li>
+                <li><i class="fa-solid fa-check"></i> Cloud Infrastructure (AWS / GCP)</li>
+                <li><i class="fa-solid fa-check"></i> 24/7 Global SLA Support</li>
+              </ul>
+              <button class="btn btn-primary open-package-modal" data-package="SME International" data-pdf="/SME Proposal-International.pdf">
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+
+            <!-- Package 3: Corporate Kenya -->
+            <article class="package-card">
+              <h3>Corporate Kenya</h3>
+              <span class="package-type">Enterprise Solution (Kenya)</span>
+              <p>Enterprise-grade software systems, dedicated engineering teams, and corporate brand positioning.</p>
+              <ul class="package-features">
+                <li><i class="fa-solid fa-check"></i> Enterprise Custom Software Architecture</li>
+                <li><i class="fa-solid fa-check"></i> High-Volume Digital Marketing</li>
+                <li><i class="fa-solid fa-check"></i> Security & Compliance Integration</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Account Manager</li>
+              </ul>
+              <button class="btn btn-primary open-package-modal" data-package="Corporate Kenya" data-pdf="/Corporate Proposal-Kenya.pdf">
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+
+            <!-- Package 4: Corporate International -->
+            <article class="package-card">
+              <span class="package-badge">Global Enterprise</span>
+              <h3>Corporate International</h3>
+              <span class="package-type">Enterprise Solution (Global)</span>
+              <p>Advanced multi-market software ecosystem, AI/Big Data analytics, and global marketing strategies.</p>
+              <ul class="package-features">
+                <li><i class="fa-solid fa-check"></i> Multi-Market Software Ecosystem</li>
+                <li><i class="fa-solid fa-check"></i> Machine Learning & Big Data Analytics</li>
+                <li><i class="fa-solid fa-check"></i> Global Omni-Channel Marketing</li>
+                <li><i class="fa-solid fa-check"></i> Dedicated Engineering Team</li>
+              </ul>
+              <button class="btn btn-primary open-package-modal" data-package="Corporate International" data-pdf="/Corporate Proposal-International.pdf">
+                Apply for Package <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Line Counter -->
+      <div class="container">
+        <div class="section-line">
+          <div class="section-counter">04 / <span>05</span></div>
+        </div>
+      </div>
+
+      <!-- Signature Process Section -->
+      <section class="process-section" id="process">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">How We Work</span>
+            <h2 class="section-title">Process & Control</h2>
+            <p class="section-desc">
+              We have spent years refining a signature process that delivers predictable, high-impact results for every digital product and campaign.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-card">
+              <div class="process-number">01</div>
+              <h3>User & Problem Discovery</h3>
+              <p>What problems are users facing? We analyze user pain points and market opportunities to define clear requirements.</p>
+            </div>
+
+            <div class="process-card">
+              <div class="process-number">02</div>
+              <h3>Brand Strategy Alignment</h3>
+              <p>We align technical and creative solutions with your brand's long-term commercial goals and market positioning.</p>
+            </div>
+
+            <div class="process-card">
+              <div class="process-number">03</div>
+              <h3>User Persona & Research</h3>
+              <p>We compile behavioral trends, customer identities, and relevant information to tailor every touchpoint.</p>
+            </div>
+
+            <div class="process-card">
+              <div class="process-number">04</div>
+              <h3>Design & Engineering</h3>
+              <p>We map the entire user journey while interacting with a product, writing clean code and scalable diagrams.</p>
+            </div>
+
+            <div class="process-card">
+              <div class="process-number">05</div>
+              <h3>Interactive Prototyping</h3>
+              <p>We create functional prototypes to test user experiences, gathering real client feedback before final launch.</p>
+            </div>
+
+            <div class="process-card">
+              <div class="process-number">06</div>
+              <h3>Launch & Optimization</h3>
+              <p>Product is ready for launch! We ensure full client satisfaction and continuous optimization after release.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Line Counter -->
+      <div class="container">
+        <div class="section-line">
+          <div class="section-counter">05 / <span>05</span></div>
+        </div>
+      </div>
+
+      <!-- Work / Portfolio Section -->
+      <section class="work-section" id="work">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Proven Results</span>
+            <h2 class="section-title">Check Out Our Work</h2>
+            <p class="section-desc">
+              Together, we'll come up with radical ideas and execute them flawlessly.
+            </p>
+          </div>
+
+          <div class="swiper mySwiper portfolio-slider-container">
+            <div class="swiper-wrapper">
+              <!-- Project 1 -->
+              <div class="swiper-slide">
+                <article class="work-card">
+                  <div class="work-img-wrap">
+                    <img src="/fising.png" alt="Zanzibar Sports Club Website" loading="lazy" />
+                  </div>
+                  <div class="work-body">
+                    <h3>Zanzibar Sports Club</h3>
+                    <p>Sport fishing portal and digital web experience in Zanzibar.</p>
+                    <div class="work-actions">
+                      <a href="https://zanzibarsportfishing.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="swiper-slide">
+                <article class="work-card">
+                  <div class="work-img-wrap">
+                    <img src="/travely.png" alt="Travely Mobile App" loading="lazy" />
+                  </div>
+                  <div class="work-body">
+                    <h3>Travely Mobile App</h3>
+                    <p>Cross-platform mobile application available on Google Play for travel booking.</p>
+                    <div class="work-actions">
+                      <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        Google Play <i class="fa-brands fa-google-play"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Project 3 -->
+              <div class="swiper-slide">
+                <article class="work-card">
+                  <div class="work-img-wrap">
+                    <img src="/cinnamon.png" alt="Mnarani Cinnamon Spa Website" loading="lazy" />
+                  </div>
+                  <div class="work-body">
+                    <h3>Mnarani Cinnamon Spa</h3>
+                    <p>Digital booking system and marketing campaign for a luxury spa resort.</p>
+                    <div class="work-actions">
+                      <a href="https://mnaranicinnamonspa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Project 4 -->
+              <div class="swiper-slide">
+                <article class="work-card">
+                  <div class="work-img-wrap">
+                    <img src="/beauty.png" alt="Jambiani Beauty Spa Platform" loading="lazy" />
+                  </div>
+                  <div class="work-body">
+                    <h3>Jambiani Beauty Spa</h3>
+                    <p>Web portal and Google search engine optimization for customer acquisition.</p>
+                    <div class="work-actions">
+                      <a href="https://jambianibeautyspa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Spa <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Project 5 -->
+              <div class="swiper-slide">
+                <article class="work-card">
+                  <div class="work-img-wrap">
+                    <img src="/tourszanzibar.png" alt="Tours Zanzibar Tourism Website" loading="lazy" />
+                  </div>
+                  <div class="work-body">
+                    <h3>Tours Zanzibar</h3>
+                    <p>Tourism and excursion digital portal built for fast loading speeds and high conversion.</p>
+                    <div class="work-actions">
+                      <a href="https://tourszanzibar.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        View Portal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Slider controls -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Partners Section -->
+      <section class="partners-section" id="partners">
+        <div class="container">
+          <h2>Our Partners</h2>
+          <div class="partners-grid">
+            <a href="https://jambianibeautyspa.com/" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Jambiani Beauty Spa">
+              <img src="/jambiani.png" alt="Jambiani Beauty Spa Partner Logo" class="partner-logo" loading="lazy" />
+            </a>
+            <a href="https://zanzibarsportfishing.com/" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Zanzibar Sports Club">
+              <img src="/zanzibar.png" alt="Zanzibar Sports Club Partner Logo" class="partner-logo" loading="lazy" />
+            </a>
+            <a href="https://mnaranicinnamonspa.com/" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Mnarani Cinnamon Spa">
+              <img src="/cinn.png" alt="Mnarani Cinnamon Spa Partner Logo" class="partner-logo" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Contact & Lead Capture Section -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Let's Connect</span>
+            <h2 class="section-title">Start Your Project With Mugogo</h2>
+            <p class="section-desc">
+              Ready to accelerate your brand through digital marketing or custom software solutions? Reach out to us today.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-box">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-details">
+                  <h4>Headquarters</h4>
+                  <p>Nairobi, Kenya</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-details">
+                  <h4>Email Us</h4>
+                  <p><a href="mailto:info@mugogoinc.com">info@mugogoinc.com</a></p>
+                  <p><a href="mailto:customerservice@mugogoinc.com">customerservice@mugogoinc.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="contact-details">
+                  <h4>WhatsApp Direct</h4>
+                  <p><a href="https://wa.me/254721902248" target="_blank" rel="noopener noreferrer">+254 721 902 248</a></p>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="leadForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" required placeholder="john@company.com" class="form-control" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" class="form-control" required>
+                  <option value="">Select a Service...</option>
+                  <option value="Digital Marketing & SEO">Digital Marketing & SEO</option>
+                  <option value="Web Application Development">Web Application Development</option>
+                  <option value="Cross-Platform Mobile App">Cross-Platform Mobile App</option>
+                  <option value="Cloud Computing & Infrastructure">Cloud Computing & Infrastructure</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Machine Learning & Big Data">Machine Learning & Big Data</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea id="message" required placeholder="Tell us about your requirements, timeline, and goals..." class="form-control"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <p id="formFeedback" style="font-size:0.875rem; text-align:center; display:none;"></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Interactive Package Application Modal -->
+    <div class="modal-overlay" id="packageModal">
+      <div class="modal-card">
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+
+        <div class="modal-header">
+          <h3 id="modalPackageTitle">Apply for Package</h3>
+          <p>Fill in your business details below to get started with this package.</p>
+        </div>
+
+        <form id="packageForm">
+          <input type="hidden" id="selectedPackagePdf" value="" />
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="pkgNameInput">Selected Package</label>
+            <input type="text" id="pkgNameInput" readonly class="form-control" style="background:#f1f5f9; font-weight:700; color:var(--color-primary);" />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="applicantName">Full Name *</label>
+            <input type="text" id="applicantName" required placeholder="e.g. Jane Doe" class="form-control" />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="orgName">Business / Organization Name *</label>
+            <input type="text" id="orgName" required placeholder="e.g. Acme Corporation" class="form-control" />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="phoneNo">Phone Number *</label>
+            <input type="tel" id="phoneNo" required placeholder="e.g. +254 712 345 678" class="form-control" />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="applicantEmail">Email Address *</label>
+            <input type="email" id="applicantEmail" required placeholder="e.g. jane@acme.com" class="form-control" />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="projectDesc">Project Description / Requirements (Optional)</label>
+            <textarea id="projectDesc" placeholder="Describe your business goals, preferred launch date, or specific questions..." class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Send Package Application <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div id="pkgFormFeedback" style="font-size:0.9rem; text-align:center; display:none; margin-top:1rem;"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="navbar-logo">
+              <img src="/logo_t.png" alt="Mugogo Inc Logo" />
+              <span class="brand-title">Mugogo<span>.inc</span></span>
+            </a>
+            <p>
+              Reimagining possibilities in digital marketing and enterprise software development.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#packages">Packages</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#work">Portfolio</a></li>
+              <li><a href="#partners">Partners</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Digital Marketing</a></li>
+              <li><a href="#services">Web Applications</a></li>
+              <li><a href="#services">Mobile Apps</a></li>
+              <li><a href="#services">Cloud Infrastructure</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="footer-links">
+              <li><i class="fa-solid fa-envelope"></i> info@mugogoinc.com</li>
+              <li><i class="fa-solid fa-phone"></i> +254 721 902 248</li>
+              <li><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; Infinity, Mugogo Inc</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 `;
 
-// setupCounter(document.querySelector('#counter'))
+// Mobile Navigation Drawer Toggle
+const navToggle = document.querySelector("#navToggle");
+const navMenu = document.querySelector("#navMenu");
 
-//tiggle the process sectiom
-const el = document.querySelector(".coperate");
-el.addEventListener("click", () => {
-  el.classList.toggle("active");
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    const icon = navToggle.querySelector("i");
+    if (navMenu.classList.contains("active")) {
+      icon.className = "fa-solid fa-xmark";
+    } else {
+      icon.className = "fa-solid fa-bars";
+    }
+  });
+
+  // Auto-close menu when a link is tapped
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      const icon = navToggle.querySelector("i");
+      if (icon) icon.className = "fa-solid fa-bars";
+    });
+  });
+}
+
+// Package Modal Logic
+const modalOverlay = document.querySelector("#packageModal");
+const modalCloseBtn = document.querySelector("#modalCloseBtn");
+const modalPackageTitle = document.querySelector("#modalPackageTitle");
+const pkgNameInput = document.querySelector("#pkgNameInput");
+const selectedPackagePdf = document.querySelector("#selectedPackagePdf");
+const packageForm = document.querySelector("#packageForm");
+const pkgFormFeedback = document.querySelector("#pkgFormFeedback");
+
+document.querySelectorAll(".open-package-modal").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const pkgName = btn.getAttribute("data-package");
+    const pdfUrl = btn.getAttribute("data-pdf");
+
+    if (pkgNameInput) pkgNameInput.value = pkgName;
+    if (modalPackageTitle) modalPackageTitle.innerText = `Apply for ${pkgName}`;
+    if (selectedPackagePdf) selectedPackagePdf.value = pdfUrl || "";
+    if (pkgFormFeedback) pkgFormFeedback.style.display = "none";
+
+    if (modalOverlay) modalOverlay.classList.add("active");
+  });
 });
 
-//select elements
-const dropdown = document.querySelector(".dropdown-content");
-const btn = document.querySelector(".downloader");
-const links = document.querySelectorAll(".dropdown-content a");
+if (modalCloseBtn && modalOverlay) {
+  modalCloseBtn.addEventListener("click", () => {
+    modalOverlay.classList.remove("active");
+  });
 
-//close the dropdown after clicking
-links.forEach((link) =>
-  link.addEventListener("click", function () {
-    dropdown.classList.remove("show");
-  })
-);
-
-//show the dropdown
-btn.addEventListener("click", show);
-function show() {
-  dropdown.classList.toggle("show");
+  modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+      modalOverlay.classList.remove("active");
+    }
+  });
 }
-heroText(document.querySelector(".heading-one"), 0.2);
-heroText(document.querySelector(".paragraph-2"), 0.7);
-heroText(document.querySelector(".learn-more"), 1.2);
 
-heroImg(document.querySelector(".svg-cont"));
+if (packageForm) {
+  packageForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const pkgName = pkgNameInput.value;
+    const pdfUrl = selectedPackagePdf.value;
+
+    pkgFormFeedback.style.display = "block";
+    pkgFormFeedback.style.color = "var(--color-primary)";
+    pkgFormFeedback.innerHTML = `
+      <p style="margin-bottom:0.5rem; font-weight:600;">
+        <i class="fa-solid fa-circle-check"></i> Thank you! Your application for <strong>${pkgName}</strong> has been received. Our team will contact you shortly.
+      </p>
+      ${pdfUrl ? `<a href="${pdfUrl}" download class="btn btn-outline" style="padding:0.4rem 0.8rem; font-size:0.8rem; margin-top:0.5rem;"><i class="fa-solid fa-file-pdf"></i> Download ${pkgName} Proposal PDF</a>` : ""}
+    `;
+
+    packageForm.reset();
+    if (pkgNameInput) pkgNameInput.value = pkgName;
+  });
+}
+
+// Swiper Portfolio Carousel Initialization
+if (window.Swiper) {
+  new window.Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+}
+
+// Contact Form Handler
+const leadForm = document.querySelector("#leadForm");
+const formFeedback = document.querySelector("#formFeedback");
+
+if (leadForm) {
+  leadForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formFeedback.style.display = "block";
+    formFeedback.style.color = "var(--color-primary)";
+    formFeedback.innerText = "Thank you! Your message has been received. Our team will contact you shortly.";
+    leadForm.reset();
+
+    setTimeout(() => {
+      formFeedback.style.display = "none";
+    }, 5000);
+  });
+}
+
+// Hero Animations via GSAP
+heroText(document.querySelector(".hero-title"), 0.2);
+heroText(document.querySelector(".hero-desc"), 0.5);
+heroImg(document.querySelector(".hero-image-cont"));
