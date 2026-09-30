@@ -5,19 +5,19 @@
 
 /* ── Theme Tokens ─────────────────────────────────────────────────────────── */
 :root {
-  /* MD3 Teal / Cyan Primary */
-  --md-primary: #00897B;
-  --md-primary-container: #B2DFDB;
+  /* MD3 Cyan/Teal Primary (matching screenshot) */
+  --md-primary: #06b6d4;
+  --md-primary-container: #cffafe;
   --md-on-primary: #FFFFFF;
-  --md-on-primary-container: #00251A;
-  --md-secondary: #00ACC1;
-  --md-secondary-container: #B2EBF2;
-  --md-on-secondary-container: #001F23;
-  --md-tertiary: #1565C0;
+  --md-on-primary-container: #083344;
+  --md-secondary: #0ea5e9;
+  --md-secondary-container: #e0f2fe;
+  --md-on-secondary-container: #0c4a6e;
+  --md-tertiary: #3b82f6;
   --md-error: #B00020;
 
-  /* Light Surface */
-  --md-background: #FAFAFA;
+  /* Light Surface (Crisp White matching screenshot) */
+  --md-background: #FFFFFF;
   --md-surface: #FFFFFF;
   --md-surface-variant: #F0F4F3;
   --md-surface-container: #EEF2F1;
