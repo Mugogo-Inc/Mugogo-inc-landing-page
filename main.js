@@ -25,9 +25,6 @@ document.querySelector("#app").innerHTML = `
 
         <div class="nav-actions">
           <a href="#contact" class="btn btn-primary">Get a Quote</a>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
-            <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
-          </button>
           <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Drawer">
             <span class="material-symbols-outlined" id="menuIcon">menu</span>
           </button>
@@ -679,32 +676,6 @@ document.querySelector("#app").innerHTML = `
     </footer>
   </div>
 `;
-
-// ── Theme Toggle (Dark / Light Mode) ─────────────────────────────────────
-const themeToggle = document.querySelector("#themeToggle");
-const themeIcon = document.querySelector("#themeIcon");
-const htmlEl = document.documentElement;
-
-function applyTheme(theme) {
-  htmlEl.setAttribute("data-theme", theme);
-  localStorage.setItem("mugogo-theme", theme);
-  if (themeIcon) {
-    themeIcon.textContent = theme === "dark" ? "light_mode" : "dark_mode";
-  }
-}
-
-// Sync icon on load
-if (themeIcon) {
-  const currentTheme = htmlEl.getAttribute("data-theme") || "light";
-  themeIcon.textContent = currentTheme === "dark" ? "light_mode" : "dark_mode";
-}
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    const isDark = htmlEl.getAttribute("data-theme") === "dark";
-    applyTheme(isDark ? "light" : "dark");
-  });
-}
 
 // ── Mobile Navigation Drawer Toggle ───────────────────────────────────────
 const navToggle = document.querySelector("#navToggle");

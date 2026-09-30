@@ -47,33 +47,6 @@
   --md-shape-full: 50px;
 }
 
-/* ── Dark Mode Tokens ─────────────────────────────────────────────────────── */
-[data-theme="dark"] {
-  --md-primary: #4DB6AC;
-  --md-primary-container: #00564E;
-  --md-on-primary: #003731;
-  --md-on-primary-container: #70F2E3;
-  --md-secondary: #4DD0E1;
-  --md-secondary-container: #004F59;
-  --md-on-secondary-container: #97F0FF;
-  --md-tertiary: #90CAF9;
-
-  --md-background: #0E1413;
-  --md-surface: #191C1B;
-  --md-surface-variant: #3F4947;
-  --md-surface-container: #1E2221;
-  --md-surface-container-high: #282D2C;
-  --md-on-background: #E0E3E1;
-  --md-on-surface: #E0E3E1;
-  --md-on-surface-variant: #BEC9C7;
-  --md-outline: #899390;
-  --md-outline-variant: #3F4947;
-  --md-ripple: rgba(77, 182, 172, 0.16);
-  --md-shadow-1: 0 1px 2px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.3);
-  --md-shadow-2: 0 1px 2px rgba(0,0,0,0.4), 0 2px 6px 2px rgba(0,0,0,0.32);
-  --md-shadow-3: 0 4px 8px 3px rgba(0,0,0,0.32), 0 1px 3px rgba(0,0,0,0.40);
-}
-
 /* ── Reset & Base ─────────────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
