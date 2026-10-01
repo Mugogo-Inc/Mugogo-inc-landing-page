@@ -484,6 +484,12 @@ document.querySelector("#app").innerHTML = `
             <a href="https://mnaranicinnamonspa.com/" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Mnarani Cinnamon Spa">
               <img src="/cinn.png" alt="Mnarani Cinnamon Spa Partner Logo" class="partner-logo" loading="lazy" />
             </a>
+            <a href="https://www.beachholidaytours.com" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Beach Holiday Tours and Safari">
+              <img src="/beachholidaytours.png" alt="Beach Holiday Tours and Safari Partner Logo" class="partner-logo" loading="lazy" />
+            </a>
+            <a href="https://www.nungwifishingadventures.com/" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Nungwi Fishing Adventures">
+              <img src="/fising.png" alt="Nungwi Fishing Adventures Partner Logo" class="partner-logo" loading="lazy" />
+            </a>
           </div>
         </div>
       </section>
