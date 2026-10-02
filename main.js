@@ -586,8 +586,10 @@ if (navToggle && navMenu) {
     const icon = navToggle.querySelector("#menuIcon");
     if (navMenu.classList.contains("active")) {
       if (icon) icon.textContent = "close";
+      document.body.style.overflow = "hidden";
     } else {
       if (icon) icon.textContent = "menu";
+      document.body.style.overflow = "";
     }
   });
 
@@ -595,6 +597,7 @@ if (navToggle && navMenu) {
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("active");
+      document.body.style.overflow = "";
       const icon = navToggle.querySelector("#menuIcon");
       if (icon) icon.textContent = "menu";
     });

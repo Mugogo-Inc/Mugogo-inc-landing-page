@@ -1187,7 +1187,7 @@ img { max-width: 100%; height: auto; display: block; }
   border-bottom: 2px solid var(--md-outline);
   color: var(--md-on-surface);
   font-family: 'Roboto', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: var(--md-transition-fast);
   min-height: 48px;
 }
@@ -1348,27 +1348,32 @@ textarea.form-control {
 .animate-in { animation: fadeSlideUp 0.55s cubic-bezier(0.4, 0, 0.2, 1) both; }
 
 /* ==========================================================================
-   Responsive — Tablet (≤992px)
+   Responsive — Tablet & iPad (≤992px)
    ========================================================================== */
 @media (max-width: 992px) {
   .nav-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .nav-menu {
     position: fixed;
     top: 72px;
     left: 0;
+    right: 0;
     width: 100%;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
     background: var(--md-surface);
     border-bottom: 1px solid var(--md-outline-variant);
     flex-direction: column;
-    padding: 1.25rem 1.5rem;
-    gap: 0.25rem;
-    align-items: flex-start;
-    box-shadow: var(--md-shadow-2);
+    padding: 1.25rem 1.5rem 2rem 1.5rem;
+    gap: 0.35rem;
+    align-items: stretch;
+    box-shadow: var(--md-shadow-3);
     transform: translateY(-120%);
     opacity: 0;
     visibility: hidden;
@@ -1382,61 +1387,142 @@ textarea.form-control {
     visibility: visible;
   }
 
-  .nav-link { width: 100%; border-radius: var(--md-shape-md); }
+  .nav-link {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: var(--md-shape-md);
+  }
 
   .hero-grid, .about-grid, .contact-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
-  .trust-stats-row { grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.75rem; }
-
+  .trust-stats-row { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; padding: 1.75rem; }
   .tech-partners-grid { grid-template-columns: repeat(3, 1fr); }
-  .partners-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .partners-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
 
 /* ==========================================================================
-   Responsive — Mobile (≤640px)
+   Responsive — Mobile Standard (≤768px)
    ========================================================================== */
-@media (max-width: 640px) {
-  .container { padding: 0 1rem; }
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
 
   .nav-container { height: 64px; }
-  .nav-menu { top: 64px; }
+  .nav-menu { top: 64px; max-height: calc(100vh - 64px); }
 
-  .brand-title { font-size: 1.1rem; }
-  .navbar-logo img { height: 30px; }
+  .brand-title { font-size: 1.15rem; }
+  .navbar-logo img { height: 32px; }
 
-  .hero-section { padding-top: 104px; padding-bottom: 50px; }
+  .hero-section { padding-top: 100px; padding-bottom: 40px; }
 
-  .hero-buttons { flex-direction: column; width: 100%; }
-  .hero-buttons .btn { width: 100%; }
+  .hero-title {
+    font-size: clamp(1.75rem, 6.5vw, 2.5rem);
+    line-height: 1.25;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.65;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+    font-size: 0.95rem;
+  }
 
   .hero-stats {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding-top: 1.25rem;
     text-align: center;
   }
 
-  .services-grid, .process-grid, .packages-grid { grid-template-columns: 1fr; }
+  .stat-item h3 { font-size: 1.4rem; }
+  .stat-item p { font-size: 0.75rem; }
 
-  .about-card { padding: 1.5rem; }
-  .contact-form { padding: 1.5rem; }
-  .modal-card { padding: 1.5rem; }
+  .hero-image-cont img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 
-  .footer-top { grid-template-columns: 1fr; gap: 1.5rem; }
-  .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; }
+  .section-line { margin: 2.5rem 0 1.5rem 0; }
+  .section-header { margin-bottom: 2.5rem; }
 
-  .trust-stats-row { grid-template-columns: repeat(2, 1fr); padding: 1.25rem; gap: 0.85rem; }
-  .trust-stat-number { font-size: 1.6rem; }
+  .services-grid, .process-grid, .packages-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+
+  .about-card, .service-card, .process-card, .package-card, .contact-form {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--md-shape-lg);
+  }
+
+  .package-badge {
+    position: static;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    align-self: flex-start;
+  }
+
+  .modal-overlay { padding: 0.5rem; }
+  .modal-card {
+    padding: 1.5rem 1.25rem;
+    width: 100%;
+    max-height: 88vh;
+    border-radius: var(--md-shape-lg);
+  }
+
+  .footer-top { grid-template-columns: 1fr; gap: 1.75rem; }
+  .footer-bottom { flex-direction: column; text-align: center; gap: 1rem; align-items: center; }
+
+  .trust-stats-row { grid-template-columns: repeat(2, 1fr); padding: 1.25rem 1rem; gap: 0.85rem; }
+  .trust-stat-number { font-size: 1.5rem; }
   .trust-marquee-wrapper::before,
-  .trust-marquee-wrapper::after { width: 60px; }
+  .trust-marquee-wrapper::after { width: 45px; }
 
   .tech-partners-grid { grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
   .tech-partner-card { padding: 1.25rem 0.85rem; }
 
   .partners-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-  .partner-link { height: 100px; padding: 1rem; }
+  .partner-link { height: 95px; padding: 0.85rem; }
+}
+
+/* ==========================================================================
+   Responsive — Compact Mobile (≤520px)
+   ========================================================================== */
+@media (max-width: 520px) {
+  .nav-actions .btn-primary {
+    display: none; /* Hide header CTA button on small mobile so logo & toggle fit without overlap */
+  }
+
+  .container { padding: 0 0.85rem; }
+
+  .brand-title { font-size: 1.05rem; }
+  .navbar-logo img { height: 28px; }
+
+  .stat-item h3 { font-size: 1.25rem; }
+  .stat-item p { font-size: 0.7rem; }
+
+  .partners-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .partner-link { height: 85px; padding: 0.5rem; }
+
+  .tech-partner-card { padding: 1rem 0.6rem; }
+  .trust-stats-row { padding: 1rem 0.75rem; gap: 0.5rem; }
+  .trust-stat-number { font-size: 1.3rem; }
+  .trust-card { min-width: 200px; padding: 0.75rem 1rem; }
 }
