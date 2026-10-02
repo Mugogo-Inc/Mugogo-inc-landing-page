@@ -352,128 +352,16 @@ document.querySelector("#app").innerHTML = `
         </div>
       </section>
 
-      <!-- Section Line Counter -->
-      <div class="container">
-        <div class="section-line">
-          <div class="section-counter">05 / <span>05</span></div>
-        </div>
-      </div>
-
-      <!-- Work / Portfolio Section -->
-      <section class="work-section" id="work">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-subtitle">Proven Results</span>
-            <h2 class="section-title">Check Out Our Work</h2>
-            <p class="section-desc">
-              Together, we'll come up with radical ideas and execute them flawlessly.
-            </p>
-          </div>
-
-          <div class="swiper mySwiper portfolio-slider-container">
-            <div class="swiper-wrapper">
-              <!-- Project 1 -->
-              <div class="swiper-slide">
-                <article class="work-card">
-                  <div class="work-img-wrap">
-                    <img src="/fising.png" alt="Zanzibar Sports Club Website" loading="lazy" />
-                  </div>
-                  <div class="work-body">
-                    <h3>Zanzibar Sports Club</h3>
-                    <p>Sport fishing portal and digital web experience in Zanzibar.</p>
-                    <div class="work-actions">
-                      <a href="https://zanzibarsportfishing.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Project <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Project 2 -->
-              <div class="swiper-slide">
-                <article class="work-card">
-                  <div class="work-img-wrap">
-                    <img src="/travely.png" alt="Travely Mobile App" loading="lazy" />
-                  </div>
-                  <div class="work-body">
-                    <h3>Travely Mobile App</h3>
-                    <p>Cross-platform mobile application available on Google Play for travel booking.</p>
-                    <div class="work-actions">
-                      <a href="https://play.google.com/store/apps/details?id=com.kwanzainc.travely" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        Google Play <i class="fa-brands fa-google-play"></i>
-                      </a>
-                    </div>    
-                  </div>
-                </article>
-              </div>
-
-              <!-- Project 3 -->
-              <div class="swiper-slide">
-                <article class="work-card">
-                  <div class="work-img-wrap">
-                    <img src="/cinnamon.png" alt="Mnarani Cinnamon Spa Website" loading="lazy" />
-                  </div>
-                  <div class="work-body">
-                    <h3>Mnarani Cinnamon Spa</h3>
-                    <p>Digital booking system and marketing campaign for a luxury spa resort.</p>
-                    <div class="work-actions">
-                      <a href="https://mnaranicinnamonspa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Website <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Project 4 -->
-              <div class="swiper-slide">
-                <article class="work-card">
-                  <div class="work-img-wrap">
-                    <img src="/beauty.png" alt="Jambiani Beauty Spa Platform" loading="lazy" />
-                  </div>
-                  <div class="work-body">
-                    <h3>Jambiani Beauty Spa</h3>
-                    <p>Web portal and Google search engine optimization for customer acquisition.</p>
-                    <div class="work-actions">
-                      <a href="https://jambianibeautyspa.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Spa <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- Project 5 -->
-              <div class="swiper-slide">
-                <article class="work-card">
-                  <div class="work-img-wrap">
-                    <img src="/tourszanzibar.png" alt="Tours Zanzibar Tourism Website" loading="lazy" />
-                  </div>
-                  <div class="work-body">
-                    <h3>Tours Zanzibar</h3>
-                    <p>Tourism and excursion digital portal built for fast loading speeds and high conversion.</p>
-                    <div class="work-actions">
-                      <a href="https://tourszanzibar.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        View Portal <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>
-                      </a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <!-- Slider controls -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-      </section>
-
       <!-- Our Partners Section -->
       <section class="partners-section" id="partners">
         <div class="container">
-          <h2>Our Partners</h2>
+          <div class="section-header">
+            <span class="section-subtitle">Trusted By</span>
+            <h2 class="section-title">Our Partners</h2>
+            <p class="section-desc">
+              We collaborate with leading local brands and businesses to deliver outstanding digital experiences.
+            </p>
+          </div>
           <div class="partners-grid">
             <a href="https://jambianibeautyspa.com/" target="_blank" rel="noopener noreferrer" class="partner-link" title="Visit Jambiani Beauty Spa">
               <img src="/jambiani.png" alt="Jambiani Beauty Spa Partner Logo" class="partner-logo" loading="lazy" />
@@ -760,8 +648,7 @@ if (packageForm) {
     submitBtn.disabled = true;
 
     const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
-    // NOTE: Replace YOUR_SUBDOMAIN with your actual Cloudflare workers subdomain
-    const WORKER_URL = `https://mugogo-lead-router.YOUR_SUBDOMAIN.workers.dev/?bu_id=${BU_ID}`;
+    const WORKER_URL = `https://mugogo-lead-router.mugogo2022.workers.dev/?bu_id=${BU_ID}`;
 
     const payload = {
       event_type: "package_application",
@@ -776,11 +663,15 @@ if (packageForm) {
 
     try {
       // Send to Cloudflare Worker Pipeline
-      await fetch(WORKER_URL, {
+      const response = await fetch(WORKER_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
-      }).catch(err => console.warn("Worker fetch failed, may need to update WORKER_URL", err));
+      });
+
+      if (!response.ok) {
+        throw new Error(`Worker returned HTTP status ${response.status}`);
+      }
 
       pkgFormFeedback.style.display = "block";
       pkgFormFeedback.style.color = "var(--color-primary)";
@@ -803,6 +694,9 @@ if (packageForm) {
       if (pkgNameInput) pkgNameInput.value = pkgName;
     } catch (error) {
       console.error(error);
+      pkgFormFeedback.style.display = "block";
+      pkgFormFeedback.style.color = "red";
+      pkgFormFeedback.innerText = "There was an error submitting your application. Please try again.";
     } finally {
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
@@ -848,8 +742,7 @@ if (leadForm) {
     submitBtn.disabled = true;
 
     const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
-    // NOTE: Replace YOUR_SUBDOMAIN with your actual Cloudflare workers subdomain
-    const WORKER_URL = `https://mugogo-lead-router.YOUR_SUBDOMAIN.workers.dev/?bu_id=${BU_ID}`;
+    const WORKER_URL = `https://mugogo-lead-router.mugogo2022.workers.dev/?bu_id=${BU_ID}`;
 
     const payload = {
       event_type: "full_submission",
@@ -863,11 +756,15 @@ if (leadForm) {
 
     try {
       // Send to Cloudflare Worker Pipeline
-      await fetch(WORKER_URL, {
+      const response = await fetch(WORKER_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
-      }).catch(err => console.warn("Worker fetch failed, may need to update WORKER_URL", err));
+      });
+
+      if (!response.ok) {
+        throw new Error(`Worker returned HTTP status ${response.status}`);
+      }
 
       formFeedback.style.display = "block";
       formFeedback.style.color = "var(--color-primary)";
