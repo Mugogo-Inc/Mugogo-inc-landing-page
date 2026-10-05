@@ -665,7 +665,8 @@ function sendPkgPartial() {
   if (phone.length >= 10 || email.includes('@')) {
     const attribution = getUrlAttribution();
     const payload = {
-      event_type: 'partial_submission',
+      event_type: 'partial_abandoned',
+      source_channel: 'LANDING_PAGE',
       full_name: document.getElementById('applicantName')?.value || 'Partial Lead',
       phone_number: phone,
       email: email,
@@ -805,7 +806,8 @@ function sendContactPartial() {
   if (phone.length >= 10 || email.includes('@')) {
     const attribution = getUrlAttribution();
     const payload = {
-      event_type: 'partial_submission',
+      event_type: 'partial_abandoned',
+      source_channel: 'LANDING_PAGE',
       full_name: document.getElementById('name')?.value || 'Partial Lead',
       phone_number: phone,
       email: email,
