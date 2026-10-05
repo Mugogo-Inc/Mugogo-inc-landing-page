@@ -639,6 +639,64 @@ if (modalCloseBtn && modalOverlay) {
   });
 }
 
+// Helper to extract UTM & Click IDs from current URL
+function getUrlAttribution() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return {
+    gclid: urlParams.get('gclid') || null,
+    fbclid: urlParams.get('fbclid') || null,
+    utm_source: urlParams.get('utm_source') || null,
+    utm_medium: urlParams.get('utm_medium') || null,
+    utm_campaign: urlParams.get('utm_campaign') || null,
+    utm_term: urlParams.get('utm_term') || null,
+    utm_content: urlParams.get('utm_content') || null,
+  };
+}
+
+// Package Form Partial Capture Listener
+const pkgPhone = document.getElementById('phoneNo');
+const pkgEmail = document.getElementById('applicantEmail');
+let pkgPartialTimer;
+
+function sendPkgPartial() {
+  const phone = pkgPhone?.value?.trim() || '';
+  const email = pkgEmail?.value?.trim() || '';
+
+  if (phone.length >= 10 || email.includes('@')) {
+    const attribution = getUrlAttribution();
+    const payload = {
+      event_type: 'partial_submission',
+      full_name: document.getElementById('applicantName')?.value || 'Partial Lead',
+      phone_number: phone,
+      email: email,
+      org_name: document.getElementById('orgName')?.value || null,
+      package_name: document.getElementById('pkgNameInput')?.value || null,
+      message: document.getElementById('projectDesc')?.value || null,
+      ...attribution,
+    };
+
+    const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
+    const WORKER_URL = `https://mugogo-lead-router.mugogo2022.workers.dev/?bu_id=${BU_ID}`;
+
+    fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }).catch((err) => console.debug('Partial package lead sync deferred', err));
+  }
+}
+
+if (pkgPhone || pkgEmail) {
+  [pkgPhone, pkgEmail].forEach((input) => {
+    if (!input) return;
+    input.addEventListener('blur', sendPkgPartial);
+    input.addEventListener('input', () => {
+      clearTimeout(pkgPartialTimer);
+      pkgPartialTimer = setTimeout(sendPkgPartial, 2500);
+    });
+  });
+}
+
 if (packageForm) {
   packageForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -653,8 +711,9 @@ if (packageForm) {
     const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
     const WORKER_URL = `https://mugogo-lead-router.mugogo2022.workers.dev/?bu_id=${BU_ID}`;
 
+    const attribution = getUrlAttribution();
     const payload = {
-      event_type: "package_application",
+      event_type: "full_submission",
       source_channel: "LANDING_PAGE",
       full_name: document.querySelector("#applicantName").value,
       email: document.querySelector("#applicantEmail").value,
@@ -662,6 +721,7 @@ if (packageForm) {
       org_name: document.querySelector("#orgName").value,
       package_name: pkgName,
       message: document.querySelector("#projectDesc").value,
+      ...attribution,
     };
 
     try {
@@ -731,9 +791,50 @@ if (window.Swiper) {
   });
 }
 
-// Contact Form Handler
+// Contact Form Handler & Partial Capture
 const leadForm = document.querySelector("#leadForm");
 const formFeedback = document.querySelector("#formFeedback");
+const contactPhone = document.getElementById('phone');
+const contactEmail = document.getElementById('email');
+let contactPartialTimer;
+
+function sendContactPartial() {
+  const phone = contactPhone?.value?.trim() || '';
+  const email = contactEmail?.value?.trim() || '';
+
+  if (phone.length >= 10 || email.includes('@')) {
+    const attribution = getUrlAttribution();
+    const payload = {
+      event_type: 'partial_submission',
+      full_name: document.getElementById('name')?.value || 'Partial Lead',
+      phone_number: phone,
+      email: email,
+      service_interested: document.getElementById('service')?.value || null,
+      message: document.getElementById('message')?.value || null,
+      ...attribution,
+    };
+
+    const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
+    const WORKER_URL = `https://mugogo-lead-router.mugogo2022.workers.dev/?bu_id=${BU_ID}`;
+
+    fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    }).catch((err) => console.debug('Partial contact lead sync deferred', err));
+  }
+}
+
+if (contactPhone || contactEmail) {
+  [contactPhone, contactEmail].forEach((input) => {
+    if (!input) return;
+    input.addEventListener('blur', sendContactPartial);
+    input.addEventListener('input', () => {
+      clearTimeout(contactPartialTimer);
+      contactPartialTimer = setTimeout(sendContactPartial, 2500);
+    });
+  });
+}
 
 if (leadForm) {
   leadForm.addEventListener("submit", async (e) => {
@@ -747,6 +848,7 @@ if (leadForm) {
     const BU_ID = "25217301-11c6-487b-b905-4b2fb290373b";
     const WORKER_URL = `https://mugogo-lead-router.mugogo2022.workers.dev/?bu_id=${BU_ID}`;
 
+    const attribution = getUrlAttribution();
     const payload = {
       event_type: "full_submission",
       source_channel: "LANDING_PAGE",
@@ -755,6 +857,7 @@ if (leadForm) {
       phone_number: document.querySelector("#phone").value,
       service_interested: document.querySelector("#service").value,
       message: document.querySelector("#message").value,
+      ...attribution,
     };
 
     try {
