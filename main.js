@@ -564,6 +564,50 @@ document.querySelector("#app").innerHTML = `
       </div>
     </div>
 
+    <!-- Terms of Service Modal -->
+    <div class="modal-overlay" id="termsModal">
+      <div class="modal-card" style="max-width: 800px; text-align: left; max-height: 90vh; overflow-y: auto;">
+        <button class="modal-close" id="termsCloseBtn" aria-label="Close Modal"><span class="material-symbols-outlined">close</span></button>
+        <div class="modal-header" style="text-align: left;">
+          <h3>Terms of Service for Mugogo Engine</h3>
+          <p><strong>Effective Date:</strong> October 6, 2026</p>
+        </div>
+        <div style="padding: 0 2rem 2rem; line-height: 1.6; color: var(--color-text);">
+          <h4 style="margin-top: 1rem;">1. Acceptance of Terms</h4>
+          <p>By accessing or using Mugogo Engine ("the Service"), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access or use the Service.</p>
+
+          <h4 style="margin-top: 1rem;">2. Description of Service</h4>
+          <p>Mugogo Engine provides automated marketing intelligence, keyword analysis, and Google Ads management tools via API integrations.</p>
+
+          <h4 style="margin-top: 1rem;">3. Account &amp; API Usage</h4>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>User Responsibility:</strong> You are responsible for maintaining the confidentiality of your account credentials and OAuth tokens.</li>
+            <li><strong>Compliance:</strong> You agree to use the Service in compliance with all applicable laws and Google Ads API Terms of Service.</li>
+            <li><strong>Authorized Access:</strong> You must only connect Google Ads accounts that you own or have explicit permission/authorization to manage.</li>
+          </ul>
+
+          <h4 style="margin-top: 1rem;">4. Intellectual Property &amp; Service Availability</h4>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>Ownership:</strong> All content, software code, and services provided by Mugogo Engine are owned by Mugogo Inc.</li>
+            <li><strong>Service Level:</strong> While we strive for continuous availability, we do not guarantee uninterrupted access or error-free API responses due to potential third-party maintenance or network disruptions.</li>
+          </ul>
+
+          <h4 style="margin-top: 1rem;">5. Limitation of Liability</h4>
+          <p>To the maximum extent permitted by law, Mugogo Engine and Mugogo Inc. shall not be liable for any indirect, incidental, or consequential damages resulting from your use or inability to use the Service or external API connectivity issues.</p>
+
+          <h4 style="margin-top: 1rem;">6. Termination &amp; Modifications</h4>
+          <p>We reserve the right to suspend or terminate access to the Service at any time for violation of these terms. We may modify these terms periodically by updating this page.</p>
+
+          <h4 style="margin-top: 1rem;">7. Contact Information</h4>
+          <p>If you have any questions regarding these Terms of Service, please contact us at:</p>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>Email:</strong> <a href="mailto:mugogo2022@gmail.com" style="color: var(--color-primary);">mugogo2022@gmail.com</a></li>
+            <li><strong>Website:</strong> <a href="https://www.mugogoinc.com" style="color: var(--color-primary);">https://www.mugogoinc.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -611,7 +655,7 @@ document.querySelector("#app").innerHTML = `
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; Infinity, Mugogo Inc &nbsp;|&nbsp; <a href="#privacy" class="open-privacy-modal" style="color: inherit; text-decoration: none;">Privacy Policy</a></p>
+          <p>&copy; Infinity, Mugogo Inc &nbsp;|&nbsp; <a href="#privacy" class="open-privacy-modal" style="color: inherit; text-decoration: none;">Privacy Policy</a> &nbsp;|&nbsp; <a href="#terms" class="open-terms-modal" style="color: inherit; text-decoration: none;">Terms of Service</a></p>
           <div class="social-links">
             <a href="#" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
@@ -716,6 +760,37 @@ if (privacyCloseBtn && privacyModal) {
 // Check for #privacy on load
 if (window.location.hash === '#privacy' && privacyModal) {
   privacyModal.classList.add("active");
+}
+
+// Terms of Service Modal Logic
+const termsModal = document.querySelector("#termsModal");
+const termsCloseBtn = document.querySelector("#termsCloseBtn");
+
+document.querySelectorAll(".open-terms-modal, a[href='#terms']").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (termsModal) termsModal.classList.add("active");
+    history.pushState(null, null, '#terms');
+  });
+});
+
+if (termsCloseBtn && termsModal) {
+  termsCloseBtn.addEventListener("click", () => {
+    termsModal.classList.remove("active");
+    history.pushState(null, null, window.location.pathname + window.location.search);
+  });
+
+  termsModal.addEventListener("click", (e) => {
+    if (e.target === termsModal) {
+      termsModal.classList.remove("active");
+      history.pushState(null, null, window.location.pathname + window.location.search);
+    }
+  });
+}
+
+// Check for #terms on load
+if (window.location.hash === '#terms' && termsModal) {
+  termsModal.classList.add("active");
 }
 
 // Helper to extract UTM & Click IDs from current URL
