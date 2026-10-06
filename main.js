@@ -513,6 +513,53 @@ document.querySelector("#app").innerHTML = `
           </button>
           <div id="pkgFormFeedback" style="font-size:0.9rem; text-align:center; display:none; margin-top:1rem;"></div>
         </form>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal-overlay" id="privacyModal">
+      <div class="modal-card" style="max-width: 800px; text-align: left; max-height: 90vh; overflow-y: auto;">
+        <button class="modal-close" id="privacyCloseBtn" aria-label="Close Modal"><span class="material-symbols-outlined">close</span></button>
+        <div class="modal-header" style="text-align: left;">
+          <h3>Privacy Policy for Mugogo Engine</h3>
+          <p><strong>Effective Date:</strong> October 6, 2026</p>
+        </div>
+        <div style="padding: 0 2rem 2rem; line-height: 1.6; color: var(--color-text);">
+          <h4 style="margin-top: 1rem;">1. Introduction</h4>
+          <p>Welcome to Mugogo Engine ("we," "our," or "us"). We respect your privacy and are committed to protecting the personal and account data you share with us when using our application and API services.</p>
+          
+          <h4 style="margin-top: 1rem;">2. Information We Collect</h4>
+          <p>When you use Mugogo Engine, we may collect and process the following information:</p>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>Account Information:</strong> Name, email address, and developer credentials provided during sign-up or OAuth authentication.</li>
+            <li><strong>Google Ads Data:</strong> Campaign data, performance metrics, and keyword planning information obtained via Google Ads API authorization.</li>
+            <li><strong>Usage Data:</strong> Technical logs, IP addresses, and operational diagnostics related to API requests made through our system.</li>
+          </ul>
+
+          <h4 style="margin-top: 1rem;">3. How We Use Your Information</h4>
+          <p>We use the collected information solely to:</p>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li>Provide, operate, and maintain our application services.</li>
+            <li>Process Google Ads API requests (such as keyword planning and campaign management) on your behalf.</li>
+            <li>Improve system performance, security, and developer integration experience.</li>
+          </ul>
+
+          <h4 style="margin-top: 1rem;">4. Data Sharing and Protection</h4>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>No Third-Party Selling:</strong> We do not sell, rent, or trade your personal or business data to third parties.</li>
+            <li><strong>Service Providers:</strong> We only process data via official Google API services with your explicit OAuth authorization.</li>
+            <li><strong>Security:</strong> We implement industry-standard security measures to safeguard your credentials and data against unauthorized access.</li>
+          </ul>
+
+          <h4 style="margin-top: 1rem;">5. Your Rights and Data Retention</h4>
+          <p>You may revoke our app's access to your Google Account at any time via your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">Google Security Settings</a>. You may also request deletion of your account data by contacting us.</p>
+
+          <h4 style="margin-top: 1rem;">6. Contact Us</h4>
+          <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+          <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+            <li><strong>Email:</strong> <a href="mailto:mugogo2022@gmail.com" style="color: var(--color-primary);">mugogo2022@gmail.com</a></li>
+            <li><strong>Website:</strong> <a href="https://www.mugogoinc.com" style="color: var(--color-primary);">https://www.mugogoinc.com</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -539,6 +586,7 @@ document.querySelector("#app").innerHTML = `
               <li><a href="#process">Process</a></li>
               <li><a href="#work">Portfolio</a></li>
               <li><a href="#partners">Partners</a></li>
+              <li><a href="#privacy" class="open-privacy-modal">Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -637,6 +685,37 @@ if (modalCloseBtn && modalOverlay) {
       modalOverlay.classList.remove("active");
     }
   });
+}
+
+// Privacy Policy Modal Logic
+const privacyModal = document.querySelector("#privacyModal");
+const privacyCloseBtn = document.querySelector("#privacyCloseBtn");
+
+document.querySelectorAll(".open-privacy-modal, a[href='#privacy']").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (privacyModal) privacyModal.classList.add("active");
+    history.pushState(null, null, '#privacy');
+  });
+});
+
+if (privacyCloseBtn && privacyModal) {
+  privacyCloseBtn.addEventListener("click", () => {
+    privacyModal.classList.remove("active");
+    history.pushState(null, null, window.location.pathname + window.location.search);
+  });
+
+  privacyModal.addEventListener("click", (e) => {
+    if (e.target === privacyModal) {
+      privacyModal.classList.remove("active");
+      history.pushState(null, null, window.location.pathname + window.location.search);
+    }
+  });
+}
+
+// Check for #privacy on load
+if (window.location.hash === '#privacy' && privacyModal) {
+  privacyModal.classList.add("active");
 }
 
 // Helper to extract UTM & Click IDs from current URL
