@@ -586,7 +586,6 @@ document.querySelector("#app").innerHTML = `
               <li><a href="#process">Process</a></li>
               <li><a href="#work">Portfolio</a></li>
               <li><a href="#partners">Partners</a></li>
-              <li><a href="#privacy" class="open-privacy-modal">Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -611,7 +610,7 @@ document.querySelector("#app").innerHTML = `
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; Infinity, Mugogo Inc</p>
+          <p>&copy; Infinity, Mugogo Inc &nbsp;|&nbsp; <a href="#privacy" class="open-privacy-modal" style="color: inherit; text-decoration: none;">Privacy Policy</a></p>
           <div class="social-links">
             <a href="#" aria-label="Facebook" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" aria-label="Twitter" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
