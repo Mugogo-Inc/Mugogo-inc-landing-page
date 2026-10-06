@@ -513,6 +513,7 @@ document.querySelector("#app").innerHTML = `
           </button>
           <div id="pkgFormFeedback" style="font-size:0.9rem; text-align:center; display:none; margin-top:1rem;"></div>
         </form>
+      </div>
     </div>
 
     <!-- Privacy Policy Modal -->
